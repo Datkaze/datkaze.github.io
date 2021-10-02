@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Image & Link</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .menu {
+            width: 100%;
+            height: 80px;
+            background-color: #397373;
+            margin: auto;
+        }
+
+        .menu1 ul li {
+            list-style: none;
+            float: left;
+            padding: 30px 120px;
+        }
+
+        .menu1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .xe2 {
+            width: 85%;
+            height: 230px;
+        }
+
+        .xe1 {
+            width: 100%;
+            height: 250px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 60px;
+        }
+
+        h2 {
+            text-align: right;
+            font-size: 25px;
+        }
+
+        h3 {
+            font-size: 35px;
+        }
+
+        h4 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .pds2 {
+            display: flex;
+            list-style: none;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+
+        body {
+            line-height: 1.5;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+        .div2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .div1 {
+            max-width: 1170px;
+            margin: auto;
+        }
+
+        .footer {
+            background-color:hsl(351, 9%, 15%);
+            padding: 50px 0;
+        }
+        .footer-list {
+            list-style: none;
+           
+        }
+
+        .footer-list a{
+            color: #919294;
+            text-decoration: none;
+        }
+
+        
+        
+
+        .div3 {
+            width: 25%;
+            padding: 0 15px;
+        }
+
+        .div3 h4 {
+            font-size: 18px;
+            color: #ffffff;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXSJH1PdFe4eI_q9UwYRx9Ul-5WFhOFtQBBg&usqp=CAU"
+        class="xe1" alt="ảnh trang chủ">
+    <h1><img src="https://xedapthegioi.vn/wp-content/uploads/2019/05/logo.jpg" alt="tiêu đề"></h1>
+
+    <div class="menu">
+        <div class="menu1">
+            <ul>
+                <li><a href="bai-tap.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li> <a href="sanpham.html">SẢN PHẨM</a></li>
+                <li><a href="lienhe.html">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <h3>Sản phẩm bán chạy</h3>
+
+    <ul class="pds2">
+
+        <li> <a href="chitietsp1.html"><img
+                    src="https://xedapthegioi.vn/wp-content/uploads/2017/03/xe-dap-fujisan-1-510x383.jpg"
+                    title="fujisan" class="xe2" alt="fujisan"></a>
+            <a href="chitietsp1.html" class="xe2" title="Click để xem chi tiếp sản phẩm"><br /> Xe đạp thể thao Fujisan
+                khung thép</a>
+        </li>
+
+
+        <li> <a href="chitietsp2.html"><img
+                    src="https://xedapthegioi.vn/wp-content/uploads/2019/07/galaxy-a5-7-510x383.jpg" title="galaxy a5"
+                    class="xe2" alt="fujisan"> </a>
+            <a href="chitietsp2.html" class="xe2" title="Click để xem chi tiếp sản phẩm"><br /> Xe đạp thể thao Galaxy
+                A5</a>
+        </li>
+
+
+        <li> <a href="chitietsp3.html"><img
+                    src="https://xedapthegioi.vn/wp-content/uploads/2018/03/galaxy-ml200-6-510x382.jpg"
+                    title="galaxy ml200" class="xe2" alt="galaxy-ml200"> </a>
+            <a href="chitietsp3.html" class="xe2" title="Click để xem chi tiếp sản phẩm"><br /> Xe đạp địa hình Galaxy
+                ML200</a>
+        </li>
+
+
+        <li> <a href="chitietsp4.html"><img
+                    src="https://xedapthegioi.vn/wp-content/uploads/2021/05/z2521904158235_d18139473ee124dbd43133f5ab69a515-510x383.jpg"
+                    title="lanq 1850" class="xe2" alt="xe trẻ con"> </a>
+            <a href="chitietsp4.html" class="xe2" title="Click để xem chi tiếp sản phẩm"><br /> Xe đạp trẻ em LANQ
+                1850</a>
+        </li>
+
+    </ul>
+
+
+    <h3>Bình Luận</h3>
+
+    <textarea cols="40" rows="13"></textarea>
+    <textarea placeholder="nội dung bài viết"></textarea>
+    <h3>Mua Hàng</h3>
+    <input type="text" placeholder="Họ và tên">
+
+    <input type="text" placeholder="số điện thoại">
+
+    <input type="text" placeholder="email">
+
+    <textarea cols="30" rows="10" placeholder="ghi chú"></textarea>
+
+    <button>ĐẶT HÀNG</button>
+
+    <footer class="footer">
+        <div class="div1">
+            <div class="div2">
+                <div class="div3">
+                    <h4>HỖ TRỢ – DỊCH VỤ</h4>
+
+                    <ul class="footer-list">
+
+                        <li><a href="#">Tổng đài hỗ trợ: 0961839922</a></li>
+                        <li><a href="#">Hà Nội: (024).66869919</a></li>
+                        <li><a href="#">TP.HCM: 0932.662886</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="div3">
+                    <h4>SHOWROOM HÀ NỘI</h4>
+
+                    <ul class="footer-list">
+
+
+                        <li> <a href="#">9 Ngõ 214 Nguyễn Xiển - Thanh Xuân - ĐT: 0961.83.99.22</a> </li>
+                        <li> <a href="#">163 Cầu Diễn - Bắc Từ Liêm - ĐT: 0856769333</a></li>
+                        <li> <a href="#">Biệt thự M02-L09, KĐT Dương Nội - Hà Đông - ĐT: 0792 216 555</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="div3">
+                    <h4>SHOWROOM HỒ CHÍ MINH</h4>
+
+                    <ul class="footer-list">
+
+                        <li> <a href="#">540/8 CMT 8 - Quận 3 - ĐT: 0932.662.886</a></li>
+                        <li> <a href="#">485/6 Phan Văn Trị - P5 - Gò Vấp (Đối diện siêu thị Emart) - ĐT:
+                                0901.213.222</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="div3">
+                    <h4>QUY ĐỊNH</h4>
+
+                    <ul class="footer-list">
+
+                        <li><a href="#">Quy định đổi trả hàng</a></li>
+                        <li><a href="#">Các quy định về bảo hành sản phẩm</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+    </footer>
+
+
+    </form>
+</body>
+
+</html>
