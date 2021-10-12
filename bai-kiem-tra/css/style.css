@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+h3{
+    text-align: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+}
+.list-person{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.list-person li{
+    margin: 10px;
+    max-width: 400px;
+   
+}
+.list-person li img{
+display: block;
+max-width: 100%;
+transition: all 0.3s;
+}
+.list-person img:hover {
+    transform: scale(1.1);
+}
