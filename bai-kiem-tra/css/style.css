@@ -7,6 +7,10 @@ body{
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
 }
+h1{
+    padding: 20px 0px 0px 20px;
+    text-align: center;
+}
 h3{
     text-align: center;
 }
