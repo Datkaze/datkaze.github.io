@@ -1,0 +1,22 @@
+.menu {
+    height: 80px;
+    background-color: #397373;
+}
+
+.menu1 ul li {
+    list-style: none;
+    float: left;
+    padding: 30px 120px;
+}
+
+.menu1 a {
+    text-decoration: none;
+    color: white;
+}
+.menu1 ul{
+    display: flex;
+}
+.menu1 a:hover{
+background-color: blue;
+color: white;
+}

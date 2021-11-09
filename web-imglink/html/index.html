@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Image & Link</title>
-    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <style>
         * {
             margin: 0;
@@ -12,27 +13,14 @@
             box-sizing: border-box;
         }
 
-        .menu {
-            height: 80px;
-            background-color: #397373;
-        }
-
-        .menu1 ul li {
-            list-style: none;
-            float: left;
-            padding: 30px 120px;
-        }
-
-        .menu1 a {
-            text-decoration: none;
-            color: white;
-        }
-
+       
 
         .xe2 {
             width: 85%;
             text-decoration: none;
-    
+            transition: 0.4s;
+            display: block;
+
         }
 
         .xe1 {
@@ -43,6 +31,7 @@
         h1 {
             text-align: center;
             font-size: 60px;
+            
         }
 
         h2 {
@@ -66,14 +55,26 @@
         .pds2 {
             display: flex;
             list-style: none;
+            padding-left: 50px;
         }
-
-
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap');
+       
+       
+        .pds2 a:hover img{
+            transform: scale(1.1)
+        }
 
         body {
             line-height: 1.5;
             font-family: 'Poppins', sans-serif;
+        }
+
+#backtop{
+    right: 18px;
+}
+        a{
+            text-decoration: none;
+            overflow: hidden;
+            display: block;
         }
 
     </style>
@@ -213,7 +214,10 @@
 
 
         </div>
-        </div>
+        </div class="backtop">
+        
+        <a href="index.html">back to top</a>
+    
     </footer>
 
 
