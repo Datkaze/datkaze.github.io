@@ -47,7 +47,7 @@
   </head>
   <body>
       <h1>Bài Tập Login & Register Form</h1>
-    <div class="login-page">
+    <div class="login-page" id="div1">
       <div class="login" >
           <h2>Đăng Kí Tài Khoản</h2>
         <input type="text" placeholder="name" id="ip1"/>
@@ -60,10 +60,11 @@
     </div>
     <script>
         function check(){
-         alert("Đăng ký tài khoản thành công");
-         document.getElementById("ip1").value = "";
-         document.getElementById("ip2").value = "";
-         document.getElementById("ip3").value = "";
+        //  alert("Đăng ký tài khoản thành công");
+        //  document.getElementById("ip1").value = "";
+        //  document.getElementById("ip2").value = "";
+        //  document.getElementById("ip3").value = "";
+        document.getElementById("div1").innerHTML = `<div style = background-color: "white"; width: "350px"; height: "200px"; text-align: "center"> "Đăng ký tài khoản thành công" </div>`;
         }
     </script>
   </body>
