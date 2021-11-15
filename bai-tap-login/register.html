@@ -27,18 +27,25 @@
       }
       .login input{
         width: 100%;
-        margin: 0 0 15px;
+        margin: 0 0 30px;
         padding: 15px;
         box-sizing: border-box;
         font-size: 14px;
       }
+      .space{
+        padding-top: 30px;
+      }
       button{
-          width: 100%;
+          width: 85%;
           margin: 0 0 15px;
           padding: 15px;
           background: #4caf50;
           color: white;
+          border-radius: 60px;
           transition: 0.3s;
+      }
+      #button1{
+        width: 60%;
       }
       button:hover{
           background: green;
@@ -53,18 +60,17 @@
         <input type="text" placeholder="name" id="ip1"/>
         <input type="password" placeholder="password" id="ip2"/>
         <input type="text" placeholder="email" id="ip3"/>
-       <button onclick="check()">REGISTER</button>
-        <a href="login.html">back</a>
+        <div class="space"></div>
+       <button onclick="check()">Xác Nhận Đăng Kí</button>
+        <a href="login.html"><button id="button1">Đăng Nhập</button></a>
        
       </div>
     </div>
     <script>
+
+      
         function check(){
-        //  alert("Đăng ký tài khoản thành công");
-        //  document.getElementById("ip1").value = "";
-        //  document.getElementById("ip2").value = "";
-        //  document.getElementById("ip3").value = "";
-        document.getElementById("div1").innerHTML = `<div style = background-color: "white"; width: "350px"; height: "200px"; text-align: "center"> "Đăng ký tài khoản thành công" </div>`;
+        document.getElementById("div1").innerHTML = `<div style = background-color: "blue"; width: "350px"; height: "300px"; text-align: "center"> Đăng ký tài khoản thành công </div>`;
         }
     </script>
   </body>
