@@ -9,7 +9,6 @@
     <title>REGISTER</title>
   </head>
   <body>
-    <h3>Đăng Kí Thành Công</h3>
     <div class="wrapper">
       <h1>Đăng Kí</h1>
       <form class="form-login">
@@ -45,7 +44,7 @@
         </p>
       </div>
         <div class="button-n">
-        <button type="button" onclick="checkUsername()">Xác Nhận Đăng Kí</button>
+        <button type="button" onclick="check()">Xác Nhận Đăng Kí</button>
         <a href="login.html"
           ><button type="button" id="button1">Đăng Nhập</button></a
         >
@@ -58,29 +57,23 @@
       const confirm = document.getElementById("confirm-password");
       
     
-        function checkUsername() {
-          if (username.value.length < 8 || username.value.length > 20) {
+        function check() {
+           if (username.value.length < 8 || username.value.length > 20) {
             document.getElementById("username-error").style.display = "block";
-          } else {
+          } else{
             document.getElementById("username-error").style.display = "none";
-          }
-        }
-        function checkPassword() {
-          if (password.value.length < 6 || password.value.length > 32) {
+          }  if (password.value.length < 6 || password.value.length > 32) {
             document.getElementById("password-error").style.display = "block";
           } else {
             document.getElementById("password-error").style.display = "none";
-          }
-        }
-        function checkConfirm() {
-          if (
-            document.getElementById("password") == document.getElementById("confirm-password")
-          ) {
+          } if (confirm.value == password.value) {
             document.getElementById("confirm-error").style.display = "none";
           } else {
             document.getElementById("confirm-error").style.display = "block";
+          } if (username.value.length > 8 && username.value.length < 20 && password.value.length > 6 && password.value.length < 32 && confirm.value == password.value){
+            document.querySelector(".wrapper").innerHTML = `<div style = "height: 200px; text-align: center; padding-top: 30px;"><h2 style = "padding-bottom: 30px">Đăng Kí Thành Công</h2><a href='login.html'><button>Quay Lại Đăng Nhập</button></a></div>`
           }
-        }
+        } 
       
     </script>
   </body>

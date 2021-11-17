@@ -12,27 +12,33 @@
     <title>LOGIN</title>
   </head>
   <body>
-    <h3>Đăng Nhập Thành Công</h3>
+    <h3 id="dntc">Đăng Nhập Thành Công</h3>
     <div class="wrapper">
       <h1>Đăng Nhập</h1>
       <form class="form-login">
         <div class="from-input">
           <i class="fas fa-user"></i>
-          <input type="text" placeholder="Username" >
-          <p class="error" id="username-error">
-            Username must be at least 8 characters and less than 20 characters
-          </p>
-      </div>
-      <div class="from-input">
-        <i id="lock" class="fas fa-lock" ></i>
-          <input id="password" type="password" placeholder="Password" onclick="clickPassword()" >
-          
+          <input type="text" placeholder="Username" id="username" />
+          <p class="error" id="username-error">undefined account</p>
+        </div>
+        <div class="from-input">
+          <i id="lock" class="fas fa-lock"></i>
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            onclick="clickPassword()"
+          />
+
           <i id="show-eye" class="fas fa-eye" onclick="showPassword()"></i>
-          <i id="hide-eye"    class="fas fa-eye-slash" style="display: none;" onclick="hidePassword()"></i>
-          <p class="error" id="password-error">
-            Password must be at least 6 characters and less than 32 characters
-          </p>
-      </div>
+          <i
+            id="hide-eye"
+            class="fas fa-eye-slash"
+            style="display: none"
+            onclick="hidePassword()"
+          ></i>
+          <p class="error" id="password-error">not precision password</p>
+        </div>
         <div class="check">
           <label for="checkbox">
             <input type="checkbox" id="checkbox" /> Remember me
@@ -40,7 +46,7 @@
           <a id="password" href="#">Forgot Password?</a>
         </div>
         <div class="button-n">
-          <button type="submit" onclick="checkUsername()">Đăng Nhập</button>
+          <button type="button" onclick="check()">Đăng Nhập</button>
           <a href="register.html"
             ><button type="button" id="button1">Đăng Kí</button></a
           >
@@ -66,20 +72,19 @@
           hideEye.style.display = "none";
         }
       }
-      // function checkUsername() {
-      //   if (username.value.length < 8 || username.value.length > 20) {
-      //     document.getElementById("username-error").style.display = "block";
-      //   } else {
-      //     document.getElementById("username-error").style.display = "none";
-      //   }
-      // }
-      // function checkPassword() {
-      //   if (password.value.length < 6 || password.value.length > 32) {
-      //     document.getElementById("password-error").style.display = "block";
-      //   } else {
-      //     document.getElementById("password-error").style.display = "none";
-      //   }
-      // }
+      function check() {
+        if(username.value.length > 8 && username.value.length < 20 && password.value.length > 6 && password.value.length < 32){
+        document.getElementById("dntc").style.display = "block";
+      } if (username.value.length < 8 || username.value.length > 20) {
+          document.getElementById("username-error").style.display = "block";
+        } else {
+          document.getElementById("username-error").style.display = "none";
+        } if (password.value.length < 6 || password.value.length > 32) {
+          document.getElementById("password-error").style.display = "block";
+        } else {
+          document.getElementById("password-error").style.display = "none";
+        }
+      } 
     </script>
   </body>
 </html>
