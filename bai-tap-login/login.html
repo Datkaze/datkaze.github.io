@@ -156,6 +156,11 @@
         opacity: 0.85;
         color: #ccc;
       }
+      .error {
+        color: red;
+        display: none;
+        text-align: center;
+      }
     </style>
   </head>
 
@@ -207,33 +212,36 @@
       <div id="signup-box">
         <form action="" id="signup-form">
           <div class="form-group">
-            <input type="text" name="username" required />
+            <input type="text" id="signup-user" name="username" />
             <label for="username"> Username </label>
           </div>
           <div class="form-group">
-            <input type="password" id="signup-pass" name="password" required />
+            <input type="password" id="signup-pass" name="password" />
             <i
               toggle="#signup-pass"
               class="fa fa-eye toggle-password"
               id="toggle-signup-pass"
             ></i>
             <label for="password"> Password </label>
+            <p class="error" id="pass-error">
+              Password must be at least 6 characters and less than 32 characters
+            </p>
           </div>
           <div class="form-group">
-            <input
-              type="password"
-              id="confirm-pass"
-              name="confirm-password"
-              required
-            />
+            <input type="password" id="confirm-pass" name="confirm-password" />
             <i
               toggle="#confirm-pass"
               class="fa fa-eye toggle-password"
               id="toggle-confirm-pass"
             ></i>
             <label for="confirm-password"> Confirm Password </label>
+            <p class="error" id="cf-error">password must be same with confirm password</p>
           </div>
-          <button type="submit" class="btn btn-outline-info btn-block">
+          <button
+            type="submit"
+            onclick="check()"
+            class="btn btn-outline-info btn-block"
+          >
             Create Account
           </button>
         </form>
@@ -289,7 +297,7 @@
         if (eye.hasClass("fa-eye-slash")) {
           eye.removeClass("fa-eye-slash");
           eye.addClass("fa-eye");
-          var input = $(eye.attr("toggle"));
+          let input = $(eye.attr("toggle"));
           input.attr("type", "password");
         }
       }
@@ -327,11 +335,33 @@
 
       function toggleEye(eye) {
         eye.toggleClass("fa-eye fa-eye-slash");
-        var input = $(eye.attr("toggle"));
+       let input = $(eye.attr("toggle"));
         if (eye.hasClass("fa-eye-slash")) {
           input.attr("type", "text");
         } else {
           input.attr("type", "password");
+        }
+      }
+      let username = document.getElementById("signup-user");
+      let password = document.getElementById("signup-pass");
+      let confirm = document.getElementById("confirm-pass");
+
+      function check() {
+        if (
+          password.value.length > 6 &&
+          password.value.length < 32 &&
+          confirm.value == password.value
+        ) {
+          document.querySelector(
+            ".box"
+          ).innerHTML = `<div><h2>Đăng Kí Thành Công</h2></div>`;
+        } else if (password.value.length < 6) {
+          document.getElementById("pass-error").style.display = "block";
+        } else if (
+          password.value.length > 32 ||
+          confirmpass.value != password.value
+        ) {
+          document.getElementById("cf-error").style.display = "block";
         }
       }
     </script>
