@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Automates Accounting" />
+    <meta
+      name="keywords"
+      content="E-Ledger System, Tesla online bill, E-way Online, Online Billing, Hayatt online bill"
+    />
+    <meta name="author" content="Tabassum Khan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Login Page</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #96d1c7 no-repeat;
+        background-size: cover;
+      }
+
+      .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: auto;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgb(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+      }
+
+      .login-tab {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 10px;
+        margin-top: -10px;
+        margin-left: 1px;
+      }
+
+      .login-tab .col {
+        width: 100%;
+        color: #59b4b4;
+        float: left;
+        cursor: pointer;
+        padding: 5px;
+        padding-top: 8px;
+      }
+
+      .box .form-group {
+        position: relative;
+      }
+
+      .box .form-group input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-top: 15px;
+        color: #ccc;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #03a9f4;
+        outline: none;
+        background: transparent;
+      }
+
+      .box .form-group input:-webkit-autofill,
+      .box .form-group input:-webkit-autofill:hover,
+      .box .form-group input:-webkit-autofill:focus {
+        border: none;
+        border-bottom: 1px solid #03a9f4;
+        -webkit-text-fill-color: #ccc;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
+      .box .form-group label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 10px;
+        font-size: 15px;
+        color: #ccc;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      .box .form-group input:focus ~ label,
+      .box .form-group input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+        font-size: 13px;
+      }
+
+      .remember-forgot-tab {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        line-height: 16px;
+      }
+
+      .checkbox label {
+        float: left;
+      }
+
+      .forgot-pass label {
+        float: right;
+      }
+
+      .remember-forgot-tab .checkbox label,
+      .remember-forgot-tab .forgot-pass a {
+        text-decoration: none;
+        color: #59b4b4;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .remember-forgot-tab .checkbox input {
+        position: absolute;
+        line-height: 16px;
+        height: 15px;
+        width: 15px;
+      }
+
+      .remember-forgot-tab .checkbox span {
+        margin-left: 22px;
+      }
+
+      .box .form-group .toggle-password {
+        float: right;
+        position: relative;
+        margin-top: -62px;
+        margin-right: 10px;
+        cursor: pointer;
+        opacity: 0.85;
+        color: #ccc;
+      }
+      .error {
+        color: red;
+        display: none;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="row login-tab">
+        <div class="col login link" id="login-link">
+          <h4 id="login-heading">Login</h4>
+        </div>
+        <div class="col signup link" id="signup-link">
+          <h4 id="signup-heading">Sign Up</h4>
+        </div>
+      </div>
+
+      <div id="login-box">
+        <form action="" id="login-form">
+          <div class="form-group">
+            <input type="text" name="username" required />
+            <label for="username"> Username </label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="login-pass" name="password" required />
+            <i
+              toggle="#login-pass"
+              class="fa fa-eye toggle-password"
+              id="toggle-login-pass"
+            ></i>
+            <label for="password"> Password </label>
+          </div>
+          <div class="row remember-forgot-tab">
+            <div class="col checkbox">
+              <label
+                ><input type="checkbox" name="remember-me" checked="checked" />
+                <span> Remember Me? </span></label
+              >
+            </div>
+            <div class="col forgot-pass">
+              <label>
+                <a href="#" name="forgot-pass"> Forgot Password? </a>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-info btn-block">
+            Login
+          </button>
+        </form>
+      </div>
+
+      <div id="signup-box">
+        <form action="" id="signup-form">
+          <div class="form-group">
+            <input type="text" id="signup-user" name="username" />
+            <label for="username"> Username </label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="signup-pass" name="password" />
+            <i
+              toggle="#signup-pass"
+              class="fa fa-eye toggle-password"
+              id="toggle-signup-pass"
+            ></i>
+            <label for="password"> Password </label>
+            <p class="error" id="pass-error">
+              Password must be at least 6 characters and less than 32 characters
+            </p>
+          </div>
+          <div class="form-group">
+            <input type="password" id="confirm-pass" name="confirm-password" />
+            <i
+              toggle="#confirm-pass"
+              class="fa fa-eye toggle-password"
+              id="toggle-confirm-pass"
+            ></i>
+            <label for="confirm-password"> Confirm Password </label>
+            <p class="error" id="cf-error">password must be same with confirm password</p>
+          </div>
+          <button
+            type="submit"
+            onclick="check()"
+            class="btn btn-outline-info btn-block"
+          >
+            Create Account
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#signup-box").hide();
+        $("#login-link").css({
+          color: "#ccc",
+          border: "1px solid #59B4B4",
+        });
+      });
+
+      $("#signup-link").click(function () {
+        $("#login-box").hide(500, function () {
+          $("#signup-box").show(500);
+          linkStyleOnClick($("#signup-link"));
+          linkStyleOffClick($("#login-link"));
+          $("#login-form").trigger("reset");
+          resetEyeToggle($("#toggle-login-pass"));
+        });
+      });
+
+      $("#login-link").click(function () {
+        $("#signup-box").hide(500, function () {
+          $("#login-box").show(500);
+          linkStyleOnClick($("#login-link"));
+          linkStyleOffClick($("#signup-link"));
+          $("#signup-form").trigger("reset");
+
+          resetEyeToggle($("#toggle-signup-pass"));
+          resetEyeToggle($("#toggle-confirm-pass"));
+        });
+      });
+
+      function linkStyleOnClick(link) {
+        link.css({
+          color: "#ccc",
+          border: "1px solid #59B4B4",
+        });
+      }
+
+      function linkStyleOffClick(link) {
+        link.css({
+          color: "#59B4B4",
+          border: "none",
+        });
+      }
+
+      function resetEyeToggle(eye) {
+        if (eye.hasClass("fa-eye-slash")) {
+          eye.removeClass("fa-eye-slash");
+          eye.addClass("fa-eye");
+          let input = $(eye.attr("toggle"));
+          input.attr("type", "password");
+        }
+      }
+
+      $(document).ready(function () {
+        $(".login-tab")
+          .find(".col")
+          .hover(
+            function () {
+              $(this).css("color", "#ccc");
+            },
+            function () {
+              if ($("#login-box").is(":hidden")) {
+                $("#login-link").css("color", "#59B4B4");
+              }
+
+              if ($("#signup-box").is(":hidden")) {
+                $("#signup-link").css("color", "#59B4B4");
+              }
+            }
+          );
+      });
+
+      $("#toggle-login-pass").click(function () {
+        toggleEye($(this));
+      });
+
+      $("#toggle-signup-pass").click(function () {
+        toggleEye($(this));
+      });
+
+      $("#toggle-confirm-pass").click(function () {
+        toggleEye($(this));
+      });
+
+      function toggleEye(eye) {
+        eye.toggleClass("fa-eye fa-eye-slash");
+       let input = $(eye.attr("toggle"));
+        if (eye.hasClass("fa-eye-slash")) {
+          input.attr("type", "text");
+        } else {
+          input.attr("type", "password");
+        }
+      }
+      let username = document.getElementById("signup-user");
+      let password = document.getElementById("signup-pass");
+      let confirm = document.getElementById("confirm-pass");
+
+      function check() {
+        if (
+          password.value.length > 6 &&
+          password.value.length < 32 &&
+          confirm.value == password.value
+        ) {
+          document.querySelector(
+            ".box"
+          ).innerHTML = `<div><h2>Đăng Kí Thành Công</h2></div>`;
+        } else if (password.value.length < 6) {
+          document.getElementById("pass-error").style.display = "block";
+        } else if (
+          password.value.length > 32 ||
+          confirmpass.value != password.value
+        ) {
+          document.getElementById("cf-error").style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
