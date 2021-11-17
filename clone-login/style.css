@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: lightblue;
+  font-family: "Poppins", sans-serif;
+  padding-top: 80px;
+}
+h3 {
+  display: none;
+  text-align: center;
+  color: green;
+  font-size: 20px;
+}
+h1 {
+  padding-top: 50px;
+  margin-bottom: -20px;
+  color: rgb(90, 75, 75);
+  text-align: center;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 500px;
+  border-radius: 30px;
+  margin: auto;
+  background-color: white;
+}
+.form-login {
+  background: white;
+  padding: 40px;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+.form-login input {
+  width: 90%;
+  margin: 20px 0 15px;
+  padding: 15px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid rgb(119, 119, 240);
+  outline: none;
+}
+.check {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+label {
+  margin-top: -20px;
+}
+#checkbox {
+  width: 20px;
+}
+button {
+  width: 80%;
+  margin: 0 0 15px;
+  padding: 15px;
+  background: #4c93af;
+  color: white;
+  transition: 0.3s;
+  font-size: 20px;
+  border-radius: 60px;
+}
+#button1 {
+  width: 60%;
+}
+button:hover {
+  background: rgb(0, 153, 255);
+}
+.error {
+  display: none;
+  color: red;
+  font-size: 15px;
+}
+.form-input i{
+  font-size: 30px;
+  padding-right:5px;
+}
+.button-n{
+  text-align: center;
+  padding-top: 60px;
+}
+
+.form-input{
+  position: relative;
+  display: flex;
+}

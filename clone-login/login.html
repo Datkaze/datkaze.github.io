@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>LOGIN</title>
+  </head>
+  <body>
+    <h3>Đăng Nhập Thành Công</h3>
+    <div class="wrapper">
+      <h1>Đăng Nhập</h1>
+      <form class="form-login">
+        <div class="from-input">
+          <input type="text" placeholder="Username" >
+          <i class="fas fa-user"></i>
+          <p class="error" id="username-error">
+            Username must be at least 8 characters and less than 20 characters
+          </p>
+      </div>
+      <div class="from-input">
+          <input id="password" type="password" placeholder="Password" onclick="clickPassword()" >
+          <span ><i id="lock" class="fas fa-lock" ></i></span>
+          <i id="show-eye" class="fas fa-eye" onclick="showPassword()"></i>
+          <i id="hide-eye"    class="fas fa-eye-slash" style="display: none;" onclick="hidePassword()"></i>
+          <p class="error" id="password-error">
+            Password must be at least 6 characters and less than 32 characters
+          </p>
+      </div>
+        <div class="check">
+          <label for="checkbox">
+            <input type="checkbox" id="checkbox" /> Remember me
+          </label>
+          <a id="password" href="#">Forgot Password?</a>
+        </div>
+        <div class="button-n">
+          <button type="submit" onclick="check()">Đăng Nhập</button>
+          <a href="register.html"
+            ><button type="button" id="button1">Đăng Kí</button></a
+          >
+          <p>Are you new? <a href="register.html">Sign Up</a></p>
+        </div>
+      </form>
+    </div>
+    <script>
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+      let showEye = document.getElementById("show-eye");
+      let hideEye = document.getElementById("hide-eye");
+
+      function showPassword() {
+        if (password.type === "password") {
+          password.type = "text";
+          hideEye.style.display = "block";
+        }
+      }
+      function hidePassword() {
+        if (password.type === "text") {
+          password.type = "password";
+          hideEye.style.display = "none";
+        }
+      }
+      function checkUsername() {
+        if (username.value.length < 8 || username.value.length > 20) {
+          document.getElementById("username-error").style.display = "block";
+        } else {
+          document.getElementById("username-error").style.display = "none";
+        }
+      }
+      function checkPassword() {
+        if (password.value.length < 6 || password.value.length > 32) {
+          document.getElementById("password-error").style.display = "block";
+        } else {
+          document.getElementById("password-error").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
