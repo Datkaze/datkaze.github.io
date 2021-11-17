@@ -62,7 +62,7 @@
             document.getElementById("username-error").style.display = "block";
           } else{
             document.getElementById("username-error").style.display = "none";
-          }  if (password.value.length < 6 || password.value.length > 32) {
+          }  if (password.value.length < 5 || password.value.length > 32) {
             document.getElementById("password-error").style.display = "block";
           } else {
             document.getElementById("password-error").style.display = "none";
@@ -70,7 +70,7 @@
             document.getElementById("confirm-error").style.display = "none";
           } else {
             document.getElementById("confirm-error").style.display = "block";
-          } if (username.value.length > 8 && username.value.length < 20 && password.value.length > 6 && password.value.length < 32 && confirm.value == password.value){
+          } if (username.value.length > 8 && username.value.length < 20 && password.value.length < 6 && password.value.length > 32 && confirm.value == password.value){
             document.querySelector(".wrapper").innerHTML = `<div style = "height: 200px; text-align: center; padding-top: 30px;"><h2 style = "padding-bottom: 30px">Đăng Kí Thành Công</h2><a href='login.html'><button>Quay Lại Đăng Nhập</button></a></div>`
           }
         } 
