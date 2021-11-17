@@ -27,7 +27,6 @@
         <i class="fas fa-key"></i>
         <input type="password" placeholder="Password" id="password" />
       </label>
-        <i class="fas fa-eye"></i>
         <p class="error" id="password-error">
           Password must be at least 6 characters and less than 32 characters
         </p>
@@ -41,13 +40,12 @@
           id="confirm-password"
         />
       </label>
-        <i class="fas fa-eye"></i>
         <p class="error" id="confirm-error">
           Confirm password must match the password
         </p>
       </div>
         <div class="button-n">
-        <button type="submit" onclick="checkUsername()">Xác Nhận Đăng Kí</button>
+        <button type="button" onclick="checkUsername()">Xác Nhận Đăng Kí</button>
         <a href="login.html"
           ><button type="button" id="button1">Đăng Nhập</button></a
         >
@@ -58,7 +56,8 @@
       const username = document.getElementById("username");
       const password = document.getElementById("password");
       const confirm = document.getElementById("confirm-password");
-      // function check() {
+      
+    
         function checkUsername() {
           if (username.value.length < 8 || username.value.length > 20) {
             document.getElementById("username-error").style.display = "block";
@@ -66,23 +65,23 @@
             document.getElementById("username-error").style.display = "none";
           }
         }
-      //   function checkPassword() {
-      //     if (password.value.length < 6 || password.value.length > 32) {
-      //       document.getElementById("password-error").style.display = "block";
-      //     } else {
-      //       document.getElementById("password-error").style.display = "none";
-      //     }
-      //   }
-      //   function checkConfirm() {
-      //     if (
-      //       document.getElementById("password") == document.getElementById("confirm-password")
-      //     ) {
-      //       document.getElementById("confirm-error").style.display = "none";
-      //     } else {
-      //       document.getElementById("confirm-error").style.display = "block";
-      //     }
-      //   }
-      // }
+        function checkPassword() {
+          if (password.value.length < 6 || password.value.length > 32) {
+            document.getElementById("password-error").style.display = "block";
+          } else {
+            document.getElementById("password-error").style.display = "none";
+          }
+        }
+        function checkConfirm() {
+          if (
+            document.getElementById("password") == document.getElementById("confirm-password")
+          ) {
+            document.getElementById("confirm-error").style.display = "none";
+          } else {
+            document.getElementById("confirm-error").style.display = "block";
+          }
+        }
+      
     </script>
   </body>
 </html>
