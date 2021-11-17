@@ -24,7 +24,7 @@ a {
   text-decoration: none;
 }
 .wrapper {
-  width: 500px;
+  width: 400px;
   border-radius: 30px;
   margin: auto;
   background-color: white;
@@ -36,13 +36,14 @@ a {
   justify-content: space-between;
 }
 .form-login input {
-  width: 90%;
+  width: 100%;
   margin: 20px 0 15px;
-  padding: 15px;
+  padding: 15px 30px 15px 30px;
   font-size: 14px;
   border: none;
   border-bottom: 1px solid rgb(119, 119, 240);
   outline: none;
+
 }
 .check {
   padding-top: 10px;
@@ -50,9 +51,6 @@ a {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
-}
-label {
-  margin-top: -20px;
 }
 #checkbox {
   width: 20px;
@@ -79,15 +77,19 @@ button:hover {
   font-size: 15px;
   text-align: center;
 }
-.form-input i{
-  font-size: 30px;
-  padding-right:5px;
-}
+
 .button-n{
   text-align: center;
   padding-top: 60px;
 }
 
-.form-input{
+.form-login .form-input{
+  width: 100%;
   position: relative;
 }
+
+.fas{
+  position: absolute;
+  font-size: 20px;
+}
+
