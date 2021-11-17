@@ -1,187 +1,339 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Automates Accounting" />
+    <meta
+      name="keywords"
+      content="E-Ledger System, Tesla online bill, E-way Online, Online Billing, Hayatt online bill"
+    />
+    <meta name="author" content="Tabassum Khan" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link
       rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <title>LOGIN</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Login Page</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
       body {
-        background-color: lightblue;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background: #96d1c7 no-repeat;
         background-size: cover;
-        background-position-y: -80px;
-        font-size: 16px;
       }
-      #wrapper {
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+      .box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: auto;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgb(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
       }
-      #form-login {
-        max-width: 400px;
-        background: rgba(0, 0, 0, 0.8);
-        flex-grow: 1;
-        padding: 30px 30px 40px;
-        box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
-      }
-      .form-heading {
-        font-size: 25px;
-        color: #f5f5f5;
+
+      .login-tab {
+        position: relative;
+        width: 100%;
         text-align: center;
         margin-bottom: 30px;
+        padding: 10px;
+        margin-top: -10px;
+        margin-left: 1px;
       }
-      .form-group {
-        border-bottom: 1px solid #fff;
-        margin-top: 15px;
-        margin-bottom: 20px;
-        display: flex;
-      }
-      .form-group i {
-        color: #fff;
-        font-size: 14px;
-        padding-top: 5px;
-        padding-right: 10px;
-      }
-      .form-input {
-        background: transparent;
-        border: 0;
-        outline: 0;
-        color: #f5f5f5;
+
+      .login-tab .col {
         width: 100%;
+        color: #59b4b4;
+        float: left;
+        cursor: pointer;
+        padding: 5px;
+        padding-top: 8px;
       }
-      .form-input::placeholder {
-        color: #f5f5f5;
+
+      .box .form-group {
+        position: relative;
       }
-      #eye i {
-        padding-right: 0;
+
+      .box .form-group input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 15px;
+        padding-left: 15px;
+        padding-top: 15px;
+        color: #ccc;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #03a9f4;
+        outline: none;
+        background: transparent;
+      }
+
+      .box .form-group input:-webkit-autofill,
+      .box .form-group input:-webkit-autofill:hover,
+      .box .form-group input:-webkit-autofill:focus {
+        border: none;
+        border-bottom: 1px solid #03a9f4;
+        -webkit-text-fill-color: #ccc;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
+      .box .form-group label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 10px;
+        font-size: 15px;
+        color: #ccc;
+        pointer-events: none;
+        transition: 0.5s;
+      }
+
+      .box .form-group input:focus ~ label,
+      .box .form-group input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: #03a9f4;
+        font-size: 13px;
+      }
+
+      .remember-forgot-tab {
+        margin-top: -10px;
+        margin-bottom: 20px;
+        line-height: 16px;
+      }
+
+      .checkbox label {
+        float: left;
+      }
+
+      .forgot-pass label {
+        float: right;
+      }
+
+      .remember-forgot-tab .checkbox label,
+      .remember-forgot-tab .forgot-pass a {
+        text-decoration: none;
+        color: #59b4b4;
+        font-size: 15px;
         cursor: pointer;
       }
-      .form-submit {
-        background: transparent;
-        border: 1px solid #f5f5f5;
-        color: #fff;
-        width: 100%;
-        text-transform: uppercase;
-        padding: 6px 10px;
-        transition: 0.25s ease-in-out;
-        margin-top: 30px;
+
+      .remember-forgot-tab .checkbox input {
+        position: absolute;
+        line-height: 16px;
+        height: 15px;
+        width: 15px;
       }
-      .form-submit:hover {
-        border: 1px solid #54a0ff;
+
+      .remember-forgot-tab .checkbox span {
+        margin-left: 22px;
       }
-      p {
-        color: white;
-        text-align: center;
-      }
-      a {
-        color: blue;
-        text-decoration: none;
-      }
-      .error {
-        display: none;
-        color: red;
+
+      .box .form-group .toggle-password {
+        float: right;
+        position: relative;
+        margin-top: -62px;
+        margin-right: 10px;
+        cursor: pointer;
+        opacity: 0.85;
+        color: #ccc;
       }
     </style>
   </head>
+
   <body>
-    <div id="wrapper">
-      <form action="" id="form-login">
-        <h1 class="form-heading">Form đăng nhập</h1>
-        <div class="form-group">
-          <i class="far fa-user"></i>
-          <input
-            type="text"
-            id="username"
-            class="form-input"
-            placeholder="Username"
-          />
+    <div class="box">
+      <div class="row login-tab">
+        <div class="col login link" id="login-link">
+          <h4 id="login-heading">Login</h4>
         </div>
-        <p id="unError" class="error"></p>
-        <div class="form-group">
-          <i class="fas fa-key"></i>
-          <input
-            type="password"
-            id="password"
-            class="form-input"
-            placeholder="Password"
-          />
-          <div id="eye3">
-            <i class="far fa-eye"></i>
+        <div class="col signup link" id="signup-link">
+          <h4 id="signup-heading">Sign Up</h4>
+        </div>
+      </div>
+
+      <div id="login-box">
+        <form action="" id="login-form">
+          <div class="form-group">
+            <input type="text" name="username" required />
+            <label for="username"> Username </label>
           </div>
-        </div>
-        <p id="unError" class="error"></p>
-        <button type="submit" onclick="check()" class="form-submit">
-          Đăng Nhập
-        </button>
-        <p>are you new?<a href="register.html">Sign now</a></p>
-      </form>
+          <div class="form-group">
+            <input type="password" id="login-pass" name="password" required />
+            <i
+              toggle="#login-pass"
+              class="fa fa-eye toggle-password"
+              id="toggle-login-pass"
+            ></i>
+            <label for="password"> Password </label>
+          </div>
+          <div class="row remember-forgot-tab">
+            <div class="col checkbox">
+              <label
+                ><input type="checkbox" name="remember-me" checked="checked" />
+                <span> Remember Me? </span></label
+              >
+            </div>
+            <div class="col forgot-pass">
+              <label>
+                <a href="#" name="forgot-pass"> Forgot Password? </a>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-outline-info btn-block">
+            Login
+          </button>
+        </form>
+      </div>
+
+      <div id="signup-box">
+        <form action="" id="signup-form">
+          <div class="form-group">
+            <input type="text" name="username" required />
+            <label for="username"> Username </label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="signup-pass" name="password" required />
+            <i
+              toggle="#signup-pass"
+              class="fa fa-eye toggle-password"
+              id="toggle-signup-pass"
+            ></i>
+            <label for="password"> Password </label>
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              id="confirm-pass"
+              name="confirm-password"
+              required
+            />
+            <i
+              toggle="#confirm-pass"
+              class="fa fa-eye toggle-password"
+              id="toggle-confirm-pass"
+            ></i>
+            <label for="confirm-password"> Confirm Password </label>
+          </div>
+          <button type="submit" class="btn btn-outline-info btn-block">
+            Create Account
+          </button>
+        </form>
+      </div>
     </div>
-  </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#eye3").click(function () {
-        $(this).toggleClass("open");
-        $(this).children("i").toggleClass("fa-eye-slash fa-eye");
-        if ($(this).hasClass("open")) {
-          $(this).prev().attr("type", "text");
-        } else {
-          $(this).prev().attr("type", "password");
-        }
+
+    <script>
+      $(document).ready(function () {
+        $("#signup-box").hide();
+        $("#login-link").css({
+          color: "#ccc",
+          border: "1px solid #59B4B4",
+        });
       });
-    });
 
-    function check() {
-      let userName = $("#username").value();
-      let passWord = $("#password").value();
+      $("#signup-link").click(function () {
+        $("#login-box").hide(500, function () {
+          $("#signup-box").show(500);
+          linkStyleOnClick($("#signup-link"));
+          linkStyleOffClick($("#login-link"));
+          $("#login-form").trigger("reset");
+          resetEyeToggle($("#toggle-login-pass"));
+        });
+      });
 
-      if (userName == null || userName == "") {
-        $("#unError").text("User name do not empty!");
-        $("#unError").addClass("show");
-        setTimeout(function () {
-          $("#unError").removeClass("show");
-        }, 1000);
+      $("#login-link").click(function () {
+        $("#signup-box").hide(500, function () {
+          $("#login-box").show(500);
+          linkStyleOnClick($("#login-link"));
+          linkStyleOffClick($("#signup-link"));
+          $("#signup-form").trigger("reset");
 
-        return false;
+          resetEyeToggle($("#toggle-signup-pass"));
+          resetEyeToggle($("#toggle-confirm-pass"));
+        });
+      });
+
+      function linkStyleOnClick(link) {
+        link.css({
+          color: "#ccc",
+          border: "1px solid #59B4B4",
+        });
       }
 
-      if (userName.length < 8) {
-        $("#unError").text("Username must be at least 8 characters");
-        $("#unError").addClass("show");
-        setTimeout(function () {
-          $("#unError").removeClass("show");
-        }, 1000);
-
-        return false;
+      function linkStyleOffClick(link) {
+        link.css({
+          color: "#59B4B4",
+          border: "none",
+        });
       }
-    }
 
-    //   if (passWord == null || passWord == "") {
-    //     $("#pwError").text("Password do not empty!");
-    //     $("#pwError").addClass("show");
-    //     $("input#password").focus();
-    //     setTimeout(function () {
-    //       $("#pwError").removeClass("show");
-    //     }, 1000);
+      function resetEyeToggle(eye) {
+        if (eye.hasClass("fa-eye-slash")) {
+          eye.removeClass("fa-eye-slash");
+          eye.addClass("fa-eye");
+          var input = $(eye.attr("toggle"));
+          input.attr("type", "password");
+        }
+      }
 
-    //     return false;
-    //   }
+      $(document).ready(function () {
+        $(".login-tab")
+          .find(".col")
+          .hover(
+            function () {
+              $(this).css("color", "#ccc");
+            },
+            function () {
+              if ($("#login-box").is(":hidden")) {
+                $("#login-link").css("color", "#59B4B4");
+              }
 
-    //   if (passWord.length < 6) {
-    //     $("#pwError").text("Password wrong!");
-    //     $("#pwError").addClass("show");
-    //     $("input#password").focus();
-    //     setTimeout(function () {
-    //       $("#pwError").removeClass("show");
-    //     }, 1000);
+              if ($("#signup-box").is(":hidden")) {
+                $("#signup-link").css("color", "#59B4B4");
+              }
+            }
+          );
+      });
 
-    //     return false;
-    //   }
-    // }
-  </script>
+      $("#toggle-login-pass").click(function () {
+        toggleEye($(this));
+      });
+
+      $("#toggle-signup-pass").click(function () {
+        toggleEye($(this));
+      });
+
+      $("#toggle-confirm-pass").click(function () {
+        toggleEye($(this));
+      });
+
+      function toggleEye(eye) {
+        eye.toggleClass("fa-eye fa-eye-slash");
+        var input = $(eye.attr("toggle"));
+        if (eye.hasClass("fa-eye-slash")) {
+          input.attr("type", "text");
+        } else {
+          input.attr("type", "password");
+        }
+      }
+    </script>
+  </body>
 </html>
