@@ -43,7 +43,7 @@
           Confirm password must match the password
         </p>
       </div>
-        <div class="button-n">
+        <div class="button-m">
         <button type="button" onclick="check()">Xác Nhận Đăng Kí</button>
         <a href="login.html"
           ><button type="button" id="button1">Đăng Nhập</button></a
@@ -70,7 +70,11 @@
             document.getElementById("confirm-error").style.display = "none";
           } else {
             document.getElementById("confirm-error").style.display = "block";
-          } if (username.value.length > 8 && username.value.length < 20 && password.value.length < 6 && password.value.length > 32 && confirm.value == password.value){
+          } if (username.value.length >= 8 &&
+                username.value.length <= 20 &&
+                password.value.length <= 6 &&
+                password.value.length > 32 &&
+                confirm.value == password.value){
             document.querySelector(".wrapper").innerHTML = `<div style = "height: 200px; text-align: center; padding-top: 30px;"><h2 style = "padding-bottom: 30px">Đăng Kí Thành Công</h2><a href='login.html'><button>Quay Lại Đăng Nhập</button></a></div>`
           }
         } 

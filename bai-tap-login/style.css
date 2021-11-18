@@ -38,7 +38,7 @@ a {
 .form-login input {
   width: 100%;
   margin: 20px 0 15px;
-  padding: 15px 30px 15px 30px;
+  padding: 15px 30px 15px 38px;
   font-size: 14px;
   border: none;
   border-bottom: 1px solid rgb(119, 119, 240);
@@ -80,6 +80,9 @@ button:hover {
 
 .button-n{
   text-align: center;
+}
+.button-m{
+  text-align: center;
   padding-top: 60px;
 }
 
@@ -88,8 +91,20 @@ button:hover {
   position: relative;
 }
 
-.fas{
+i{
   position: absolute;
   font-size: 20px;
+ padding-top: 35px;
+ padding-left: 10px;
 }
-
+label{
+  margin-top: -18px;
+}
+#show-eye{
+  right: 41%;
+  
+}
+#hide-eye{
+  top: 270px;
+  right: 41%;
+}
