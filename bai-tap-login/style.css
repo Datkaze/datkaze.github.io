@@ -94,17 +94,15 @@ button:hover {
 i{
   position: absolute;
   font-size: 20px;
- padding-top: 35px;
- padding-left: 10px;
+  top: 0;
+  left: 0;
+  top: 35px;
+  left: 10px;
 }
 label{
   margin-top: -18px;
 }
-#show-eye{
-  right: 41%;
-  
-}
-#hide-eye{
-  top: 270px;
-  right: 41%;
+#show-eye, #hide-eye{
+  right: 0;
+  left: unset;
 }
