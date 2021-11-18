@@ -143,14 +143,14 @@ h4 {
     document.getElementById("calc").addEventListener("submit", calculate); 	
 	
     function calculate(e){
-    let radios = document.getElementsByName('gender');
-    let height = Number(document.getElementById("num1").value);
-    let weight = Number(document.getElementById("num2").value);
-    let height2 = height * height;
-    let bmi = (weight / height2)*10000;	
+    var radios = document.getElementsByName('gender');
+    var height = Number(document.getElementById("num1").value);
+    var weight = Number(document.getElementById("num2").value);
+    var height2 = height * height;
+    var bmi = (weight / height2)*10000;	
             e.preventDefault();
             document.getElementById("result").innerHTML = bmi.toFixed(2);
-        for (let i = 0, length = radios.length; i < length; i++)
+        for (var i = 0, length = radios.length; i < length; i++)
     {
      if (radios[i].checked)
      {
