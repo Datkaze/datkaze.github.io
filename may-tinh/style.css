@@ -106,6 +106,9 @@ color: white;
 .item:hover {
   background-color: pink;
 }
+.item1:hover {
+  background-color: pink;
+}
 .span {
   padding-left: 9px;
 }
