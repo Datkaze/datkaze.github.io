@@ -9,61 +9,44 @@
     <h1>Bài Tập CALCULATOR</h1>
     <div class="main">
       <div class="screen">
-        <div id="show" class="input">0</div>
+        <div id="show" class="input"></div>
       </div>
       <div class="keybroad">
-        <button onclick="clear()" class="item math1"><p>AC</p></button>
-        <button onclick="math()" class="item math"><p>%</p></button>
-        <button onclick="math()" class="item math">
-          <p class="span">x</p>
-          <p class="sup">2</p>
+        <button onclick="ac()" class="item math1"><p>AC</p></button>
+        <button  onclick="percent()" value="%" class="item math">
+          <p>%</p>
         </button>
-        <button  onclick="check()" class="item orange">÷</button>
-        <button  onclick="number()" class="item">7</button>
-        <button  onclick="number()" class="item">8</button>
-        <button  onclick="number()"class="item">9</button>
-        <button  onclick="check()" class="item orange">×</button>
-        <button  onclick="number()"class="item">4</button>
-        <button  onclick="number()"class="item">5</button>
-        <button  onclick="number()"class="item">6</button>
-        <button  onclick="check()" class="item orange ">-</button>
-        <button  onclick="number()"class="item">1</button>
-        <button  onclick="number()"class="item">2</button>
-        <button  onclick="number()"class="item">3</button>
-        <button  onclick="check()" class="item orange">+</button>
-        <button  onclick="number()"class="item number0">0</button>
-        <button class="item1">.</button>
-        <button class="item orange1">=</button>
+        <button  onclick="square()" class="item math">
+          <span>x</span>
+          <sup >2</sup>
+        </button>
+        <button  onclick="especially4()" class="item orange">
+          ÷
+        </button>
+        <button  onclick="number7()" class="item">7</button>
+        <button  onclick="number8()" class="item">8</button>
+        <button  onclick="number9()" class="item">9</button>
+        <button  onclick="especially3()" class="item orange">
+          ×
+        </button>
+        <button  onclick="number4()" class="item">4</button>
+        <button  onclick="number5()"  class="item">5</button>
+        <button  onclick="number6()" class="item">6</button>
+        <button  onclick="especially2()" class="item orange">
+          -
+        </button>
+        <button  onclick="number1()" class="item">1</button>
+        <button  onclick="number2()" class="item">2</button>
+        <button  onclick="number3()" class="item">3</button>
+        <button  onclick="especially1()" class="item orange">
+          +
+        </button>
+        <button  onclick="number0()" class="item number0">0</button>
+        <button  class="item1" onclick="dot()">.</button>
+        <button  onclick="equal()" class="item orange1">=</button>
       </div>
     </div>
-    <!-- <script src="script.js"></script> -->
-    <script>
-      let numbers = document.getElementsByClassName(".item");
-      let especially = document.getElementsByClassName(".orange");
-      let calculation = document.getElementsByClassName(".math")
-      let clearmath = document.getElementsByClassName(".math1")
-
-      
-      function number(){
-        if(numbers){
-          document.getElementById("show").innerText = "3";
-        }
-      }
-      function check(){
-        if(especially){
-          document.getElementById("show").innerText = "+-*/";
-        }
-      }
-      function math(){
-        if(calculation){
-          document.getElementById("show").innerText = "%";
-        }
-      }
-      function clear(){
-        if(clearmath){
-          document.getElementById("show").innerText = "0";
-        }
-      }
-    </script>
+    <script src="script.js"></script>
+    
   </body>
 </html>

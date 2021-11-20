@@ -18,12 +18,24 @@ h2 {
   text-align: end;
   font-size: 50px;
 }
-p {
-  color: black;
+span{
+  color: white;
+  padding-left: 9px;
+}
+sup {
+  color: white;
+  padding-bottom: 16px;
+
+}
+#p1 {
+color: white;
 }
 .input{
+  background-color: gray;
   color: white;
   font-size: 60px;
+  height: 60px;
+  overflow: hidden;
 }
 .main {
   position: absolute;
@@ -36,8 +48,9 @@ p {
   background-color: black;
 }
 .screen{
-  margin: 10px 0 30px 0;
+  margin: 40px 0 50px 0;
   text-align: right;
+  height: 60px;
 }
 .keybroad {
   display: grid;
