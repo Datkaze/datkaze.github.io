@@ -26,16 +26,10 @@
       nav {
         margin-bottom: 10px;
       }
-      .card {
-        transition: 0.3s;
-      }
       .my-2 {
         padding-bottom: 20px;
       }
-      .card:hover {
-        transform: scale(1.1);
-      }
-      .nav-link{
+      .nav-link {
         font-size: 18px;
         color: white;
       }
@@ -43,91 +37,98 @@
         color: #f8f9fa;
         border-color: #f8f9fa;
       }
+      .bg-primary {
+        background-color: #34465c !important;
+      }
+      .btn-primary {
+        width: 100%;
+      }
+     
     </style>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg"  style="background-color: #34465c;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
-              src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png"
-              alt="ảnh logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Trải Nghiệm</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Việc Làm</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Khóa Học
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Trực tuyến</a></li>
-                  <li><a class="dropdown-item" href="#">Phòng lab</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Chúng Tôi
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Trung tâm</a></li>
-                  <li><a class="dropdown-item" href="#">Quy định chung</a></li>
-                  <li><a class="dropdown-item" href="#">Giảng viên</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png"
+            alt="ảnh logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trải Nghiệm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Việc Làm</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Khóa Học
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Trực tuyến</a></li>
+                <li><a class="dropdown-item" href="#">Phòng lab</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Chúng Tôi
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Trung tâm</a></li>
+                <li><a class="dropdown-item" href="#">Quy định chung</a></li>
+                <li><a class="dropdown-item" href="#">Giảng viên</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <div class="container">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -155,11 +156,11 @@
             aria-label="Slide 3"
           ></button>
           <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000">
@@ -213,7 +214,7 @@
 
       <div class="row" style="justify-content: center">
         <h1>Danh Sách Sản Phẩm</h1>
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh1.jpg"
@@ -228,7 +229,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh2.jpg"
@@ -243,7 +244,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh3.jpg"
@@ -258,7 +259,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh4.jpg"
@@ -273,7 +274,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh5.jpg"
@@ -288,7 +289,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh6.jpg"
@@ -303,7 +304,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh6.jpg"
@@ -318,7 +319,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-5 col-6 col-7 my-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 my-2">
           <div class="card">
             <img
               src="picture/anh5.jpg"
@@ -333,6 +334,23 @@
           </div>
         </div>
       </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination" style="justify-content: center">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
