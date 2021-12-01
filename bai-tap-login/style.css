@@ -6,7 +6,7 @@
 body {
   background-color: lightblue;
   font-family: "Poppins", sans-serif;
-  padding-top: 80px;
+  padding-top: 65px;
 }
 h3 {
   display: none;
@@ -106,4 +106,12 @@ label{
   right: 0;
   left: unset;
   right: 6px;
+}
+.fa-check-circle{
+  position: unset;
+  margin: 6px;
+}
+.fa-exclamation-circle{
+  position: unset;
+  margin-right: 5px;
 }
