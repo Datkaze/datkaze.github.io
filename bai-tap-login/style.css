@@ -105,11 +105,11 @@ label{
 #show-eye, #hide-eye{
   right: 0;
   left: unset;
-  right: 6px;
+  right: 5px;
 }
 .fa-check-circle{
   position: unset;
-  margin: 6px;
+  margin: 5px;
 }
 .fa-exclamation-circle{
   position: unset;
@@ -118,5 +118,5 @@ label{
 #show-eye1, #hide-eye1{
   right: 0;
   left: unset;
-  right: 6px;
+  right: 5px;
 }
