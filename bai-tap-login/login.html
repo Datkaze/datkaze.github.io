@@ -18,24 +18,29 @@
       <form class="form-login">
         <div class="form-input">
           <label for="username">
-          <i class="fas fa-user" id="user"></i>
-          <input type="text" placeholder="Username" id="username" />
-        </label>
-          <p class="error" id="username-error"><i class="fas fa-exclamation-circle"></i>This account does not exist yet</p>
+            <i class="fas fa-user" id="user"></i>
+            <input type="text" placeholder="Username" id="username" />
+          </label>
+          <p class="error" id="username-error">
+            <i class="fas fa-exclamation-circle"></i>This account does not exist
+            yet
+          </p>
         </div>
         <div class="form-input">
           <label for="password">
-          <i id="lock" class="fas fa-lock"></i>
-          <input id="password" type="password" placeholder="Password" />
-        </label>
-        <i id="show-eye" class="fas fa-eye"  onclick="showPassword()"></i>
+            <i id="lock" class="fas fa-lock"></i>
+            <input id="password" type="password" placeholder="Password" />
+          </label>
+          <i id="show-eye" class="fas fa-eye" onclick="showPassword()"></i>
           <i
             id="hide-eye"
             class="fas fa-eye-slash"
-            style="display: none;"
+            style="display: none"
             onclick="hidePassword()"
           ></i>
-          <p class="error" id="password-error"><i class="fas fa-exclamation-circle"></i>not precision password</p>
+          <p class="error" id="password-error">
+            <i class="fas fa-exclamation-circle"></i>not precision password
+          </p>
         </div>
         <div class="check">
           <label for="checkbox">
@@ -48,53 +53,11 @@
           <a href="register.html"
             ><button type="button" id="button1">Đăng Kí</button></a
           >
-          
+
           <p>Are you new? <a href="register.html">Sign Up</a></p>
         </div>
       </form>
     </div>
-    <script>
-      const username = document.getElementById("username");
-      const password = document.getElementById("password");
-      let showEye = document.getElementById("show-eye");
-      let hideEye = document.getElementById("hide-eye");
-
-      function showPassword() {
-        if (password.type === "password") {
-          password.type = "text";
-          hideEye.style.display = "block";
-          showEye.style.display = "none";
-        }
-      }
-      function hidePassword() {
-        if (password.type === "text") {
-          password.type = "password";
-          hideEye.style.display = "none";
-          showEye.style.display = "block";
-        }
-      }
-      function check() {
-        if (username.value.length < 8 || username.value.length > 20) {
-          document.getElementById("username-error").style.display = "block";
-        } else {
-          document.getElementById("username-error").style.display = "none";
-        }
-        if (password.value.length < 6 || password.value.length > 32) {
-          document.getElementById("password-error").style.display = "block";
-        } else {
-          document.getElementById("password-error").style.display = "none";
-        }
-        if (
-          username.value.length >= 8 &&
-          username.value.length <= 20 &&
-          password.value.length >= 6 &&
-          password.value.length < 32
-        ) {
-          document.getElementById("dntc").style.display = "block";
-        } else{
-          document.getElementById("dntc").style.display = "none";
-        }
-      }
-    </script>
+    <script src="login.js"></script>
   </body>
 </html>
