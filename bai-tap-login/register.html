@@ -26,6 +26,13 @@
         <i class="fas fa-key"></i>
         <input type="password" placeholder="Password" id="password" />
       </label>
+      <i id="show-eye" class="fas fa-eye"  onclick="showPassword()"></i>
+          <i
+            id="hide-eye"
+            class="fas fa-eye-slash"
+            style="display: none;"
+            onclick="hidePassword()"
+          ></i>
         <p class="error" id="password-error"><i class="fas fa-exclamation-circle"></i>
           Password must be at least 6 characters and less than 32 characters
         </p>
@@ -39,6 +46,13 @@
           id="confirm-password"
         />
       </label>
+      <i id="show-eye1" class="fas fa-eye"  onclick="showPassword1()"></i>
+          <i
+            id="hide-eye1"
+            class="fas fa-eye-slash"
+            style="display: none;"
+            onclick="hidePassword1()"
+          ></i>
         <p class="error" id="confirm-error"><i class="fas fa-exclamation-circle"></i>
           Confirm password must match the password
         </p>
@@ -52,11 +66,47 @@
       </div>
     </div>
     <script>
+      
       const username = document.getElementById("username");
       const password = document.getElementById("password");
       const confirm = document.getElementById("confirm-password");
+      let showEye = document.getElementById("show-eye");
+      let hideEye = document.getElementById("hide-eye");
+      let showEye1 = document.getElementById("show-eye1");
+      let hideEye1 = document.getElementById("hide-eye1");
+
+
+      function showPassword() {
+        if (password.type === "password") {
+          password.type = "text";
+          hideEye.style.display = "block";
+          showEye.style.display = "none";
+        }
+      }
+      function hidePassword() {
+        if (password.type === "text") {
+          password.type = "password";
+          hideEye.style.display = "none";
+          showEye.style.display = "block";
+        }
+      }
+
+
+      function showPassword1() {
+        if (confirm.type === "password") {
+          confirm.type = "text";
+          hideEye1.style.display = "block";
+          showEye1.style.display = "none";
+        }
+      }
+      function hidePassword1() {
+        if (confirm.type === "text") {
+          confirm.type = "password";
+          hideEye1.style.display = "none";
+          showEye1.style.display = "block";
+        }
+      }
       
-    
         function check() {
            if (username.value.length < 8 || username.value.length > 20) {
             document.getElementById("username-error").style.display = "block";

@@ -115,3 +115,8 @@ label{
   position: unset;
   margin-right: 5px;
 }
+#show-eye1, #hide-eye1{
+  right: 0;
+  left: unset;
+  right: 6px;
+}
