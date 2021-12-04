@@ -33,18 +33,18 @@
         position: absolute;
       }
       #div-top{
-          bottom: 45px;
+          bottom: 52px;
       }
       #div-right{
-        margin-left: 150px;
+        margin-left: 156px;
         top: -8px;
       }
       #div-bottom{
-        top: 45px;
+        top: 52px;
         margin-left: 15px;
       }
       #div-left{
-        margin-left: -138px;
+        margin-left: -144px;
         bottom: -10px;
       }
       .btn{
@@ -55,23 +55,79 @@
         position: relative;
         justify-content: center;
       }
+
+      #div-top::after{
+        content: " ";
+       position: absolute;
+       right: 48px;
+       bottom: -15px;
+       border-top: 15px solid wheat;
+       border-right: 15px solid transparent;
+       border-left: 15px solid transparent;
+       border-bottom: none;
+      }
+
+      #div-right::after{
+        content: " ";
+        position: absolute;
+        left: -15px;
+         top: 13px;
+         border-top: 15px solid transparent;
+        border-right: 15px solid wheat;
+       border-left: none;
+        border-bottom: 15px solid transparent;
+      }
+
+      #div-bottom::after{
+        content: " ";
+         position: absolute;
+         right: 48px;
+         top: -15px;
+         border-top: none;
+         border-right: 15px solid transparent;
+         border-left: 15px solid transparent;
+         border-bottom: 15px solid wheat;
+      }
+
+      #div-left::after{
+        content: " ";
+        position: absolute;
+         right: -15px;
+       top: 13px;
+       border-top: 15px solid transparent;
+         border-right: none;
+         border-left: 15px solid wheat;
+          border-bottom: 15px solid transparent;
+      }
+
+
+
       @media (max-width: 768px) {
         #div-top{
-          bottom: 68px;
+          bottom: 76px;
           width: 92px;
       }
+      #div-top::after{
+        left: 30px;
+      }
+      #div-top::after{
+
+      }
       #div-right{
-        margin-left: 106px;
+        margin-left: 114px;
         top: 3px;
         width: 92px;
       }
       #div-bottom{
-        top: 68px;
+        top: 76px;
         margin-left: 11px;
        width: 92px;
       }
+      #div-bottom::after{
+        right: 30px;
+      }
       #div-left{
-        margin-left: -98px;
+        margin-left: -106px;
         bottom: 3px;
         width: 92px;
       }
