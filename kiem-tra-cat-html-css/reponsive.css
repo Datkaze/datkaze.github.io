@@ -118,6 +118,7 @@
     .section-5{
         margin: 50px 0 !important;
         padding: 80px 0 !important;
+        text-align: center !important;
     }
     .set-img-sec-5 img{
         display: none;
