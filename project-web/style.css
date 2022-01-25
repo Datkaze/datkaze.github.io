@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 5px;
+}
+ul, li{
+    padding-left: unset !important; 
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: var(--bs-font-sans-serif);
+}
+                /* header */
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #D5262C;
+    padding: 8px 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.container-fluid{
+    margin:0 3.5rem;
+}
+.banner{
+    padding: 79px 0 40px 0;
+}
+.list{
+    display: flex;
+    margin-bottom: unset;
+    padding: unset;
+}
+.header .logo{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+.list a{
+    color: white;
+}
+.menu-item a{
+    color: black;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+li, ul{
+    list-style: none;
+    padding-left: 1rem;
+}
+.list li{
+   padding: 20px;
+}
+    /* navbar */
+
+.nav-link, .nav-item{
+    color: white !important;
+    padding:10px 20px;
+}
+.navbar{
+    background: #D5262C !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-brand{
+    font-size: 35px !important;
+    color: white !important;
+    font-weight: 500;
+    margin-right: unset;
+}
+.nav-link:hover {
+    color: black !important;
+}
+.nav-item:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-item{
+    padding: 13px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu{
+    padding: unset;
+    margin-left: -30px;
+    margin-top: 5px;
+}
+.hov-banner:hover{
+    color: #FFFFFF !important;
+}
+/* ------------------------------------------------------Trang Chủ------------------------------------------------------------------- */
+
+   /* section-1 */
+.banner-sec{
+    padding: 40px 0 40px 0;
+}
+.card{
+    box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+}
+.h2{
+    padding: 0 0 15px 0;
+}
+.card-body{
+    background: #FFFFFF;
+}
+.card-body .para1{
+    color: red;
+}
+.card-body .para2{
+    color: #707070;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img img{
+    transition: 0.5s;
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.btn2:hover{
+    background-color: rgba(252, 32, 32, 0.8) !important;
+}
+.btn1:hover{
+    background-color: rgb(177, 171, 171) !important;
+}
+p{
+    margin-bottom: 0;
+}
+.card-text{
+    margin-bottom: 15px;
+}
+.col-6{
+    padding: 10px;
+}
+.d-flex .btn1{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.2rem;
+    border: initial;
+    margin-top: initial;
+}
+.d-flex .btn2{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.2rem;
+    border: initial;
+    margin-top: initial;
+    color: #FFFF;
+}
+.btn-xem-them{
+    padding: 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.btn-xem-them:hover,.btn-xem-them a:hover{
+    background: rgb(216, 10, 10);
+    color: white;
+}
+/* ----------------------------------------------------------Kết Thúc Trang Chủ----------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------Sản Phẩm---------------------------------------------------------- */
+.banner h2, h1{
+    color: white;
+}
+.div-banner{
+    padding: 25px;
+    background: #423F3F;
+}
+.banner-sp{
+    padding: 10px 0 30px 0;
+}
+.div h2{
+    margin-bottom: unset;
+}
+.div a{
+    margin-top: 10px;
+}
+.section-sp{
+    padding: 20px 0 50px 0;
+}
+
+/* -----------------------------------------------------------Kết Thúc Sản Phẩm------------------------------------------------------- */
+
+
+/* ---------------------------------------------------------Tin Tức------------------------------------------------------------- */
+.news p, h3,.time{
+    color: black;
+}
+.news1:hover h3{
+    color: red;
+}
+.news:hover h6{
+    color: red;
+}
+/* ------------------------------------------------------------Kết Thúc Tin Tức--------------------------------------------------------- */
+
+
+/* ----------------------------------------------------------------Liên Hệ---------------------------------------------------------------- */
+.input-w input{
+    width: 49%;
+    padding: 8px;
+}
+.text-input {
+    height: 8rem;
+}
+.contact-btn{
+    background: #FF5353;
+    padding: 6px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.contact-btn:hover{
+    background-color: rgba(255, 83, 83, 0.8);
+}
+.icon i{
+    color: red;
+    padding-right: 8px;
+}
+.ttdc p{
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+.ttdc a{
+    padding-bottom: 3px;
+}
+.map{
+    padding: 2rem 0 9%;
+}
+iframe {
+    width: 100%;
+    height: 35rem;
+}
+
+/* ----------------------------------------------------------------Kết Thúc Liên Hệ-------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------Laptop---------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------Kết Thúc Laptop------------------------------------------------------- */
+
+/* -------------------------------------------------------------------Điện Thoại------------------------------------------------------------ */
+
+/* -------------------------------------------------------------------Kết Thúc Điện Thoại-------------------------------------------------- */
+
+/* -------------------------------------------------------------------Tivi---------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------Kết Thúc Tivi--------------------------------------------------------- */
+
+/* -------------------------------------------------------------------Phụ Kiện---------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------Kết Thúc Phụ Kiện----------------------------------------------------- */
+    /* footer*/
+.footer1{
+    background: #383838;
+    padding: 30px 0;
+}
+.footer1 .h2-footer{
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+}
+.footer1 .para{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+.footer1 input{
+    width: 400px;
+    padding: 10px 0;
+}
+.footer1 button{
+    padding: 10px 25px;
+    background: #D73939;
+    color: white;
+}
+.footer1 .h2, .para{
+    color: white;
+}
+.footer2{
+    background: #494545;
+    padding: 50px 100px;
+    margin: unset;
+}
+.footer2 h3{
+    color: white;
+}
+.footer2 a{
+    color: #919294;
+}
+.footer2 p{
+    color: #919294;
+}
+.footer3{
+    padding: 6px;
+    background: #050505;
+    color: white;
+}
+footer a:hover{
+    color: white;
+}
