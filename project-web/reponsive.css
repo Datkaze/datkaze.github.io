@@ -50,4 +50,7 @@
     .container-fluid{
         margin: unset;
     }
+    .card-tt{
+        padding: unset !important;
+    }
 }
