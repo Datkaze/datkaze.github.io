@@ -19,44 +19,48 @@
     <title>Thanh Toán</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="trang-chu.html">Techcom</a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="trang-chu.html">Trang Chủ</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="san-pham.html">
-                    Sản Phẩm
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
-                    <li><a class="dropdown-item" href="dien-thoai.html">Điện Thoại</a></li>
-                    <li><a class="dropdown-item" href="tivi.html">Tivi</a></li>
-                    <li><a class="dropdown-item" href="phu-kien.html">Phụ Kiện</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tin-tuc.html">Tin Tức</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="lien-he.html">Liên Hệ</a>
-                </li>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="trang-chu.html">Techcom</a>
+        <div class="nav-order order-1">
+          <a href="gio-hang.html"><i class="cart-shop fas fa-shopping-cart"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="trang-chu.html">Trang Chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="san-pham.html">
+                Sản Phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                <li><a class="dropdown-item" href="dien-thoai.html">Điện Thoại</a></li>
+                <li><a class="dropdown-item" href="tivi.html">Tivi</a></li>
+                <li><a class="dropdown-item" href="phu-kien.html">Phụ Kiện</a></li>
               </ul>
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-        </nav>
-      </header>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tin-tuc.html">Tin Tức</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lien-he.html">Liên Hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"><i class="far fa-search"></i></button>
+          </form>
+          
+        </div>
+      </div>
+    </nav>
+  </header>
 
     <section class="banner text-center">
         <div class="div-banner">
@@ -122,7 +126,7 @@
                           <div class="input-group">
                               <input type="text" class="form-control" placeholder="Mã khuyến mãi">
                               <div class="input-group-append">
-                                <button type="button" class="btn-confirm">Áp dụng</button>
+                                <button type="button" class="btn2" style="padding:5px 13px; border-radius:0 5px 5px 0;">Áp dụng</button>
                               </div>
                             </div>
                           
@@ -206,7 +210,7 @@
                               <div class="col-12 mb-2">
                                 <label for="validationDefault06" class="form-label">Tùy chọn giao hàng</label>
                                 <div class="d-flex flex-row flex-wrap">
-                                    <div class="form-check mb-3 form-check-ship ">
+                                    <div class="form-check-1 mb-3 form-check-ship d-flex">
                                         <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required="">
                                         <div class="d-flex flex-column">
                                             <label class="form-check-label" for="validationFormCheck1">15.000 ₫</label>
@@ -215,7 +219,7 @@
                                         
                                         
                                       </div>
-                                      <div class="form-check mb-3 form-check-ship">
+                                      <div class="form-check-1 mb-3 form-check-ship d-flex">
                                         <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required="">
                                         <div class="d-flex flex-column">
                                             <label class="form-check-label" for="validationFormCheck2">30.000 ₫</label>
@@ -228,18 +232,18 @@
                               </div>
                               <div class="col-12 mb-2">
                                 <label for="validationDefault06" class="form-label">Chọn hình thức thanh toán</label>
-                                <div class="form-check">
+                                <div class="form-check-2">
                                     <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked-1" required="">
                                     <label class="form-check-label" for="validationFormCheck3">Trả tiền mặt khi nhận hàng</label>
                                   </div>
-                                  <div class="form-check">
+                                  <div class="form-check-2">
                                     <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked-1" required="">
                                     <label class="form-check-label" for="validationFormCheck4">Chuyển khoản</label>
                                   </div>
                                 
                               </div>
                               <div class="col-12">
-                                <button class="btn-buy-now" type="submit">
+                                <button class="btn2" style="padding: 5px 30px; border-radius: 5px;" type="submit">
                                   Đặt hàng
                                 </button>
                               </div>
