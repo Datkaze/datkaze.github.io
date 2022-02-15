@@ -36,7 +36,7 @@ body{
    padding: 8px 10%;
 }
 .banner{
-    padding: 95px 0 50px 0;
+    padding: 78px 0 50px 0;
 }
 .list{
     display: flex;
@@ -79,7 +79,8 @@ li, ul{
 .nav-link, .nav-item{
     color: white !important;
     padding:10px 20px;
-}
+    transition: 0.2s;
+    }
 .navbar-toggler{
     color: white !important;
     border-color: white !important;
@@ -92,6 +93,7 @@ li, ul{
     left: 0;
     right: 0;
     z-index: 1000;
+    padding: unset;
 }
 .navbar-nav{
     margin-left: auto;
@@ -103,7 +105,8 @@ li, ul{
     margin-right: unset;
 }
 .nav-link:hover {
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700;
 }
 .nav-item:hover .dropdown-menu{
     display: block;
@@ -119,6 +122,11 @@ li, ul{
 }
 .hov-banner:hover{
     color: #FFFFFF !important;
+}
+.btn-outline-success{
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
 }
 /* ------------------------------------------------------Trang Chủ------------------------------------------------------------------- */
 
@@ -247,7 +255,23 @@ p{
 .tt{
     padding-right: 20px;
 }
-
+.buttons-added{
+    display: inline-flex;
+}
+.miu ,.plus ,.input-qty{
+    width: 2.5rem !important;
+    height: 2rem !important;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.plus{
+    border-radius: 0 4px 4px 0;
+    background: #f9f9f9;
+}
+.miu{
+    border-radius: 4px 0 0 4px;
+    background: #f9f9f9;
+}
 
 /* ------------------------------------------------------------------Kết Thúc Giỏ Hàng--------------------------------------------------------------- */
 
@@ -271,8 +295,15 @@ p{
 .section-sp{
     margin-bottom: 40px;
 }
+.section-sp-rp{
+    margin-bottom: 40px;
+}
 .rp-1{
     padding: 10px 0 10px 0;
+}
+.span-sp{
+    margin: 8px;
+    color:rgb(108, 117, 125);
 }
 /* -----------------------------------------------------------Kết Thúc Sản Phẩm------------------------------------------------------- */
 
@@ -287,8 +318,66 @@ p{
 .news:hover h6{
     color: red;
 }
+.section-tt-1, .section-tt-2{
+    padding: 0 30px;
+}
+.para-tt{
+    margin-top: 20px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.comment {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.content p {
+    margin-bottom: 1rem;
+}
+.posts {
+    margin-top: 120px;
+}
+.post-title ,.title-news{
+    font-size: 25px;
+}
+.title-news{
+    margin-bottom: 20px;
+}
+.img1-intro{
+    font-weight: 500;
+    font-size: 18px;
+}
+.img2-intro{
+    font-weight: 500;
+}
+.button-comment{
+    width: 100px;
+    background-color: #125276;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+.response p {
+    color: #125276;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.name, .comment-content, .response {
+    margin-bottom: 10px;
+}
+.name {
+    color: #125276 !important;
+    font-weight: bold;
+}
+.comments-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
 /* ------------------------------------------------------------Kết Thúc Tin Tức--------------------------------------------------------- */
-
 
 /* ----------------------------------------------------------------Liên Hệ---------------------------------------------------------------- */
 .input-w input{
@@ -320,7 +409,7 @@ p{
     padding-bottom: 3px;
 }
 .map{
-    padding: 2rem 0 9%;
+    padding: 2rem 0 5%;
 }
 iframe {
     width: 100%;
