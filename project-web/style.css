@@ -305,6 +305,84 @@ p{
     margin: 8px;
     color:rgb(108, 117, 125);
 }
+.star-icon{
+    color: #EA9D02;
+}
+.product-reviews .product-reviews-number {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.product-reviews-star{
+    padding-right: 10px;
+    font-size: 15px;
+}
+.product-reviews-number{
+    padding: 0 10px;
+}
+.product-reviews-sold{
+    padding-left: 10px;
+}
+.product-details-special-price{
+    color: red;
+}
+.product-details-old-price{
+    padding: 0 15px;
+}
+.product-details-reduce {
+    color: #FFF;
+    background-color: #ff5353;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.fa-check-circle {
+    color: #48bb78;
+    padding-left: 10px;
+}
+.product-details-promotion-content-text{
+    padding-left: 10px;
+}
+.nav-link-ctsp{
+    padding: 10px 20px;
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+.product-details-promotion {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 0.4rem;
+}
+.product-details-promotion-title {
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.clearfix .product-details-color .btn-color {
+    padding: 10px 10px;
+    border: 1px solid #ddd;
+    font-weight: 400;
+    border-radius: 0.4rem !important;
+}
+.nav-link-ctsp:hover{
+    border-color: #dee2e6 #dee2e6 #fff;
+    background: #dedede;
+}
+.btn-check:active+.color-2, .btn-check:checked+.color-2 {
+    background-color: #000000;
+    color: #FFF;
+}
+.btn-check:active+.color-1, .btn-check:checked+.color-1 {
+    background-color: #57ABF0;
+    color: #FFF;
+}
+.product-intro{
+    margin-top: 50px;
+}
 /* -----------------------------------------------------------Kết Thúc Sản Phẩm------------------------------------------------------- */
 
 
