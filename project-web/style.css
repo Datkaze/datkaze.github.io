@@ -38,6 +38,9 @@ body{
 .banner{
     padding: 78px 0 50px 0;
 }
+.banner-sp{
+    padding: 78px 0 50px 0;
+}
 .list{
     display: flex;
     margin-bottom: unset;
@@ -61,7 +64,6 @@ a{
     color: black;
 }
 li, ul{
-    list-style: none;
     padding-left: 1rem;
 }
 .list li{
@@ -73,10 +75,10 @@ li, ul{
 }
 .cart-shop{
     color: white;
-    padding: 0 12px;
+    padding: 0 20px 0 30px;
     font-size: 20px;
 }
-.nav-link, .nav-item{
+.nav-link, .nav-item, .nav-item-tc{
     color: white !important;
     padding:10px 20px;
     transition: 0.2s;
@@ -104,11 +106,15 @@ li, ul{
     font-weight: 500;
     margin-right: unset;
 }
-.nav-link:hover {
+.nav-link:hover{
     color: rgb(255, 255, 255) !important;
     font-weight: 700;
 }
-.nav-item:hover .dropdown-menu{
+.nav-link-tc1:hover{
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700;
+}
+.nav-item-tc:hover .dropdown-menu{
     display: block;
 }
 .dropdown-item{
@@ -129,10 +135,32 @@ li, ul{
     border-color: #198754;
 }
 /* ------------------------------------------------------Trang Chủ------------------------------------------------------------------- */
-
+.swiper-wrapper {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
    /* section-1 */
 .banner-sec{
     padding: 40px 0 40px 0;
+}
+.nav-item-tc1{
+    display: none;
+    padding: 20px 0;
+}
+.nav-link-tc1{
+    color: white !important;
+}
+.nav-link-tc2{
+    background: #D5262C;
+    color: white;
+    border: none;
+    font-size: 14px;
+    padding-left: 20px;
 }
 .card{
     box-shadow: rgb(60 64 67 / 10%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
@@ -283,7 +311,7 @@ p{
     padding: 25px 0;
     background: #423F3F;
 }
-.banner-sp{
+.banner-sp-1{
     padding: 0 0 50px 0;
 }
 .div h2{
@@ -327,6 +355,8 @@ p{
 }
 .product-details-old-price{
     padding: 0 15px;
+    color: #707070;
+    text-decoration: line-through;
 }
 .product-details-reduce {
     color: #FFF;
@@ -370,7 +400,8 @@ p{
 }
 .nav-link-ctsp:hover{
     border-color: #dee2e6 #dee2e6 #fff;
-    background: #dedede;
+    background: #787373;
+    color: white;
 }
 .btn-check:active+.color-2, .btn-check:checked+.color-2 {
     background-color: #000000;
@@ -381,7 +412,50 @@ p{
     color: #FFF;
 }
 .product-intro{
-    margin-top: 50px;
+    margin: 50px 0 40px 0;
+}
+.nav-link-ctsp.active{
+    background-color: #fe6767;
+    color: white;
+}
+.list-thongso{
+    list-style: square !important;
+    padding-left: 20px !important;
+}
+.list-thongso li{
+    padding: 3px 0;
+}
+.nhanxet{
+    margin: 10px 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-ctsp input{
+    margin-bottom: 5px;
+        height: 40px;
+        padding: 10px;
+        border: 1px solid #ddd;
+}
+.send .star1 {
+    margin: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.stars-judge{
+    margin: 20px 0;
+}
+.btn-ctsp{
+    background: #ff4848;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 5px;
+    border: none;
+}
+.btn-ctsp:hover{
+    background: #f71717;
+}
+.comment-ctsp{
+    margin: 30px 0 10px 0;
 }
 /* -----------------------------------------------------------Kết Thúc Sản Phẩm------------------------------------------------------- */
 

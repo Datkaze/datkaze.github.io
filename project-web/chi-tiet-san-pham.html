@@ -34,17 +34,34 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="trang-chu.html">Trang Chủ</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="san-pham.html">
-                Sản Phẩm
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
-                <li><a class="dropdown-item" href="dien-thoai.html">Điện Thoại</a></li>
-                <li><a class="dropdown-item" href="tivi.html">Tivi</a></li>
-                <li><a class="dropdown-item" href="phu-kien.html">Phụ Kiện</a></li>
-              </ul>
-            </li>
+
+            <div>
+              <li class="nav-item-tc">
+                <a class="nav-link" href="san-pham.html">
+                  Sản Phẩm <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                  <li><a class="dropdown-item" href="dien-thoai.html">Điện Thoại</a></li>
+                  <li><a class="dropdown-item" href="tivi.html">Tivi</a></li>
+                  <li><a class="dropdown-item" href="phu-kien.html">Phụ Kiện</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item-tc1">
+                <a class="nav-link-tc1" href="#">
+                  Sản Phẩm 
+                </a>
+                <button class="nav-link-tc2 dropdown" href="#" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-chevron-down"></i></button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Laptop.html">Laptop</a></li>
+                  <li><a class="dropdown-item" href="dien-thoai.html">Điện Thoại</a></li>
+                  <li><a class="dropdown-item" href="tivi.html">Tivi</a></li>
+                  <li><a class="dropdown-item" href="phu-kien.html">Phụ Kiện</a></li>
+                </ul>
+              </li>
+            </div>
+            
             <li class="nav-item">
               <a class="nav-link" href="tin-tuc.html">Tin Tức</a>
             </li>
@@ -81,24 +98,25 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="list-img">
-                    <img src="img/ban/ban2/ban2.1.webp" alt="" href="img/ban/ban2/ban2.1.webp">
+                    <img src="picture-section-1/item-bn-sp.png" alt="">
                     <div class="row">
-                        <div class="col-4"><img src="img/ban/ban2/ban2.2.webp" alt="" href="img/ban/ban2/ban2.2.webp"></div>
-                        <div class="col-4"><img src="img/ban/ban2/ban2.3.webp" alt="" href="img/ban/ban2/ban2.3.webp"></div>
-                        <div class="col-4"><img src="img/ban/ban2/ban2.4.webp" alt="" href="img/ban/ban2/ban2.4.webp"></div>
+                        <div class="col-3"><img src="picture-section-1/item36.png" alt=""></div>
+                        <div class="col-3"><img src="picture-section-1/item37.png" alt=""></div>
+                        <div class="col-3"><img src="picture-section-1/item38.png" alt=""></div>
+                        <div class="col-3"><img src="picture-section-1/item39.png" alt=""></div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6">
               <div class="product-details ">
                 <div class="d-flex flex-column">
-                    <h3 class="product-details-heding">Xiaomi Redmi Note 10 Pro</h3>
+                    <h3 class="product-details-heding">Iphone 13 Pro 128GB</h3>
                     <div class="product-reviews">
                         <d class="d-flex flex-row">
                             <div class="product-reviews-star">
-                                <div class="d-flex">
+                                <div class="star-set d-flex">
                                     <div class="product-reviews-star-number " style="margin-right: 5px;">
-                                        4
+                                        5
                                     </div>
                                     <div class="star-icon">
                                         <i class="fas fa-star"></i>
@@ -119,8 +137,8 @@
                     </div>
                     <div class="product-details-heding-price mt-3">
                       <div class="d-flex  align-items-center">
-                        <h3 class="product-details-special-price">5.130.000₫ </h3>
-                        <h5 class="product-details-old-price">5.700.000₫</h5>
+                        <h3 class="product-details-special-price">35,950,000₫ </h3>
+                        <h5 class="product-details-old-price">39,000,000₫</h5>
                         <span class="product-details-reduce pl-2"> 8% Giảm</span>
                       </div>
                     </div>
@@ -182,7 +200,7 @@
         <div class="product-intro">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item-ctsp" role="presentation">
-                  <button class="nav-link-ctsp" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Miêu tả</button>
+                  <button class="nav-link-ctsp active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Miêu tả</button>
                 </li>
                 <li class="nav-item-ctsp" role="presentation">
                   <button class="nav-link-ctsp" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Thông số</button>
@@ -192,17 +210,16 @@
                 </li>
               </ul>
               <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    Những năm 50 đã nhắn tin - họ đã trở lại. Ghế Svelti mang tính biểu tượng của chúng tôi đặt một góc quay hiện đại vào một thiết kế cổ điển giữa thế kỷ, khiến nó trở thành chiếc ghế trong nhà hoặc ngoài trời hoàn hảo. Đa năng, dễ chăm sóc và cũng dễ dàng cho mắt. Ghế được bán và vận chuyển theo cặp. Giá được hiển thị trên mỗi ghế.
-                    282 / 5000
-                    Một diện mạo hiện đại duyên dáng giữa thế kỷ được đặt trong đá. Chân gỗ chắc chắn được bao phủ bởi một phiến đá cẩm thạch trang nhã để tạo nên vẻ ngoài gọn gàng, nhỏ gọn, hoàn hảo cho không gian nhỏ. Đó là một thiết kế cổ điển sẽ chuyển đổi qua bất kỳ phong cách chỗ ngồi nào. Trộn và kết hợp với bàn gỗ rắn.                         </div>
+                <div class="tab-pane fade active show" style="padding-top: 3px;" id="home" role="tabpanel" aria-labelledby="home-tab"><p>iPhone 13 Pro và iPhone 13 Pro Max là bộ đôi điện thoại thông minh thuộc dòng iPhone được Apple ra mắt vào ngày 14 tháng 9 năm 2021, cùng với bộ đôi iPhone 13 và iPhone 13 Mini. Bộ đôi này là phiên bản kế nhiệm của bộ đôi iPhone 12 Pro và iPhone 12 Pro Max với một số nâng cấp.</br>
+                iPhone 13 Pro và 13 Pro Max được đánh giá cao về chất lượng camera, thời lượng pin, nhưng chưa có nhiều cải tiến thực sự đáng chú ý. Xét tổng thể, Tom's Guide chấm 5 sao cho iPhone 13 Pro Max, còn iPhone 13 và iPhone 13 Pro đạt 4,5 sao. The Verge cho điểm 9/10 cả hai mẫu 13 Pro. Tương tự, CNET cho điểm 9,2, trong khi Engadget chấm điểm chung 91/100.</p></div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <ul class="list-thongso">
-                        <li>Trọng lượng: 50kg</li>
-                        <li>Ghế được bán và vận chuyển theo cặp. Giá được hiển thị trên mỗi ghế</li>
-                        <li>Polypropylene đúc chất lượng cao</li>
-                        <li>Thích hợp cho sử dụng trong nhà và ngoài trời</li>
-                        <li>Yêu cầu lắp ráp đơn giản (khoảng 15 phút)</li>
+                        <li>Thương hiệu: Apple</li>
+                        <li>Xuất xứ thương hiệu: Mỹ</li>
+                        <li>Trọng lượng: 164g</li>
+                        <li>RAM: 4GB</li>
+                        <li>ROM: 128GB</li>
+                        <li>Kích thước màn hình: 6,1 inch</li>
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
@@ -210,7 +227,7 @@
                         <div class="container">
                             <div class=" d-flex flex-column">
                                 <p class="nhanxet">Đánh giá & nhận xét sản phẩm</p>
-                                <div class="input d-flex flex-column">
+                                <div class="input-ctsp d-flex flex-column">
                                     <input type="text" class="input-name" placeholder="Họ và Tên" style="width: 100%;">
                                     <input type="text" class="input-name" placeholder="Số điện thoại">
                                     <textarea name="" id="" cols="30" rows="10" placeholder="Chia sẻ về sản phẩm"></textarea>
@@ -228,15 +245,15 @@
                                 </div>
                             </div>
                             <div class="submit text-center">
-                                <button class="btn">Gửi đánh giá</button>
+                                <button class="btn-ctsp">Gửi đánh giá</button>
                             </div>
                             <hr class="hr">
-                            <div class="comment text-start">
-                                <div class="row">
-                                    <div class="col-1">
-                                        <img src="img/portrait-user/comment1.jpg" alt="">
+                            <div class="comment-ctsp text-start">
+                                <div class="row pb-3">
+                                    <div class="avartar col-2">
+                                        <img src="picture-section-1/item-avatar.jpg" alt="avartar">
                                     </div>
-                                    <div class="col-11">
+                                    <div class="col-10">
                                         <div class="comment-name">Đoàn Minh Đạt</div>
                                         sản phẩm tốt
                                         <div class="star-icon">
@@ -249,10 +266,10 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-1">
-                                        <img src="img/portrait-user/user2.png" alt="">
+                                    <div class="avartar col-2">
+                                        <img src="picture-section-1/item-avatar.jpg" alt="avartar">
                                     </div>
-                                    <div class="col-11">
+                                    <div class="col-10">
                                         <div class="comment-name">Đoàn Minh Đạt</div>
                                         Sản phẩm chất lượng
                                         <div class="star-icon">
@@ -271,6 +288,129 @@
               </div>
         </div>
     </div>  
+    
+    <div class="section-2" style="margin-bottom: 50px;">
+      <div class="row">
+        <h2 class="h2 text-center">Sản phẩm gợi ý</h2>
+        <div class="col-lg-3 col-sm-6 my-2">
+          <div class="card">
+            <a href="chi-tiet-san-pham.html">
+              <div class="card-img">
+                <img src="./picture-section-1/item9.png" alt="ảnh sản phẩm">
+              </div>
+            </a>
+            <div class="card-body">
+              <p class="card-text">
+                Macbook Air 13-inch 7-Core
+              </p>
+              <div>
+              <p class="para1">24,950,000 ₫</p>
+              <p class="para2">30,000,000 ₫</p>
+            </div>
+            <div class="star-icon">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            </div>
+            <div class="d-flex text-center"> 
+                  <a class="btn1 col-6" href="#">Thêm vào giỏ</a>
+                  <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
+          </div> 
+        </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 my-2">
+      <div class="card">
+        <a href="chi-tiet-san-pham.html">
+          <div class="card-img">
+            <img src="./picture-section-1/item10.png" alt="ảnh sản phẩm">
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Macbook Air 13-inch 7-Core
+          </p>
+          <div>
+          <p class="para1">24,950,000 ₫</p>
+          <p class="para2">30,000,000 ₫</p>
+        </div>
+        <div class="star-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        </div>
+        <div class="d-flex text-center"> 
+              <a class="btn1 col-6" href="#">Thêm vào giỏ</a>
+              <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
+      </div> 
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 my-2">
+      <div class="card">
+        <a href="chi-tiet-san-pham.html">
+          <div class="card-img">
+            <img src="./picture-section-1/item11.png" alt="ảnh sản phẩm">
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Macbook Air 13-inch 7-Core
+          </p>
+          <div>
+          <p class="para1">24,950,000 ₫</p>
+          <p class="para2">30,000,000 ₫</p>
+        </div>
+        <div class="star-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        </div>
+        <div class="d-flex text-center"> 
+              <a class="btn1 col-6" href="#">Thêm vào giỏ</a>
+              <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
+      </div> 
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 my-2">
+      <div class="card">
+        <a href="chi-tiet-san-pham.html">
+          <div class="card-img">
+            <img src="./picture-section-1/item12.png" alt="ảnh sản phẩm">
+          </div>
+        </a>
+        <div class="card-body">
+          <p class="card-text">
+            Macbook Air 13-inch 7-Core
+          </p>
+          <div>
+          <p class="para1">24,950,000 ₫</p>
+          <p class="para2">30,000,000 ₫</p>
+        </div>
+        <div class="star-icon">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        </div>
+        <div class="d-flex text-center"> 
+              <a class="btn1 col-6" href="#">Thêm vào giỏ</a>
+              <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
+      </div> 
+    </div>
+    </div>    
+      </div>
+    </div>
+
   </section>
 
 <footer>
@@ -354,5 +494,20 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script>
+      let star = document.querySelectorAll('.star1');
+      star.forEach((el,i)=>{
+      el.addEventListener('click',()=>{
+  for(let j = 0;j <= i;j++){
+    star[j].style.color = '#EA9D02'
+  }
+  for(let x = i+1;x <= 5;x++){
+    star[x].style.color = 'black';
+  }
+})
+})
+
+
+    </script>
 </body>
 </html>
