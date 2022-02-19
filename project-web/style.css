@@ -80,8 +80,9 @@ li, ul{
 }
 .nav-link, .nav-item, .nav-item-tc{
     color: white !important;
-    padding:10px 20px;
+    padding:8px 20px;
     transition: 0.2s;
+    margin-left: 10px;
     }
 .navbar-toggler{
     color: white !important;
@@ -150,7 +151,10 @@ li, ul{
 }
 .nav-item-tc1{
     display: none;
-    padding: 20px 0;
+    padding: 15px 0; 
+}
+.nav-link-tc1{
+    margin-left: 21px;
 }
 .nav-link-tc1{
     color: white !important;
@@ -248,19 +252,27 @@ p{
 /* ----------------------------------------------------------Kết Thúc Trang Chủ----------------------------------------------------------- */
 
 /* ------------------------------------------------------------------Giỏ Hàng--------------------------------------------------------------- */
-.top-gh ,.cart-buy-gh{
+.top-gh{
     padding: 20px 30px;
     border: 1px solid #9D9393;
     margin-bottom: 20px;
 }
+.cart-buy-gh{
+    padding: 15px 30px;
+    border: 1px solid #9D9393;
+    margin-bottom: 20px;
+}
 .cart-gh{
-    padding: 0 30px;
+    padding: 15px 30px;
     border: 1px solid #9D9393;
     margin-bottom: 30px;
 }
 .cart-operation,.cart-operation-1{
     cursor: pointer;
     color: red;
+}
+.cart-operation i{
+    font-size: 25px;
 }
 .cart-operation-1{
     margin-left: 30px;
@@ -290,15 +302,17 @@ p{
     width: 2.5rem !important;
     height: 2rem !important;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 1px solid rgb(252, 110, 110);
 }
 .plus{
     border-radius: 0 4px 4px 0;
-    background: #f9f9f9;
+    background: #ff6161;
+    color: white;
 }
 .miu{
     border-radius: 4px 0 0 4px;
-    background: #f9f9f9;
+    background: #ff6161;
+    color: white;
 }
 
 /* ------------------------------------------------------------------Kết Thúc Giỏ Hàng--------------------------------------------------------------- */
@@ -335,6 +349,9 @@ p{
 }
 .star-icon{
     color: #EA9D02;
+}
+.list-item{
+    margin-bottom: 40px;
 }
 .product-reviews .product-reviews-number {
     border-left: 1px solid #ddd;
@@ -456,6 +473,19 @@ p{
 }
 .comment-ctsp{
     margin: 30px 0 10px 0;
+}
+.page-item.active .page-link {
+    color: #fff;
+    background: #ff3b3b;
+    border-color: #ff3b3b;
+}
+.page-link{
+    color: #ff3b3b;
+}
+.page-link:hover{
+    color: white;
+    background: #f72a2a;
+    border-color: #f72a2a;
 }
 /* -----------------------------------------------------------Kết Thúc Sản Phẩm------------------------------------------------------- */
 
@@ -589,6 +619,10 @@ iframe {
     padding: 10px 10px 10px 10px;
     border-radius: 6px;
     margin-right: 5%;
+    margin-bottom: 10px;
+}
+.form-check-2{
+    margin-bottom: 5px;
 }
 .form-check-input{
     margin: 5px 8px 0 0;
@@ -643,4 +677,19 @@ iframe {
 }
 footer a:hover{
     color: white;
+}
+
+/* back to top */
+.scroll {
+    position: fixed;
+    bottom: 2rem;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #ed4f4f;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
 }

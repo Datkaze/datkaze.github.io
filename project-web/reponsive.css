@@ -25,6 +25,10 @@
      .posts{
          margin-top: 10px;
      }
+     /* sản phẩm */
+     .list-img{
+        width: 100% !important;
+     }
 }
 
 @media(max-width:768px){
@@ -53,6 +57,10 @@
     /* tin tức */
     .para-tt{
         margin-top: 10px;
+    }
+    /* thanh toán */
+    .dathang{
+        text-align: center;
     }
 }
 
@@ -86,10 +94,14 @@
         padding: 0 35px;
     }
     .section-sp{
-        padding: 035px;
+        padding: 0 35px;
     }
     .span-sp{
-        margin: 6px !important;
+        margin: 6px;
+    }
+    /* thanh toán */
+    .box-cart{
+        padding: 2rem !important;
     }
 }
 
@@ -125,8 +137,8 @@
     .section-sp{
         padding: 0 35px;
     }
-    .banner-sp-1{
-        padding-bottom: 0px;
+    .banner-sp-1 {
+        padding-bottom: 40px;
     }
     .flex{
         display: flex;
@@ -145,7 +157,9 @@
         width: 100px;
     }
     /* giỏ hàng */
-    
+    .cart-gh{
+        padding: 0 15px;
+    }
     .cart-buy-gh{
         padding: 20px 10px;
     }
@@ -167,6 +181,28 @@
     }
     .product-details-reduce {
        font-size: 12px;
+    }
+    /* thanh toan */
+    .sum{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 340px) {
+    /* sản phẩm */
+    .span-sp{
+        font-size: 12px;
+        margin: 3px;
+    }
+    .rep-font{
+        font-size: 16px;
+    }
+    /* footer */
+    .h2-footer{
+        font-size: 25px !important; 
+    }
+    .para{
+        font-size: 16px !important;
     }
 }
 
