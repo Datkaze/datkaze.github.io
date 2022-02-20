@@ -654,8 +654,8 @@ iframe {
     color: white;
 }
 .footer2{
-    background: #494545;
-    padding: 50px 100px;
+    background: #1f1f1f;
+    padding: 60px 100px;
     margin: unset;
 }
 .footer2 h3{
@@ -675,7 +675,33 @@ iframe {
 footer a:hover{
     color: white;
 }
-
+.network{
+    margin-top: 15px;
+}
+.facebook {
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+    background: #385898;
+    padding: 5px 11px;
+}
+.twitter{
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+    background: rgba(29,161,242,1.00);
+    padding: 5px 5px;
+}
+.youtube{
+    font-size: 30px;
+    margin-right: 10px;
+    border-radius: 50%;
+    color: white;
+    background: red;
+    padding: 5px 3px;
+}
 /* back to top */
 .scroll {
     position: fixed;
