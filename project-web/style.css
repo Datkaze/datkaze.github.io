@@ -263,18 +263,18 @@ p{
 /* ------------------------------------------------------------------Giỏ Hàng--------------------------------------------------------------- */
 .top-gh{
     padding: 20px 30px;
-    border: 1px solid #9D9393;
-    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
 }
 .cart-buy-gh{
     padding: 15px 30px;
-    border: 1px solid #9D9393;
+    border: 1px solid #ddd;
     margin-bottom: 20px;
 }
 .cart-gh{
     padding: 15px 30px;
-    border: 1px solid #9D9393;
-    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
 }
 .cart-operation,.cart-operation-1{
     cursor: pointer;
