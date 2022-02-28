@@ -76,7 +76,7 @@ li, ul{
 .cart-shop{
     color: white;
     padding: 0 20px 0 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .nav-link, .nav-item, .nav-item-tc{
     color: white !important;
@@ -179,7 +179,7 @@ li, ul{
     border-radius: 0 0.25rem 0.25rem 0;
 }
 .h2{
-    padding: 0 0 15px 0;
+    padding: 0 0 5px 0;
 }
 .card-body{
     background: #FFFFFF;
@@ -256,7 +256,8 @@ p{
     color: white;
 }
 .section-3{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 /* ----------------------------------------------------------Kết Thúc Trang Chủ----------------------------------------------------------- */
 
@@ -358,6 +359,10 @@ p{
 }
 .star-icon{
     color: #EA9D02;
+    font-size: 14px;
+}
+.danhgiaitem{
+    font-size: 14px;
 }
 .product-reviews .product-reviews-number {
     border-left: 1px solid #ddd;
@@ -729,3 +734,52 @@ footer a:hover{
     z-index: 100;
 }
 
+    /* slick slider */
+.slick-prev, .slick-next{
+    position: absolute;
+    padding: 8px 12px;
+    border: none;
+    background: #e72f40;
+    color: white;
+}
+.slick-prev{
+    bottom: 48%;
+    z-index: 999;
+    left: 10px;
+}
+.slick-next{
+    right: 10px;
+    top: 43%
+}
+.set-mg-sp1{
+    margin-right: 17px;
+}
+.set-mb-sp{
+    margin-left: 15px;
+}
+
+.slice-slider-ctsp1{
+    margin-bottom: 15px;
+}
+.item-slice-ctsp{
+    padding: unset;
+    cursor: pointer;
+}
+.avartar{
+    width: 8%;
+    padding-right: 15px;
+}
+
+.slice-slider-ctsp2 button{
+    display: none !important;
+}
+
+.item-slice-ctsp:hover img{
+    transform: scale(1.1);
+}
+.cart-shop span{
+    transform: translate(-30%,-70%);
+    background: red;
+    border-radius: 50%;
+    font-size: 12px;
+}
