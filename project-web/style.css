@@ -186,11 +186,14 @@ li, ul{
 }
 .card-body .para1{
     color: red;
+    font-weight: 700;
+    font-size: 16px;
 }
 .card-body .para2{
     color: #707070;
     text-decoration: line-through;
     font-size: 14px;
+    font-weight: 500;
 }
 .card-img{
     overflow: hidden;
@@ -222,6 +225,7 @@ p{
 }
 .card-text{
     margin-bottom: 15px;
+    font-weight: 500;
 }
 .col-6{
     padding: 10px;
@@ -250,10 +254,12 @@ p{
     padding: 8px;
     margin-top: 15px;
     border-radius: 5px;
+    border: 1px solid #000000;
 }
 .btn-xem-them:hover,.btn-xem-them a:hover{
     background: rgb(216, 10, 10);
     color: white;
+    border: 1px solid #000000;
 }
 .section-3{
     margin-bottom: 20px;
@@ -454,7 +460,7 @@ p{
     padding: 3px 0;
 }
 .nhanxet{
-    margin: 10px 0 15px 0;
+    margin: 3px 0 15px 0;
     font-size: 18px;
     font-weight: 500;
 }
@@ -504,6 +510,9 @@ p{
 /* ---------------------------------------------------------Tin Tức------------------------------------------------------------- */
 .news p, h3,.time{
     color: black;
+}
+.rep-font{
+    font-weight: 700;
 }
 .news1:hover h3{
     color: red;
