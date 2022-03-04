@@ -32,8 +32,8 @@ $('.item-slider-tc').slick({
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow:"<button type='button' class='slick-prev-1 pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:"<button type='button' class='slick-next-1 pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
     responsive: [
       {
         breakpoint: 992,
@@ -62,77 +62,17 @@ $('.item-slider-tc').slick({
   });
 
 // chi tiết sản phẩm
-  $('.slice-slider-ctsp2').slick({
-    infinite: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 4,
-          slidesToScroll: 1,
-        }
-      }
-    ]
-    
-  });
-
-
-  $(() => {
-    $(".slice-slider-ctsp2 img").click(function(){
-      let imgPath = $(this).attr('src');
-      $("#main-img").attr('src', imgPath);
-    })
-  })
-
-
-
-
-
-// let cartForm = document.querySelector('.shopping-cart');
-// let cartBtn = document.querySelector('#cart-btn');
-// let menuBtn = document.querySelector('#menu-btn');
-
-// document.querySelector('#search-btn').onclick = () =>{
-//     searchForm.classList.toggle('active');
-// }
-
-// document.querySelector('#cart-btn').onclick = () =>{
-//     cartForm.classList.toggle('active');
-// }
-
-
-// // document.querySelector('#menu-btn').onclick = () =>{
-// //     navbar.classList.toggle('active');
-// // }
-
-// menuBtn.addEventListener('click', ()=>{
-//     menuBtn.classList.toggle('fa-times');
-//     navbar.classList.toggle('active');
-// })
-
-
-// window.onscroll = () =>{
-//     searchForm.classList.remove('active');
-//     cartForm.classList.remove('active');
-    
-// }
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+  nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  focusOnSelect: true
+});
