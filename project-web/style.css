@@ -135,12 +135,12 @@ li, ul{
 }
 .btn-outline-success{
     color: #fff;
-    background-color: #fa7979;
-    border-color: #fa7979;
-}
-.btn-outline-success:hover {
     background-color: #f34b4b;
     border-color: #f34b4b;
+}
+.btn-outline-success:hover {
+    background-color: #fa7979;
+    border-color: #fa7979;
 }
 /* ------------------------------------------------------Trang Chủ------------------------------------------------------------------- */
 .swiper-wrapper {
@@ -255,15 +255,16 @@ p{
     color: #000;
 }
 .btn-xem-them{
+    background: white;
     padding: 8px;
     margin-top: 15px;
     border-radius: 5px;
-    border: 1px solid #000000;
+    border: 1px solid red;
 }
 .btn-xem-them:hover,.btn-xem-them a:hover{
     background: rgb(216, 10, 10);
     color: white;
-    border: 1px solid #000000;
+    border: 1px solid rgb(216, 10, 10);
 }
 .section-3{
     margin-bottom: 20px;
@@ -287,8 +288,15 @@ p{
     border: 1px solid #ddd;
     margin-bottom: 15px;
 }
+.cart-product-name{
+    font-size: 18px;
+    font-weight: 500;
+}
 .cart-operation,.cart-operation-1{
     cursor: pointer;
+    color: #ea3535;
+}
+.cart-operation:hover{
     color: red;
 }
 .cart-operation i{
@@ -299,6 +307,7 @@ p{
 }
 .cart-price{
     color: red;
+    font-weight: 500;
 }
 .clear{
     color: red;
@@ -311,6 +320,7 @@ p{
 .total-number{
     color: red;
     margin-left: 5px;
+    font-weight: 500;
 }
 .tt{
     padding-right: 20px;
@@ -333,6 +343,9 @@ p{
     border-radius: 4px 0 0 4px;
     background: #ff6161;
     color: white;
+}
+.plus:hover, .miu:hover{
+    background: #fa3131;
 }
 
 /* ------------------------------------------------------------------Kết Thúc Giỏ Hàng--------------------------------------------------------------- */
@@ -390,9 +403,12 @@ p{
 }
 .product-details-special-price{
     color: red;
+    font-size: 21px;
+    margin-top: 2px;
 }
 .product-details-old-price{
-    padding: 0 15px;
+    padding: 4px 15px 0 15px;
+    font-size: 16px;
     color: #707070;
     text-decoration: line-through;
 }
@@ -403,7 +419,8 @@ p{
     padding: 2px 4px;
     font-weight: 500;
     line-height: 1;
-    margin-bottom: 5px;
+    font-size: 14px;
+    margin-bottom: 1px;
 }
 .fa-check-circle {
     color: #48bb78;

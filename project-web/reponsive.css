@@ -118,6 +118,12 @@
     .slick-next{
         top: 45%;
     }
+    .cart-gh-main-1{
+        display: none;
+    }
+    .cart-gh-main{
+        display: block !important;
+    }
     /* thanh toán */
     .box-cart{
         padding: 2rem !important;
@@ -250,6 +256,12 @@
     }
     .slick-next {
         top: 38%;
+    }
+    .cart-price {
+        margin-left: 30px !important;
+    }
+    .cart-number{
+        margin-left: 24px !important;
     }
     /* footer */
     .para{
