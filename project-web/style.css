@@ -89,13 +89,15 @@ li, ul{
     border-color: white !important;
     box-shadow: none !important;
 }
-.navbar{
-    background: #D5262C !important;
+header{
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+}
+.navbar{
+    background: #D5262C !important;
     padding: unset;
 }
 .navbar-nav{
@@ -105,7 +107,7 @@ li, ul{
     font-weight: 300;
 }
 .navbar-brand{
-    font-size: 35px !important;
+    font-size: 38px !important;
     color: white !important;
     font-weight: 500;
     margin-right: unset;
@@ -127,7 +129,7 @@ li, ul{
 }
 .dropdown-menu{
     padding: unset;
-    margin-left: -30px;
+    margin-left: -16px;
     margin-top: 5px;
 }
 .hov-banner:hover{
@@ -211,7 +213,7 @@ li, ul{
 .btn2:hover{
     background-color: rgba(252, 32, 32, 0.8) !important;
 }
-.btn1:hover{
+.addCart:hover{
     background-color: rgb(177, 171, 171) !important;
     color: black;
 }
@@ -234,7 +236,7 @@ p{
 .col-6{
     padding: 10px;
 }
-.d-flex .btn1{
+.d-flex .addCart{
     font-weight: 500;
     font-size: 14px;
     line-height: 2.2rem;
@@ -250,7 +252,7 @@ p{
     color: #FFFF;
     background: #ED3131;
 }
-.btn1{
+.addCart{
     background: #C4C4C4;
     color: #000;
 }
@@ -270,13 +272,31 @@ p{
     margin-bottom: 20px;
     margin-top: 30px;
 }
+.buy-success{
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1000;
+    opacity: 0.9;
+    padding: 5px 0;
+}
+.buy-success p{
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+.hide {
+    display: none !important;
+}
 /* ----------------------------------------------------------Kết Thúc Trang Chủ----------------------------------------------------------- */
 
 /* ------------------------------------------------------------------Giỏ Hàng--------------------------------------------------------------- */
-.top-gh{
-    padding: 20px 30px;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
+.table{
+    border: 1px solid #ddd; 
+}
+.table p{
+    font-weight: 300;
 }
 .cart-buy-gh{
     padding: 15px 30px;
@@ -798,15 +818,16 @@ footer a:hover{
     background: #e72f40;
     color: white;
     border-radius: 50%;
+    right: 11px;
 }
 .slick-prev{
-    bottom: 45%;
+    top: 115px;
     z-index: 999;
     left: 10px;
 }
 .slick-next{
     right: 10px;
-    top: 45%
+    top: 115px;
 }
 .slick-next:hover{
     background: #f71b2f;
@@ -828,12 +849,10 @@ footer a:hover{
     background: #f71b2f;
 }
 .slick-prev-1{
-    bottom: 45%;
+    top: 115px;
     z-index: 999;
     left: 10px;
 }
-.slick-next-1{
-    right: 10px;
-    top: 47%
+.nav-item-ctsp-tc{
+    margin: 0 10px;
 }
-

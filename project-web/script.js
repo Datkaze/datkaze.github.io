@@ -28,19 +28,17 @@ let star = document.querySelectorAll('.star1');
 
 // sản phẩm
 $('.item-slider-tc').slick({
-    infinite: false,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow:"<button type='button' class='slick-prev-1 pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-    nextArrow:"<button type='button' class='slick-next-1 pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    prevArrow:`<button type='button' class='slick-prev-1 pull-left' style="top:220px; right: 10px;"><i class='fa fa-angle-left' aria-hidden='true'></i></button>`,
+    nextArrow:`<button type='button' class='slick-next-1 pull-right' style="top:220px;"><i class='fa fa-angle-right' aria-hidden='true'></i></button>`,
     responsive: [
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true,
         }
       },
       {
@@ -76,3 +74,4 @@ $('.slider-nav').slick({
   asNavFor: '.slider-for',
   focusOnSelect: true
 });
+

@@ -20,11 +20,15 @@
 </head>
 <body>
   <header class="header">
+    <div class="buy-success d-flex justify-content-center align-items-center hide">
+      <p>Thêm vào giỏ thành công</p>
+  </div>
+  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="trang-chu.html">Techcom</a>
         <div class="nav-order order-1">
-          <a href="gio-hang.html"><div class="cart-shop fas fa-shopping-cart position-relative"><span class="position-absolute number   badge  ">3</span></div></a>
+          <a href="gio-hang.html"><div class="cart-shop fas fa-shopping-cart position-relative"><span class="number-buy position-absolute badge">0</span></div></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
@@ -89,211 +93,53 @@
             </div>
         </div>
     </section>
+<section class="cart">
+    <div class="container">
+      <table class="table">
+        <thead>
+            <tr class="text-center">
+             <th class="col-lg-4 col-4"><p>Sản Phẩm</p></th>
+             <th class="col-lg-3 col-3 text-center"><p>Đơn Giá</p></th>
+             <th class="col-lg-3 col-3 text-center"><p>Số Lượng</p></th>
+             <th class="col-lg-2 col-2 text-center"><p>Thao Tác</p></th>
+            </tr>
+        </thead>
+        <tbody class="tbody text-center"></tbody>
+    </table>  
+    </div>
+</section>
 
-    <section class="container">
-      <div class="top-gh d-flex">
-          <div class="col-lg-4 col-4"><p>Sản Phẩm</p></div>
-          <div class="col-lg-3 col-3 text-center"><p>Đơn Giá</p></div>
-          <div class="col-lg-3 col-3 text-center"><p>Số Lượng</p></div>
-          <div class="col-lg-2 col-2 text-center"><p>Thao Tác</p></div>  
-      </div>  
-      <div class="cart-gh-main-1">
-        <div class="cart-gh d-flex flex-row flex-wrap justify-content-between  align-items-center">
-          <div class="cart-content-product col-sm-4 col-12 ">
-           
-           <div class="d-flex flex-row align-items-center">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+<section class="container">
+<div class="cart-buy-gh mb-5">
+  <div class="d-flex flex-row flex-wrap justify-content-between align-items-center flex-auto">
+    <div class="cart-product  col-sm-3 col-4  ">
+     
+     <div class="d-flex flex-row align-items-center cart-product-text">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecke">
+        <label class="form-check-label pl-1" for="flexCheckChecke">
+          Chọn tất cả
+        </label>
+      </div>           
+     </div>
+    </div>
+       <div class="cart-operation-title-1  text-center">
+        <div class="d-flex flex-row align-items-center justify-content-between">
+          <div class="tt d-flex flex-row">
+            <div class="total-title ">
+              Tổng thanh toán: 
             </div>
-            <a href="chi-tiet-san-pham.html"><img class="img-cart" src="./picture-section-1/item-gh-2.png" alt="anh sp"></a>
-            <a href="chi-tiet-san-pham.html"><div class="cart-product-name">iphone 13 Pro Max</div></a>
-           </div>
+            <div class="total-number">0₫</div>
           </div>
-          <div class="cart-price col-sm-3 col-4 text-center">29.950.000₫</div>
-             <div class="cart-number col-sm-3 col-6  text-center">
-              <div class="buttons-added">
-                <input class="miu is-form" type="button" value="-">
-                <input aria-label="quantity" class="input-qty" max="10" min="1" value="1">
-                <input class="plus is-form" type="button" value="+">
-              </div>
-             </div>
-             <div class="cart-operation col-sm-2 col-2  text-center"><i class="far fa-trash-alt"></i></div>
+          <div>  
+         </div>
+
+          <a href="thanh-toan.html" role="button" class="btn2" style="background: #ED3131; padding: 5px 25px; border-radius: 5px;"> Mua </a>
         </div>
-        
-
-        <div class="cart-gh d-flex flex-row flex-wrap justify-content-between  align-items-center">
-          <div class="cart-content-product col-sm-4 col-12 ">
-           
-           <div class="d-flex flex-row align-items-center">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            </div>
-            <a href="chi-tiet-san-pham.html"><img class="img-cart" src="./picture-section-1/item-gh-2.png" alt="anh sp"></a>
-            <a href="chi-tiet-san-pham.html"><div class="cart-product-name">iphone 13 Pro Max</div></a>
-           </div>
-          </div>
-          <div class="cart-price col-sm-3 col-4 text-center">29.950.000₫</div>
-             <div class="cart-number col-sm-3 col-6  text-center">
-              <div class="buttons-added">
-                <input class="miu is-form" type="button" value="-">
-                <input aria-label="quantity" class="input-qty" max="10" min="1" value="1">
-                <input class="plus is-form" type="button" value="+">
-              </div>
-             </div>
-             <div class="cart-operation col-sm-2 col-2  text-center"><i class="far fa-trash-alt"></i></div>
-        </div>
-
-
-        <div class="cart-gh d-flex flex-row flex-wrap justify-content-between  align-items-center" style="margin-bottom: 10px;">
-          <div class="cart-content-product col-sm-4 col-12 ">
-           
-           <div class="d-flex flex-row align-items-center">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            </div>
-            <a href="chi-tiet-san-pham.html"><img class="img-cart" src="./picture-section-1/item-gh-1.png" alt="anh sp"></a>
-            <a href="chi-tiet-san-pham.html"><div class="cart-product-name">Macbook Air M1</div></a>
-            
-           </div>
-
-          </div>
-          <div class="cart-price col-sm-3 col-4 text-center">24,950,000₫</div>
-             <div class="cart-number col-sm-3 col-6  text-center">
-              <div class="buttons-added">
-                <input class="miu is-form" type="button" value="-">
-                <input aria-label="quantity" class="input-qty" max="10" min="1" value="1">
-                <input class="plus is-form" type="button" value="+">
-              </div>
-             </div>
-             <div class="cart-operation col-sm-2 col-2  text-center"><i class="far fa-trash-alt"></i></div>
-        </div>
-      </div>
-          
-
-          <div class="cart-gh-main" style="display: none;">
-            <div class="cart-gh d-flex flex-row flex-wrap justify-content-between  align-items-center">
-              <div class="cart-content-product col-sm-4 col-12 mb-2">
-               <div class="d-flex flex-row align-items-center">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                </div>
-                <a href="chi-tiet-san-pham.html"><img class="img-cart" src="./picture-section-1/item-gh-2.png" alt="anh sp"></a>
-                <a href="chi-tiet-san-pham.html"><div class="cart-product-name">iphone 13 Pro Max</div></a>
-                
-               </div>
-      
-              </div>
-              <div class="d-flex col-12 mb-2" style="padding-left: 40px;">
-                <div>Đơn giá:</div>
-                <div class="cart-price text-center" style="margin-left: 50px;">29.950.000₫</div>
-              </div>
-              <div class="d-flex col-12 mb-2" style="padding-left: 40px;">
-                <div>Số lượng:</div>
-                <div class="cart-number text-center" style="margin-left: 44px;">
-                  <div class="buttons-added">
-                    <input class="miu is-form" type="button" value="-">
-                    <input aria-label="quantity" class="input-qty" max="10" min="1" value="1">
-                    <input class="plus is-form" type="button" value="+">
-                  </div>
-                 </div>
-              </div>
-            </br>
-                <div class="cart-operation col-12 text-center mb-1"><i class="far fa-trash-alt"></i></div>  
-            </div>
-
-            <div class="cart-gh d-flex flex-row flex-wrap justify-content-between  align-items-center">
-              <div class="cart-content-product col-sm-4 col-12 mb-2">
-               <div class="d-flex flex-row align-items-center">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                </div>
-                <a href="chi-tiet-san-pham.html"><img class="img-cart" src="./picture-section-1/item-gh-2.png" alt="anh sp"></a>
-                <a href="chi-tiet-san-pham.html"><div class="cart-product-name">iphone 13 Pro Max</div></a>
-                
-               </div>
-      
-              </div>
-              <div class="d-flex col-12 mb-2" style="padding-left: 40px;">
-                <div>Đơn giá:</div>
-                <div class="cart-price text-center" style="margin-left: 50px;">29.950.000₫</div>
-              </div>
-              <div class="d-flex col-12 mb-2" style="padding-left: 40px;">
-                <div>Số lượng:</div>
-                <div class="cart-number text-center" style="margin-left: 44px;">
-                  <div class="buttons-added">
-                    <input class="miu is-form" type="button" value="-">
-                    <input aria-label="quantity" class="input-qty" max="10" min="1" value="1">
-                    <input class="plus is-form" type="button" value="+">
-                  </div>
-                 </div>
-              </div>
-            </br>
-                <div class="cart-operation col-12 text-center mb-1"><i class="far fa-trash-alt"></i></div>  
-            </div>
-
-
-            <div class="cart-gh d-flex flex-row flex-wrap justify-content-between  align-items-center" id="card3">
-                <div class="cart-content-product col-sm-4 col-12 mb-2">
-                  <div class="d-flex flex-row align-items-center">
-                   <div class="form-check">
-                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                   </div>
-                   <a href="chi-tiet-san-pham.html"><img class="img-cart" src="./picture-section-1/item-gh-1.png" alt="anh sp"></a>
-                   <a href="chi-tiet-san-pham.html"><div class="cart-product-name">Macbook Air M1</div></a>
-                   
-                  </div>
-         
-                 </div>
-                 <div class="d-flex col-12 mb-2" style="padding-left: 40px;">
-                   <div>Đơn giá:</div>
-                   <div class="cart-price text-center" style="margin-left: 50px;">24,950,000₫</div>
-                 </div>
-                 <div class="d-flex col-12 mb-2" style="padding-left: 40px;">
-                   <div>Số lượng:</div>
-                   <div class="cart-number text-center" style="margin-left: 44px;">
-                     <div class="buttons-added">
-                       <input class="miu is-form" type="button" value="-">
-                       <input aria-label="quantity" class="input-qty" max="10" min="1" value="1">
-                       <input class="plus is-form" type="button" value="+">
-                     </div>
-                    </div>
-                 </div>
-               </br>
-                   <div class="cart-operation col-12 text-center mb-1"><i class="far fa-trash-alt"></i></div>  
-               </div>
-              </div>
-              
-
-          <div class="cart-buy-gh mb-5">
-            <div class="d-flex flex-row flex-wrap justify-content-between align-items-center flex-auto">
-              <div class="cart-product  col-sm-3 col-4  ">
-               
-               <div class="d-flex flex-row align-items-center cart-product-text">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecke">
-                  <label class="form-check-label pl-1" for="flexCheckChecke">
-                    Chọn tất cả
-                  </label>
-                </div>           
-               </div>
-              </div>
-                 <div class="cart-operation-title-1  text-center">
-                  <div class="d-flex flex-row align-items-center justify-content-between">
-                    <div class="tt d-flex flex-row">
-                      <div class="total-title ">
-                        Tổng thanh toán: 
-                      </div>
-                      <div class="total-number">83,950,000₫</div>
-                    </div>
-                    <div>  
-                   </div>
-
-                    <a href="thanh-toan.html" role="button" class="btn2" style="background: #ED3131; padding: 5px 25px; border-radius: 5px;"> Mua </a>
-                  </div>
-                 </div>
-            </div>
-          </div>    
-    </section>
+       </div>
+  </div>
+</div>
+</section> 
 
     <footer>
       <div class="footer1 text-center">
@@ -360,5 +206,7 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="addcart.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
