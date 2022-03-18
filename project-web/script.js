@@ -31,8 +31,8 @@ $('.item-slider-tc').slick({
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    prevArrow:`<button type='button' class='slick-prev-1 pull-left' style="top:220px; right: 10px;"><i class='fa fa-angle-left' aria-hidden='true'></i></button>`,
-    nextArrow:`<button type='button' class='slick-next-1 pull-right' style="top:220px;"><i class='fa fa-angle-right' aria-hidden='true'></i></button>`,
+    nextArrow:`<button type='button' class='slick-next-1 pull-right' style="top:200px; right: 12px; z-index: 100;"><i class='fa fa-angle-right' aria-hidden='true'></i></button>`,
+    prevArrow:`<button type='button' class='slick-prev-1 pull-left' style="top:200px; z-index: 100;"><i class='fa fa-angle-left' aria-hidden='true'></i></button>`,
     responsive: [
       {
         breakpoint: 992,
