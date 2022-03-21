@@ -40,7 +40,7 @@ button.forEach((el)=>{
 
 // Bấn nút để hàm thực thi,đưa dữ liệu lên localstorage
 let j = 1;
-function addToCart(idSanPham,name, soLuong, price, img,giamgia){
+function addToCart(idSanPham,name, soLuong ,price, img,giamgia){
     let danhSachItemGiohang = layDanhSachItemGioHang();
     
       let coTonTaiTrongDanhSachItemGioHang = false;
@@ -83,3 +83,18 @@ danhSachItemGioHang.forEach(el => {
 if(danhSachItemGioHang != null){
     document.querySelector('.number-buy').innerText = soluong;
 }
+
+
+// back to top
+$(document).ready(function() {
+    $(window).scroll(function(){
+        if($(this).scrollTop()){
+            $(`#backtop`).fadeIn();
+        } else{
+            $(`#backtop`).fadeOut();
+        }
+    });
+$("#backtop").click(function(){
+    $(`html, body`).animate({scrollTop: 0}, 500);
+    });
+});

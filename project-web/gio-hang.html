@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./picture-banner/logo bar.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,10 +21,6 @@
 </head>
 <body>
   <header class="header">
-    <div class="buy-success d-flex justify-content-center align-items-center hide">
-      <p>Thêm vào giỏ thành công</p>
-  </div>
-  
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="trang-chu.html">Techcom</a>
@@ -93,54 +90,58 @@
             </div>
         </div>
     </section>
-<section class="cart">
-    <div class="container">
-      <table class="table">
-        <thead>
-            <tr class="text-center">
-             <th><p>Sản Phẩm</p></th>
-             <th><p>Đơn Giá</p></th>
-             <th><p>Giảm giá</p></th>
-             <th><p>Số lượng</p></th>
-             <th><p>Thao Tác</p></th>
-            </tr>
-        </thead>
-        <tbody class="tbody text-center"></tbody>
-    </table>  
-    </div>
-</section>
 
-<section class="container">
-<div class="cart-buy-gh mb-5">
-  <div class="d-flex flex-row flex-wrap justify-content-between align-items-center flex-auto">
-    <div class="cart-product  col-sm-3 col-4  ">
-     
-     <div class="d-flex flex-row align-items-center cart-product-text">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecke">
-        <label class="form-check-label pl-1" for="flexCheckChecke">
-          Chọn tất cả
-        </label>
-      </div>           
-     </div>
+    <section class="container">
+    <div class="cart">
+      
+        <table class="table">
+          <thead>
+              <tr class="text-center">
+               <th>Sản Phẩm</th>
+               <th>Giá gốc</th>
+               <th>Giảm giá</th>
+               <th>Số lượng</th>
+               <th>Tạm tính</th>
+              </tr>
+          </thead>
+          <tbody class="tbody text-center"></tbody>
+      </table>
+  
     </div>
-       <div class="cart-operation-title-1  text-center">
-        <div class="d-flex flex-row align-items-center justify-content-between">
-          <div class="tt d-flex flex-row">
-            <div class="total-title ">
-              Tổng thanh toán: 
+    </section>
+
+
+    <section class="container">
+          <div class="cart-buy-gh mb-5">
+            <div class="d-flex flex-row flex-wrap justify-content-between align-items-center flex-auto">
+              <div class="cart-product  col-sm-3 col-4  ">
+               
+               <div class="d-flex flex-row align-items-center cart-product-text">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecke">
+                  <label class="form-check-label pl-1" for="flexCheckChecke">
+                    Chọn tất cả
+                  </label>
+                </div>           
+               </div>
+              </div>
+                 <div class="cart-operation-title-1  text-center">
+                  <div class="d-flex flex-row align-items-center justify-content-between">
+                    <div class="tt d-flex flex-row">
+                      <div class="total-title ">
+                        Tổng thanh toán: 
+                      </div>
+                      <div class="total-number">0₫</div>
+                    </div>
+                    <div>
+                      
+                    </div>
+                    <a href="thanh-toan.html" role="button" class="btn2" style="background: #ED3131; padding: 5px 25px; border-radius: 5px;"> Mua </a>
+                  </div>
+                 </div>
             </div>
-            <div class="total-number">0₫</div>
-          </div>
-          <div>  
-         </div>
-
-          <a href="thanh-toan.html" role="button" class="btn2" style="background: #ED3131; padding: 5px 25px; border-radius: 5px;"> Mua </a>
-        </div>
-       </div>
-  </div>
-</div>
-</section> 
+          </div>    
+    </section>
 
     <footer>
       <div class="footer1 text-center">
@@ -200,12 +201,12 @@
       </div>
     </footer>
 <div class="scroll" id="backtop"><i class="fas fa-arrow-up" style="color: white;"></i></div>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
       <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="cart.js"></script>
 </body>

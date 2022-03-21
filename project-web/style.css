@@ -83,6 +83,7 @@ li, ul{
     padding:8px 20px;
     transition: 0.2s;
     margin-left: 10px;
+    font-weight: 500;
     }
 .navbar-toggler{
     color: white !important;
@@ -104,7 +105,7 @@ header{
     margin-left: auto;
 }
 .nav-link i{
-    font-weight: 300;
+    font-weight: 700;
 }
 .navbar-brand{
     font-size: 38px !important;
@@ -113,12 +114,14 @@ header{
     margin-right: unset;
 }
 .nav-link:hover{
-    color: rgb(255, 255, 255) !important;
-    font-weight: 700;
+    color: black !important;
+    background: white;
+    border-radius: 5px;
 }
 .nav-link-tc1:hover{
-    color: rgb(255, 255, 255) !important;
-    font-weight: 700;
+    color: black !important;
+    background: white;
+    border-radius: 5px;
 }
 .nav-item-tc:hover .dropdown-menu{
     display: block;
@@ -137,12 +140,12 @@ header{
 }
 .btn-outline-success{
     color: #fff;
-    background-color: #f34b4b;
-    border-color: #f34b4b;
+    background-color: #7b7be0;
+    border-color: #7b7be0;
 }
 .btn-outline-success:hover {
-    background-color: #fa7979;
-    border-color: #fa7979;
+    background-color: #5757d3;
+    border-color: #5757d3;
 }
 /* ------------------------------------------------------Trang Chủ------------------------------------------------------------------- */
 .swiper-wrapper {
@@ -167,6 +170,7 @@ header{
 }
 .nav-link-tc1{
     color: white !important;
+    font-weight: 500;
 }
 .nav-link-tc2{
     background: #D5262C;
@@ -274,7 +278,7 @@ p{
     margin-top: 30px;
 }
 .buy-success{
-    background-color: black;
+    background-color: green;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -293,11 +297,18 @@ p{
 /* ----------------------------------------------------------Kết Thúc Trang Chủ----------------------------------------------------------- */
 
 /* ------------------------------------------------------------------Giỏ Hàng--------------------------------------------------------------- */
-.table{
+.cart{
     border: 1px solid #ddd; 
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 10px;
 }
-.table p{
+.table{
+    margin-bottom: unset;
+}
+th{
     font-weight: 300;
+    border-bottom: unset;
 }
 .cart-buy-gh{
     padding: 15px 30px;

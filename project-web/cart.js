@@ -145,17 +145,13 @@ let keyLocalStorage = "danhsachitemGiohang";
           let total = ev.target.parentElement.parentElement.parentElement.querySelector('.total p');
           
           total.innerText = ((price - discount) * soluong).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
-          
-          // tongGiaGoc.forEach(el => {
-          //     sum += Number(el.innerText);
-          // })
-          // document.querySelector('.giagoc').innerText = sum;
+    
           let sum = 0;
   
           tongGia.forEach(el => {
               sum += Number(el.innerText.replace('.','').replace('.','').replace('đ',''));
           })
-          document.querySelector('.tongtien').innerText = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
+          document.querySelector('.total-number').innerText = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
           sum = 0;
       })
   
@@ -164,7 +160,7 @@ let keyLocalStorage = "danhsachitemGiohang";
   tongGia.forEach(el => {
       x += Number(el.innerText.replace('.','').replace('.','').replace('đ',''));
   })
-  document.querySelector('.tongtien').innerText = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
+  document.querySelector('.total-number').innerText = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
   
   giam.forEach((el) => {
       el.addEventListener('click',(ev) => {
@@ -207,7 +203,7 @@ let keyLocalStorage = "danhsachitemGiohang";
           tongGia.forEach(el => {
               sum += Number(el.innerText.replace('.','').replace('.','').replace('đ',''));
           })
-          document.querySelector('.tongtien').innerText = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
+          document.querySelector('.total-number').innerText = sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")+'đ';
           sum = 0;
       })
   })
@@ -230,11 +226,6 @@ let keyLocalStorage = "danhsachitemGiohang";
   })
   
   //reponsive
-  document.querySelector('.navbar-toggler').addEventListener('click',()=>{
-      document.querySelector('.responsive-navbar').classList.toggle('hide')
-    })
-    console.log(document.querySelector('.navbar-toggler'));
-  
     let danhSachItemGioHang = layDanhSachItemGioHang();
   let soluong = 0
   danhSachItemGioHang.forEach(el => {

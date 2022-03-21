@@ -101,9 +101,10 @@
         padding: 10px 50px 30px 50px;
     }
     /* giỏ hàng */
-    .top-gh{
+    .cart{
         display: none !important;
     }
+    
     /* tin tức */
     .para-tt{
         margin-top: 5px;
