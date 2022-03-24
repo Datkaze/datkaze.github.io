@@ -20,6 +20,68 @@
     <title>Thanh Toán</title>
 </head>
 <body>
+
+  
+  <section class="model_checkout" style="display: block;">
+       
+          
+    <!-- Modal -->
+    <div class="modal  fade " id="confirmOrder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-checkout">
+        <div class="modal-content">
+         
+          <div class="modal-body ">
+            <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+            <p class="text-sucess">Đặt hàng thành công</p>
+            <div class="detail-order">
+                  <div class="check-out">
+                      <span>Mã đơn hàng:</span>
+                      <span>11234</span>
+                  </div>
+                  <div class="check-out">
+                      <span>Khách hàng:</span>
+                      <span>Nguyễn Văn A</span>
+                  </div>
+                  <div class="check-out">
+                      <span>Địa chỉ: </span>
+                      <span>360 Giải Phóng, Hoàng Mai, Hà Nội</span>
+                  </div>
+                  <div class="check-out">
+                      <span>Số điện thoại: </span>
+                      <span>0984678123</span>
+                  </div>
+                  <div class="check-out">
+                      <span>Hình thức thanh toán: </span>
+                      <span>Thanh toán khi nhận hàng</span>
+                  </div>
+                  <p class="text-order">Đơn hàng</p>
+                  <div class="check-out">
+                      <span class="name-product">Macbook Air 13-inch M1 x 1</span>
+                      <span class="price-set">24.950.000₫</span>
+                  </div>
+                  <div class="check-out">
+                    <span class="name-product">Laptop Dell Latitude 3520 x 1</span>
+                    <span class="price-set">19.550.000₫</span>
+                </div>
+                  <div class="check-out">
+                      <span class="name-product">iphone 13 Pro Max x 1</span>
+                      <span class="price-set">29.950.000₫</span>
+                      
+                  </div>
+                  <div class="total-order">
+                      <span>Tổng tiền</span>
+                      <span>74.450.000 ₫</span>
+                  </div>
+                  <div class="btn-return">
+                  <a style="color: #0d6efd; font-size: 18px; font-weight: 500;" href="trang-chu.html"><span><i class="fas fa-long-arrow-alt-left"></i></span> Quay lại trang chủ</a></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+</section>
+
   <header class="header">
     <div class="buy-success d-flex justify-content-center align-items-center hide">
       <p>Thêm vào giỏ thành công</p>
@@ -97,191 +159,203 @@
         </div>
     </section>
 
-    <section class="checkout">
-        <div class="container">
-          <form class="needs-validation" action="#">
-            <div class="d-flex flex-row flex-wrap justify-content-between">
-              <div class="card-tt col-lg-6 col-12 mb-4" style="padding-right: 10px;">
-                  <div class="box-cart p-5">
-                      <h3 class="d-flex justify-content-between align-items-center ">
-                      <span class="text-cart">Thông tin đơn hàng</span>
-                    </h3>
-                    <ul class="list-group mb-3">
-                      
-                      <li class="
-                          list-group-item
-                          d-flex
-                          justify-content-between
-                          lh-condensed
-                        ">
-                        <div>
-                          <h6 class="my-0">iphone 13 Pro</h6>
-                          <small class="text-muted">29.950.000₫ x 2</small>
-                        </div>
-                        <span class="text-muted">59,900,000₫</span>
-                      </li>
-                      
-      
-                      <li class="
-                          list-group-item
-                          d-flex
-                          justify-content-between
-                          lh-condensed
-                        ">
-                        <div>
-                          <h6 class="my-0">Macbook Air M1</h6>
-                          <small class="text-muted">24,950,000₫ x 1</small>
-                        </div>
-                        <span class="text-muted">24,950,000₫</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between">
-                        <span>Tạm tính</span>
-                        <span class="text-muted">83,950,000₫</span>
-                      </li>
-                      
-                        <li class="list-group-item d-flex justify-content-between">
-                          <span>Phí giao hàng</span>
-                          <span class="text-muted">15.000₫</span>
-                        </li>
+    <main class="container mb-5">
+          <h2 class="order-title">1. ĐỊA CHỈ THANH TOÁN</h2>
+          <div class="row">
 
-                        <li class="list-group-item d-flex justify-content-between">
-                          <span>Giảm giá phí giao hàng</span>
-                          <span class="text-muted">-15.000₫</span>
-                        </li>
+              <div class=" col-lg-7 col-md-12">
 
-                        <li class="list-group-item d-flex justify-content-between">
-                          <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Mã khuyến mãi">
-                              <div class="input-group-append">
-                                <button type="button" class="btn2" style="padding:5px 13px; border-radius:0 5px 5px 0;">Áp dụng</button>
+                  <div class="infor-order-area">
+
+
+                      <form>
+
+                          <div class="form-group row">
+                              <label for="colFormLabel" class="col-sm-3 col-form-label">Họ tên</label>
+                              <div class="col-sm-9">
+                                  <input type="email" class="form-control" id="colFormLabel" placeholder="Nhập họ tên">
                               </div>
-                            </div>
-                          
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                          <span class="sum">Tổng số tiền</span>
-                          <span class="text-sum">83,950,000₫</span>
-                          
-                        </li>    
-                    </ul>
-                  </div>
-              </div>
-              <div class="card-tt col-lg-6 col-12 mb-5" style="padding-left: 10px;">
-                  <div class="box-cart p-5">
-                      <h3 class="mb-3">Thông tin khách hàng</h3>
-                        <div class="d-flex flex-row ">
-                          <div class="col-12 ">
-                            <div class="d-flex flex-column">
-                                <div class="col-md-12 mb-2">
-                                    <label for="validationCustom01" class="form-label">Họ và tên</label>
-                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Họ tên" required="">
-                                    <div class="invalid-feedback">
-                                        Vui lòng điền số điện thoại của bạn
-                                    </div>
-                                  </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationCustom02" class="form-label">Số điện thoại</label>
-                                <input type="text" class="form-control" id="validationCustom02" placeholder="Vui lòng điền số điện thoại của bạn" required="">
-                                <div class="invalid-feedback">
-                                    Vui lòng điền số điện thoại của bạn
-                                </div>
-                              </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationCustom03" class="form-label">Địa chỉ nhận hàng</label>
-                                <input type="text" class="form-control" id="validationCustom03" placeholder="Vui lòng nhập địa chỉ của bạn" required="">
-                                <div class="invalid-feedback">
-                                    Vui lòng nhập địa chỉ của bạn
-                                </div>
-                              </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationDefault04" class="form-label">Tỉnh/Thành phố</label>
-                                <select class="form-select" id="validationDefault04" required="">
-                                  <option selected="" disabled="" value="" class="text">Vui lòng chọn tỉnh/thành phố</option>
-                                  <option>Hà Nội</option>
-                                  <option>Hồ Chí Minh</option>
-                                  <option>Đà nẵng</option>
-                                </select>
-                                <div id="validationServer04Feedback" class="invalid-feedback">
-                                Vui lòng chọn tỉnh/thành phố
-                                </div>
-                              </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationDefault05" class="form-label">Quận/Huyện</label>
-                                <select class="form-select" id="validationDefault05" required="">
-                                  <option selected="" disabled="" value="" class="text">Vui lòng chọn quận/huyện</option>
-                                  <option>Huyện Ba Vì</option>
-                                  <option>Huyện Thanh Oai</option>
-                                  <option>Huyện Đông Anh</option>
-                                  <option>Quận Ba Đình</option>
-                                  <option>Quận Hoàn Kiếm</option>
-                                  <option>Quận Hoàng mai</option>
-                                </select>
-                                <div id="validationServer05Feedback" class="invalid-feedback">
-                                Vui lòng chọn quận/huyện
-                                </div>
-                              </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationDefault06" class="form-label">Phường/Xã</label>
-                                <select class="form-select" id="validationDefault06" required="">
-                                  <option selected="" disabled="" value="" class="text">Vui lòng chọn phường/xã</option>
-                                  <option>Phường Chương Dương</option>
-                                  <option>Phường Cửa Nam</option>
-                                  <option>Phường Cửa Đông</option>
-                                  <option>Phường Hàng Bạc</option>
-                                  <option>Phường Hàng Bài</option>
-                                </select>
-                                <div id="validationServer06Feedback" class="invalid-feedback">
-                                Vui lòng chọn phường/xã
-                                </div>
-                              </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationDefault06" class="form-label">Tùy chọn giao hàng</label>
-                                <div class="d-flex flex-row flex-wrap">
-                                    <div class="form-check-1 form-check-ship d-flex">
-                                        <input type="radio" class="form-check-input" id="validationFormCheck1" name="radio-stacked" required="">
-                                        <div class="d-flex flex-column">
-                                            <label class="form-check-label" for="validationFormCheck1">15.000 ₫</label>
-                                            <label class="form-check-label" for="validationFormCheck1">Giao hàng tiết kiệm</label>
-                                        </div>
-                                        
-                                        
-                                      </div>
-                                      <div class="form-check-1 form-check-ship d-flex" style="margin-bottom: unset !important;">
-                                        <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required="">
-                                        <div class="d-flex flex-column">
-                                            <label class="form-check-label" for="validationFormCheck2">30.000 ₫</label>
-                                            <label class="form-check-label" for="validationFormCheck2">Giao hàng nhanh</label>
-                                        </div>
-                                        
-                                      </div>
-                                      <div class="invalid-feedback">Vui lòng chọn phương thức giao hàng</div>
-                                </div>
-                              </div>
-                              <div class="col-12 mb-2">
-                                <label for="validationDefault06" class="form-label">Chọn hình thức thanh toán</label>
-                                <div class="form-check-2">
-                                    <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked-1" required="">
-                                    <label class="form-check-label" for="validationFormCheck3">Trả tiền mặt khi nhận hàng</label>
-                                  </div>
-                                  <div class="form-check-2">
-                                    <input type="radio" class="form-check-input" id="validationFormCheck4" name="radio-stacked-1" required="">
-                                    <label class="form-check-label" for="validationFormCheck4">Chuyển khoản</label>
-                                  </div>
-                                
-                              </div>
-                              <div class="dathang col-12">
-                                <button class="btn2" style="padding: 5px 30px; border-radius: 5px; margin-top: 10px;" type="submit">
-                                  Đặt hàng
-                                </button>
-                              </div>
-                            </div>
                           </div>
-                        </div>          
+
+                          <div class="form-group row">
+                              <label for="colFormLabel" class="col-sm-3 col-form-label">Điện thoại</label>
+                              <div class="col-sm-9">
+                                  <input type="number" class="form-control" id="colFormLabel" placeholder="Nhập số điện thoại">
+                              </div>
+                          </div>
+
+                          <div class="form-group row">
+                              <label for="colFormLabel" class="col-sm-3 col-form-label">Tỉnh/Thành phố</label>
+                              <div class="col-sm-9">
+                                  <select name="address" id="" class="form-control">
+                                      <option value="">Chọn Tỉnh/Thành Phố</option>
+                                      <option value="">Hà Nội</option>
+                                      <option value="">Ninh Bình</option>
+                                      <option value="">Hải Phòng</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="colFormLabel" class="col-sm-3 col-form-label">Quận/Huyện</label>
+                              <div class="col-sm-9">
+                                  <select name="address" id="" class="form-control">
+                                    <option value="">Chọn Quận/Huyện</option>
+                                      <option value="">Hoàng Mai</option>
+                                      <option value="">Cầu Giấy</option>
+                                      <option value="">Long Biên</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <label for="colFormLabel" class="col-sm-3 col-form-label">Địa chỉ</label>
+                              <div class="col-sm-9">
+                                  <textarea name="address" id="" class="form-control" cols="30" rows="4" placeholder="Ghi rõ địa chỉ nhận hàng"></textarea>
+                              </div>
+                          </div>
+                      </form>
+
                   </div>
+                  
+                  <h2 class="order-title">2. Phương Thức Giao Hàng</h2>
+                  <div class="infor-order-area select-option-pay">
+
+                      <label class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="cash" value="option1" checked="">
+                          <p class="form-check-label" for="exampleRadios1">
+                              Thanh toán tiền mặt khi nhận hàng
+                          </p>
+                      </label>
+                      <label class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="interBank" value="option2">
+                          <p class="form-check-label" for="exampleRadios2">
+                              Thanh toán qua chuyển khoản
+                          </p>
+                      </label>
+                      <div class="inter-bank-infor" id="interBankInfor">
+                          <p class="mb-2"><b>Chủ tài Khoản: Đoàn Minh Đạt</b></p>
+                          <p class="mb-2"><b>Số tài Khoản: 0571306754939</b></p>
+                          <p class="mb-2"><b>Ngân hàng Vietcombank chi nhánh Hà Nội</b></p>
+                          <p class="mb-1">Nội dung: Thanh toán hóa đơn mua hàng [ họ tên ] -- [ SĐT ]</p>
+                      </div>
+                      <label class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="visa" value="option2">
+                          <p class="form-check-label" for="exampleRadios2">
+                              Thanh toán bằng thẻ quốc tế VISA, MASTER
+                          </p>
+                      </label>
+                      <div class="inter-bank-infor" id="visaCardBox">
+                          <div class="card-infor" id="cardVisaInfor">
+                              <div class="font-site" id="fontSite">
+                                  <div class="mastercard-img"><img src="./picture-banner/card.jpg" alt=""> </div>
+                                  <div class="number-card">
+                                      <p id="detailNumber">•••• •••• •••• ••••</p>
+                                  </div>
+                                  <div class="day">
+
+                                      <div class="name-owner name" id="owerName">Tên Chủ Thẻ</div>
+                                      <div class="date-card">
+                                          <p>Hiệu lực đến</p>
+                                          <p id="time"><span id="day">••</span>/<span id="month">••</span></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="back-site active-display" id="backSite">
+                                  <div class="black-space"></div>
+                                  <div class="signature">
+                                      <div class="private-number" id="privateNumber"></div>
+                                  </div>
+                              </div>
+
+                          </div>
+                          <div class="">
+                              <form>
+                                  <div class="form-group">
+                                      <label for="numberCard" class="">Số Thẻ:</label>
+                                      <input autocomplete="off" type="number" id="numberCard" class="form-control" maxlength="16" placeholder="VD: 0451000454383" required="" minlength="1">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="name" class="col-form-label">Tên in trên thẻ:</label>
+                                      <input type="text" class="form-control" id="name" style="text-transform: uppercase;" autocomplete="off" required="" placeholder="VD: NGUYEN VAN A">
+                                  </div>
+                                  <div class="">
+                                      <label for="">Ngày hết hạn</label>
+                                      <div class="group-input">
+                                          <input type="text" id="inputDay" class="form-control" placeholder="Ngày" required="" autocomplete="off" maxlength="2">
+                                          <span>/</span>
+                                          <input type="text" id="inputMonth" class="form-control" placeholder="Tháng" required="" autocomplete="off" maxlength="2">
+
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="name" class="col-form-label">Mã Bảo Mật:</label>
+                                      <input type="text" id="inputPrivateNumber" class="form-control" style="width:5rem" required="" placeholder="VD:123" autocomplete="off">
+                                  </div>
+                                  <div class="text-center">
+
+                                      <button class="btn btn-success" style="border-radius: 5px;">Xác Nhận</button>
+                                  </div>
+                              </form>
+                          </div>
+
+                      </div>
+
+                  </div>
+
+
               </div>
-            </div></form>
-        </div>
-      </section>
+              <div class="col-lg-5 col-md-12">
+                  <div class="infor-bill-area">
+                      <div class="infor-bill-flex infor-bill-item">
+                          <span>Đơn hàng (3 sản phẩm)</span>
+                          <a href="gio-hang.html" style="color: #0d6efd; font-weight: 500;">Sửa</a>
+                      </div>
+                      <div class="infor-bill-item ">
+                          <div class="order-product-item infor-bill-flex">
+                            <span>Macbook Air 13-inch M1</span>
+                              <span>x1</span> 
+                              <span class="color-red">24.950.000₫</span>
+                          </div>
+                          <div class="order-product-item infor-bill-flex">
+                            <span>Laptop Dell Latitude 3520</span>
+                              <span>x1</span>
+                              
+                              <span class="color-red">19.550.000₫</span>
+                          </div>
+                          <div class="order-product-item infor-bill-flex">
+                            <span>iphone 13 Pro Max</span>
+                              <span>x1</span> 
+                              <span class="color-red">29.950.000₫</span>
+                          </div>
+                      </div>
+                      
+                      <div class="infor-bill-item">
+                          <div class="infor-bill-flex">
+                              <span>Tạm Tính</span>
+                              <span class="color-red">74.450.000₫</span>
+                          </div>
+                          <div class="infor-bill-flex">
+                            <span>Khuyến Mãi</span>
+                            <span class="color-red">0₫</span>
+                        </div>
+                          <div class="infor-bill-flex">
+                              <span>Phí Vận Chuyển</span>
+                              <span class="color-red">0đ</span>
+                          </div>
+                      </div>
+                      <div class="infor-bill-flex infor-bill-item total-price-bill">
+                          <span>Thành Tiền</span>
+                          <span>74.450.000₫</span>
+                      </div>
+                  </div>
+                  <div class="btn-order" style="padding:0;">
+                    <a href="" data-toggle="modal" data-target="#confirmOrder">Đặt Mua</a>
+                </div>
+              </div>
+              
+          </div>
+      </div>
+      
+  </main>
 
       <footer>
         <div class="footer1 text-center">
@@ -343,12 +417,8 @@
       <div class="scroll" id="backtop"><i class="fas fa-arrow-up" style="color: white;"></i></div>
 
       <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="order.js"></script>
     <script src="script.js"></script>
-    <script src="addcart.js"></script>
 </body>
 </html>

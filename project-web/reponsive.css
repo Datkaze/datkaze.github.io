@@ -5,6 +5,13 @@
     }
 }
 @media(max-width:992px){
+    .infor-bill-area{
+        margin-top: 1.5rem;
+
+    }
+    .card-infor{
+        width: 60%;
+    }
     .container-fluid{
         margin: unset;
     }
@@ -27,6 +34,8 @@
      .dropdown-menu{
          margin: 10px 0 0 0 !important;
      }
+     /* giỏ hàng */
+
      /* tin tức */
      .posts{
          margin-top: 10px;
@@ -39,6 +48,17 @@
      .product-details-button-reponsive{
          justify-content: center;
      }
+}
+@media(min-width:768px){
+    .card-infor{
+        width: 85%;
+    }
+    .btn-delete-md{
+        display: block;
+    }
+    .btn-delete-sm{
+        display: none;
+    }
 }
 
 @media(max-width:768px){
@@ -57,15 +77,17 @@
         width: 20%;
     }
     /* giỏ hàng */
-    .cart-product{
+    .product-price{
+        margin-bottom: .5rem;
+    }
+    .cart-product-content{
+        flex-wrap: wrap;
+    }
+    .btn-delete-md{
         display: none;
     }
-    .cart-buy-gh{
-        padding: 10px 20px;
-    }
-    .cart-operation-title-1 {
-        flex: 0 0 auto;
-        width: 100%;
+    .btn-delete-sm{
+        display: block;
     }
     /* tin tức */
     .para-tt{
@@ -74,6 +96,16 @@
     /* thanh toán */
     .dathang{
         text-align: center;
+    }
+}
+
+@media(max-width: 640px){
+    /* giỏ hàng */
+    .product-price{
+        margin-top: 0px !important;
+    }
+    .buttons-added{
+        margin-top: unset !important;
     }
 }
 
@@ -99,10 +131,6 @@
     }
     .footer2{
         padding: 10px 50px 30px 50px;
-    }
-    /* giỏ hàng */
-    .cart{
-        display: none !important;
     }
     
     /* tin tức */

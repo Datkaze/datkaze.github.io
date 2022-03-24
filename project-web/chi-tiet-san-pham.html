@@ -179,11 +179,11 @@
                     <div class="product-details-number mt-3">
                       <div class="d-flex  align-items-center">
                         <span class=" col-3 col-sm-2 product-details-color-title">Số lượng :</span>
-                        <div class="buttons-added">
-                          <input class="miu is-form" type="button" value="-">
-                          <input aria-label="quantity" class="input-qty" max="99" min="1" value="1">
-                          <input class="plus is-form" type="button" value="+">
-                        </div>
+                        <div class="product-quantity quantity-md" style="margin: unset;">
+                          <button class="btn-minus">-</button>
+                          <input class="inputQuanlity" type="text" value="1">
+                          <button class="btn-plus">+</button>
+                      </div>
                       </div>
                       </div>
                       <div class="product-details-promotion mt-3">
@@ -211,7 +211,7 @@
                         </div>
                         <div class="product-details-button mt-3">
                           <div class="product-details-button-reponsive d-flex flex-row align-items-center">
-                            <button class="addCart" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0" style="padding: 5px 20px; border-radius: 5px">Thêm vào giỏ</button>
+                            <button class="addCart" onclick="addToCart()" tabindex="0" style="padding: 5px 20px; border-radius: 5px">Thêm vào giỏ</button>
                             <a class="btn2" style="padding: 5px 30px; border-radius: 5px; margin-left: 15px;" href="gio-hang.html">Mua Ngay</a>              
                           </div>
                           </div>
@@ -219,7 +219,7 @@
                 </div>
         </div>
         <div class="product-intro">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item-ctsp" role="presentation">
                   <button class="nav-link-ctsp active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Miêu tả</button>
                 </li>
@@ -324,11 +324,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   iphone 12 128GB
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">18.950.000 ₫</p>
                 <p class="para2">22.000.000 ₫</p>
               </div>
@@ -346,7 +346,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>
@@ -362,11 +362,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   Oppo A9 8GB/128GB
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">4,950,000 ₫</p>
                 <p class="para2">6,000,000 ₫</p>
               </div>
@@ -384,7 +384,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>
@@ -399,11 +399,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   Xiaomi Mi 11 Lite
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">7.950.000 ₫</p>
                 <p class="para2">10,000,000 ₫</p>
               </div>
@@ -421,7 +421,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>
@@ -437,11 +437,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   Realme C3i 2GB/32GB
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">1,950,000 ₫</p>
                 <p class="para2">2,500,000 ₫</p>
               </div>
@@ -459,7 +459,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>
@@ -474,11 +474,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   Samsung Galaxy M12
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">3.450.000 ₫</p>
                 <p class="para2">5,000,000 ₫</p>
               </div>
@@ -496,7 +496,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>
@@ -511,11 +511,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   Realme GT Neo 2
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">8.550.000 ₫</p>
                 <p class="para2">10,000,000 ₫</p>
               </div>
@@ -533,7 +533,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>
@@ -548,11 +548,11 @@
                 />
                 </div>
               </a>
-              <div class="card-body">
-                <p class="card-text">
+              <div class="card-body-set">
+                <p class="card-text-set">
                   Oppo E9 Price
                 </p>
-                <div>
+                <div class="d-flex justify-content-center mb-2">
                 <p class="para1">6.550.000 ₫</p>
                 <p class="para2">8,000,000 ₫</p>
               </div>
@@ -570,7 +570,7 @@
               </div>
               </div>
               <div class="d-flex text-center"> 
-                <button class="addCart col-6" onclick="addToCart('dt1','Oppo A9 8GB/128GB', 10,4950000, './picture-section-1/item29.png')" tabindex="0">Thêm vào giỏ</button>
+                <button class="addCart col-6" onclick="addToCart()" tabindex="0">Thêm vào giỏ</button>
                     <a class="btn2 col-6" href="chi-tiet-san-pham.html">Mua Ngay</a>
             </div> 
           </div>

@@ -91,57 +91,112 @@
         </div>
     </section>
 
-    <section class="container">
-    <div class="cart">
-      
-        <table class="table">
-          <thead>
-              <tr class="text-center">
-               <th>Sản Phẩm</th>
-               <th>Giá gốc</th>
-               <th>Giảm giá</th>
-               <th>Số lượng</th>
-               <th>Tạm tính</th>
-              </tr>
-          </thead>
-          <tbody class="tbody text-center"></tbody>
-      </table>
-  
-    </div>
-    </section>
-
-
-    <section class="container">
-          <div class="cart-buy-gh mb-5">
-            <div class="d-flex flex-row flex-wrap justify-content-between align-items-center flex-auto">
-              <div class="cart-product  col-sm-3 col-4  ">
-               
-               <div class="d-flex flex-row align-items-center cart-product-text">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecke">
-                  <label class="form-check-label pl-1" for="flexCheckChecke">
-                    Chọn tất cả
-                  </label>
-                </div>           
-               </div>
+    
+  <section class="container mb-5">
+    <div class="row">
+      <div class=" col-lg-8 col-md-12">
+          <div class="product-list">
+              <div class="empty-cart">
+                  <div class="empty-img"><img src="./picture-banner/cart.jpg" alt=""></div>
+                  <p>Giỏ hàng của bạn trống</p>
               </div>
-                 <div class="cart-operation-title-1  text-center">
-                  <div class="d-flex flex-row align-items-center justify-content-between">
-                    <div class="tt d-flex flex-row">
-                      <div class="total-title ">
-                        Tổng thanh toán: 
+              <div class="card-product-item">
+                  <a href="chi-tiet-san-pham.html" class="product-img">
+                      <img src="./picture-section-1/item1.png" alt="">
+                  </a>
+                  <div class="cart-product-content">
+                      <div class="infor-product-area">
+                          <a href="chi-tiet-san-pham.html" class="name-product">Macbook Air 13-inch M1</a>
+                          <p>Màu Sắc: Đen</p>
+
+                          <i class="btn-delete btn-delete-md fas fa-trash-alt"></i>
                       </div>
-                      <div class="total-number">0₫</div>
+                      <div class="product-price">
+                          <span id="price">24.950.000</span>₫
+                      </div>
+                      <div class="product-quantity quantity-md">
+                        <button class="btn-minus">-</button>
+                        <input class="inputQuanlity" type="text" value="1">
+                        <button class="btn-plus">+</button>
                     </div>
-                    <div>
-                      
-                    </div>
-                    <a href="thanh-toan.html" role="button" class="btn2" style="background: #ED3131; padding: 5px 25px; border-radius: 5px;"> Mua </a>
+                      <div class="w-100 btn-delete btn-delete-sm"><i class="btn-delete fas fa-trash-alt"></i></div>
                   </div>
-                 </div>
-            </div>
-          </div>    
-    </section>
+
+              </div>
+              <div class="card-product-item">
+                  <a href="chi-tiet-san-pham.html" class="product-img">
+                      <img src="./picture-section-1/item40.png" alt="">
+                  </a>
+                  <div class="cart-product-content">
+                      <div class="infor-product-area">
+                          <a href="chi-tiet-san-pham.html" class="name-product">Laptop Dell Latitude 3520</a>
+                          <p>Màu Sắc: Đen</p>
+                        
+                          <i class="btn-delete btn-delete-md fas fa-trash-alt"></i>
+                      </div>
+                      <div class="product-price">
+                          <span id="price">19.550.000</span>₫
+                      </div>
+                      <div class="product-quantity quantity-md">
+                        <button class="btn-minus">-</button>
+                        <input class="inputQuanlity" type="text" value="1">
+                        <button class="btn-plus">+</button>
+                    </div>
+                      <div class="w-100 btn-delete btn-delete-sm"><i class="btn-delete fas fa-trash-alt"></i></div>
+                  </div>
+
+              </div>
+              <div class="card-product-item">
+                  <a href="chi-tiet-san-pham.html" class="product-img">
+                      <img src="./picture-section-1/item27.png" alt="">
+                  </a>
+                  <div class="cart-product-content">
+                      <div class="infor-product-area">
+                          <a href="chi-tiet-san-pham.html" class="name-product">iphone 13 Pro Max</a>
+                          <p>Màu Sắc: Trắng</p>
+                          
+                          <i class="btn-delete btn-delete-md fas fa-trash-alt"></i>
+                      </div>
+                      <div class="product-price">
+                          <span id="price">29.950.000</span>₫
+                      </div>
+                      <div class="product-quantity quantity-md">
+                        <button class="btn-minus">-</button>
+                        <input class="inputQuanlity" type="text" value="1">
+                        <button class="btn-plus">+</button>
+                    </div>
+                      <div class="w-100 btn-delete btn-delete-sm"><i class="btn-delete fas fa-trash-alt"></i></div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+          <div class="card-voucher-area">
+              <h4 class="card-title-voucher">Mã Giảm Giá</h4>
+              <input type="text" class="form-control" placeholder="Nhập mã giảm giá">
+              <button class="btn-apply-voucher">Áp Dụng</button>
+          </div>
+          <div class="cart-total-price-area">
+              <div class="price-item">
+                  <span class="title-price">Tạm Tính</span>
+                  <span class="price" id="preTotal" style="color: #dc3b3b;">0 ₫</span>
+              </div>
+              <div class="price-item">
+                  <span class="title-price">Khuyến Mãi</span>
+                  <span class="price" style="color: #dc3b3b;">0 ₫</span>
+              </div>
+              <div class="price-item">
+                  <span class="title-price">Thành Tiền</span>
+                  <span class="total-price" id="totalCard">0 ₫</span>
+              </div>
+          </div>
+          <div>
+              <a href="thanh-toan.html" class="btn-order">Thanh Toán</a>
+          </div>
+      </div>
+  </div>
+  </section>
 
     <footer>
       <div class="footer1 text-center">
