@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.heart{
+    display: flex;
+    justify-content: center;
+    animation: heart 1s infinite;
+}
+.heart img{
+  max-width: 200px;
+}
+
+
+@keyframes heart{
+   0%{
+       transform: scale(0.5)
+   }
+   100%{
+       transform: scale(1)
+   }
+}
