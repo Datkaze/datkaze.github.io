@@ -28,7 +28,7 @@
   .pointer.second {
     height: 180px;
     width: 3px;
-    background-color: green;
+    background-color: yellow;
     z-index: 10;
   }
   
