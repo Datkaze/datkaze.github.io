@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f5f8;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    background-color: #2680c0;
+    padding: 1.25rem 2rem;
+}
+
+.h1-head{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.total-number{
+    position: absolute;
+    top: 10px;
+    margin-left: 16px;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    background: #85c6f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.amount-container {
+    position: absolute;
+    top: -0.85rem;
+    right: -0.85rem;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    background: #85c6f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-ct{
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-ct h1, i{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+i{
+    font-size: 25px;
+}
+
+.cart-item {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.cart-item img{
+    width: 5rem;
+}
+
+.cart-item h4{
+    font-weight: 500;
+    font-size: 21px;
+}
+
+.price{
+    color: #617d98;
+    font-weight: 500;
+}
+
+.number{
+    margin: 3px 5px 0;
+}
+
+.btn{
+    padding: 3px 10px;
+    cursor: pointer;
+    background-color: #77c7e1;
+    border: #77c7e1;
+}
+
+.btn:hover{
+    background-color: #56bddf;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.cart-total h4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 21px;
+    padding-top: 20px;
+    border-top: 2px solid gray;
+}
+
+.remove-btn{
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    margin-top: 0.375rem;
+}
+
+.cart{
+    margin: 40px auto;
+    max-width: 50rem;
+    width: 90vw;
+}
+
+.cart footer{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.clear-btn{
+    transition: all .3s linear;
+    cursor: pointer;
+    font-size: .875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bb2525;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border: 1px solid #bb2525;
+    margin-top: 2.25rem;
+    border-radius: 0.25rem;
+}
+.clear-btn:hover {
+    background: #e66b6b;
+    border-color: #e66b6b;
+}
+
