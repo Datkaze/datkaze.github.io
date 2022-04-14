@@ -1,34 +1,14 @@
-// const { useState } = React;
-
-// const App = () =>{
-//     const clicked = (e, id) =>{
-//         console.log("Clicked!");
-//         console.log(e);
-//         console.log(id);
-//     };
-
-//     return(
-//         <div>
-//             <h1 onClick={() => clicked (1)}>Hello</h1>
-//             <h1 onClick={() => clicked (1)}>Hello</h1>
-//             <h1 onClick={(e) => clicked (e, 3)}>Hello</h1>
-//         </div>
-//     );
-// };
-
-// ReactDOM.render(<App/>, document.getElementById("app"));
-
 
 const { useState } = React;
 
 const TodoItem = ({ id, title, onClick}) => {
    const handleClick = () =>{
-       if (confirm("Delete this task?")) onClick(id);
+       onClick(id);
    }
    return(
     <li className="todo-item">
-        {title}
-        <button onClick={handleClick}>Delete</button>
+        <p>{title}</p>
+        <button className="btn-delete" onClick={handleClick}><i class="fas fa-trash-alt"></i></button>
     </li>
     );
 };
@@ -56,19 +36,20 @@ const TodoForm = ({ onSubmit }) => {
 
 const TodoSumary = ({pending, onClick}) => {
     const handleClick = () => {
-        if(confirm("Delete all tasks?")) onClick();
+        onClick();
     };
     if (pending > 0) {
         return(
             <div className="todo-sumary">
-                You have {pending} pending 
+               <p>You have <strong>{pending}</strong> pending </p>    
                 <button onClick={handleClick}>Clear All</button>
             </div> 
         );
     }else{
         return(
             <div className="todo-sumary">
-                All done
+                <p>You have <strong>{pending}</strong> pending </p>   
+                <button onClick={handleClick}>Clear All</button>
             </div>
         )
     }
@@ -76,14 +57,7 @@ const TodoSumary = ({pending, onClick}) => {
 
 const TodoApp = () =>{
     const[tasks, setTasks] = useState([
-        {
-            id: Math.random(),
-            title: "Buy a new gaming laptop",
-        },
-        {
-            id: Math.random(),
-            title: "Complete previous homework",
-        },
+        
     ]);
      
     const handleSubmit = (e) => {
