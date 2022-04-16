@@ -75,7 +75,7 @@ li, ul{
 }
 .cart-shop{
     color: white;
-    padding: 0 20px 0 30px;
+    padding-right: 15px;
     font-size: 18px;
 }
 .nav-link, .nav-item, .nav-item-tc{
@@ -125,6 +125,13 @@ header{
 }
 .nav-item-tc:hover .dropdown-menu{
     display: block;
+}
+.icon-user{
+    color: white;
+    margin: 0 12px 0 20px;
+    font-size: 18px;
+    border: none;
+    background: transparent;
 }
 .dropdown-item{
     padding: 13px 20px;
@@ -538,8 +545,9 @@ p{
     margin-bottom: 1px;
 }
 .fa-check-circle {
-    color: #48bb78;
+    color: #1fdd1f;
     margin-left: 10px;
+    margin-right: 5px;
 }
 .product-details-promotion-content-text{
     padding-left: 10px;
@@ -1407,4 +1415,101 @@ footer a:hover{
 }
 .nav-item-ctsp{
     margin: 0 10px;
+}
+
+/* -----------------------------------Login modal--------------------------------------- */
+#username-error, #password-error, #confirm-error, #username-error-re, #password-error-re, #confirm-error-re{
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+#dntc, #dntc1{
+    display: none;
+    text-align: center;
+    font-size: 21px;
+    color: #1fdd1f;
+}
+.modal-dialog{
+    margin: 6rem auto;
+}
+.error{
+    font-size: 16px;
+    margin-right: 5px;
+}
+label{
+    display: block;
+}
+.nav-pills{
+    display: flex;
+}
+.modal-inner{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon-lg{
+    position: absolute;
+    margin-top: 42px;
+    font-size: 21px;
+    margin-left: 10px;
+}
+.icon-eye{
+    position: absolute;
+    right: 60px;
+    font-size: 21px;
+    margin-top: -32px;
+}
+.nav-item-login{
+    width: 50%;
+}
+.nav-link-login{
+    background-color: white;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.nav-link-login.active{
+    background-color: #f17373;
+    color: white;
+}
+.nav-link-login:hover{
+    background-color: #e96868;
+    color: white;
+}
+.user-name, .pass, .again{
+    width: 100%;
+    padding:0px 40px;
+    height: 45px;
+}
+.user-name, .pass {
+    margin-top: 30px;
+}
+.again{
+    margin-top: 30px;
+}
+
+.login, .register-button{
+    width: 100%;
+    padding: 8px;
+    color: white;
+    background: #f17373;
+    border: none;
+    margin: 30px 0 10px 0;
+}
+.login:hover{
+    background-color: #f15555;
+}
+.register-button:hover{
+    background-color: #f15555;
+}
+.register-button{
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.oline img{
+    margin: 10px 8px 30px 8px;
+    width: 30px;
 }

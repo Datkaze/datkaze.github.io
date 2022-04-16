@@ -4,6 +4,13 @@
         padding: 8px 1%;
     }
 }
+
+@media (max-width:1015px) {
+    .nav-item-tc, .nav-item, .nav-link{
+        margin-left: unset !important;
+    }
+}
+
 @media(max-width:992px){
     .infor-bill-area{
         margin-top: 1.5rem;
@@ -25,16 +32,18 @@
         padding: 8px 5%;
      }
      /* trang chủ */
+     .nav-item-tc, .nav-item, .nav-link {
+        margin-left: 10px !important;
+    }
      .nav-item-tc1{
-         display: block;
-     }
-     .nav-item-tc{
-         display: none;
-     }
+        display: block;
+    }
+    .nav-item-tc{
+        display: none;
+    }
      .dropdown-menu{
          margin: 10px 0 0 0 !important;
      }
-     /* giỏ hàng */
 
      /* tin tức */
      .posts{
