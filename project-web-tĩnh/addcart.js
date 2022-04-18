@@ -1,5 +1,5 @@
 // giỏ hàng
-let number = 4
+let number = 4;
 function addToCart(){
     document.querySelector('.buy-success').classList.remove('hide')
 
