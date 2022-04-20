@@ -98,7 +98,7 @@ header{
     z-index: 1000;
 }
 .navbar{
-    background: #D5262C !important;
+    background: #e74e54  !important;
     padding: unset;
 }
 .navbar-nav{
@@ -373,8 +373,9 @@ p{
 
 .btn-delete{
     display: inline-block;
-    margin-top: 6px;
-    font-size: 20px;
+    font-size: 23px;
+    width: 20px;
+    margin:6px 20px 0 20px;
     color: red;
     cursor: pointer;
 }

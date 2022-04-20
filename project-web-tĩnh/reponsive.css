@@ -121,6 +121,9 @@
     .buttons-added{
         margin-top: unset !important;
     }
+    .btn-delete{
+        margin: 0;
+    }
 }
 
 @media(max-width: 576px){

@@ -5,8 +5,6 @@ const passwordRe = document.getElementById("password-re");
 const confirm = document.getElementById("confirm-password-re");
 const showEye = document.getElementById("show-eye");
 const hideEye = document.getElementById("hide-eye");
-let showEye1 = document.getElementById("show-eye1");
-let hideEye1 = document.getElementById("hide-eye1");
 
 function showPassword() {
   if (password.type === "password") {
@@ -20,21 +18,6 @@ function hidePassword() {
     password.type = "password";
     hideEye.style.display = "none";
     showEye.style.display = "block";
-  }
-}
-
-function showPassword1() {
-  if (confirm.type === "password-re") {
-    confirm.type = "text";
-    hideEye1.style.display = "block";
-    showEye1.style.display = "none";
-  }
-}
-function hidePassword1() {
-  if (confirm.type === "text") {
-    confirm.type = "password-re";
-    hideEye1.style.display = "none";
-    showEye1.style.display = "block";
   }
 }
 
