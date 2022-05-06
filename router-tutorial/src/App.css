@@ -1,0 +1,17 @@
+.App {
+  text-align: center;
+}
+.wrap-logo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.img-logo img{
+  width: 150px;
+}
+nav a{
+  font-size: 18px;
+  margin-left: 12px;
+  text-decoration: none;
+  color: black;
+}
