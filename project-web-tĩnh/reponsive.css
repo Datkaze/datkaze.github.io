@@ -144,7 +144,11 @@
         margin-bottom: 20px !important;
     }
     .footer1 input{
-        width: 285px;
+        width: 300px;
+    }
+    .footer1 button{
+        width: 300px;
+        margin-top: 10px;
     }
     .footer2{
         padding: 10px 50px 30px 50px;
@@ -212,9 +216,6 @@
     }
     .section-2{
         padding: 0 35px;
-    }
-    .footer1 input{
-        width: 200px;
     }
     .footer2 h3{
         margin-top: 20px;
