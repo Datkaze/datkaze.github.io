@@ -1285,7 +1285,7 @@ img{
 
     /* footer*/
 .footer1{
-    background: url(./picture-banner/footer1.png);
+    background: url(./picture-banner/footer.png);
     padding: 30px 0;
 }
 .footer1 .h2-footer{
@@ -1319,7 +1319,7 @@ img{
     color: white;
 }
 .footer2{
-    background: url(./picture-banner/footer.png);
+    background:#262626;
     padding: 60px 100px;
     margin: unset;
 }

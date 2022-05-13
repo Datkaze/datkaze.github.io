@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Product from './Product'
 import Contact from './Contact'
 import Home from './Home'
+import News from './News'
 
 const RouterPages = () => {
   return (
