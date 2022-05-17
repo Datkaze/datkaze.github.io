@@ -5,7 +5,7 @@ import Contact from './Contact'
 import Home from './Home'
 import News from './News'
 
-const RouterPages = () => {
+const RouterPage = () => {
   return (
    <Routes>
        <Route path='/' element={<Home/>}/>
@@ -16,4 +16,4 @@ const RouterPages = () => {
   )
 }
 
-export default RouterPages
+export default RouterPage
