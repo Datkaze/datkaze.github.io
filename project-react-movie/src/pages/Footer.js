@@ -69,12 +69,12 @@ const Footer = () => {
                                 <ul className="footer-menu">
                                     <li className='mb-3'>
                                         <Link to="#">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/google-play.png?alt=media&token=38342860-9860-4f82-8915-c9eb871ec732" alt=""/>
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fgoogle-play.png?alt=media&token=a0547806-7fca-4e6e-b434-c20a138fba02" alt=""/>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link to="#">
-                                            <img src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/app-store.png?alt=media&token=9cfe3561-86a2-44a8-a8f0-afd8a0d15824" alt=""/>
+                                            <img src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fapp-store.png?alt=media&token=bfe722fb-687e-4531-81c9-4c92b714b7ab" alt=""/>
                                         </Link>
                                     </li>
                                 </ul>

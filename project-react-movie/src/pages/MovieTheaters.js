@@ -48,33 +48,34 @@ const MovieTheaters = () => {
           <div className="section-header">Phim Chiếu Rạp</div>
           <div className="row">
 
-              <div className="col-lg-2 col-md-3 col-sm-6">
-              <Link to="#" className="movie-item-mv ">
-                <img
-                  src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/cartoons%2Fdemon-slayer.png?alt=media&token=681e0d92-b9e1-4970-b595-ea19853ded11"
-                  alt=""
-                />
-                <div className="movie-item-content">
-                  <div className="movie-item-title">Demon Slayer</div>
-                  <div className="movie-infos">
-                    <div className="movie-info">
-                      <i className="bx bxs-star"></i>
-                      <span>9.5</span>
-                    </div>
-                    <div className="movie-info">
-                      <i className="bx bxs-time"></i>
-                      <span>120 mins</span>
-                    </div>
-                    <div className="movie-info">
-                      <span>HD</span>
-                    </div>
-                    <div className="movie-info">
-                      <span>16+</span>
-                    </div>
+          {movietheaterArray.map((data, i) => {
+        return (
+          <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
+            <Link to="#" className="movie-item-mv ">
+              <img src={data.image} alt="" />
+              <div className="movie-item-content">
+                <div className="movie-item-title">{data.nameMovie}</div>
+                <div className="movie-infos">
+                  <div className="movie-info">
+                    <i className="bx bxs-star"></i>
+                    <span>{data.point}</span>
+                  </div>
+                  <div className="movie-info">
+                    <i className="bx bxs-time"></i>
+                    <span>{data.time}</span>
+                  </div>
+                  <div className="movie-info">
+                    <span>HD</span>
+                  </div>
+                  <div className="movie-info">
+                    <span>16+</span>
                   </div>
                 </div>
-              </Link>
-              </div>  
+              </div>
+            </Link>
+          </div>
+        );
+      })}     
           </div>
         </div>
       </div>
