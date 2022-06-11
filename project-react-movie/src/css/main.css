@@ -270,7 +270,7 @@ a.movie-item:hover {
 }
 
 .item-content-title {
-  font-size: 5rem;
+  font-size: 50px;
   line-height: 5rem;
   font-weight: 900;
 }
@@ -278,7 +278,14 @@ a.movie-item:hover {
 .movie-infos {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  margin-top: calc(var(--space-top) / 2);
+}
+
+.movie-infos2 {
+  display: flex;
+  align-items: center;
   margin-top: calc(var(--space-top) / 2);
 }
 
@@ -437,9 +444,10 @@ a.movie-item:hover {
 
 .movie-item-title {
   color: var(--text-color);
-  font-size: 1.5rem;
+  font-size: 18px;
   position: relative;
   font-weight: 700;
+  text-align: center;
 }
 
 .section {
@@ -689,4 +697,78 @@ footer .content {
 .item-content-description{
   font-size: 16px;
 }
+}
+.para-detail {
+  margin-top: 15px;
+}
+.cast {
+  margin-top: 30px;
+}
+.setimg-movie img{
+    width: 250px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.button-movie1, .button-movie2{
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+.button-movie1{
+  background-color: #c0392b;
+  border: 2px solid #c0392b;
+  margin-right: 15px;
+}
+.button-movie2{
+  border: 2px solid white;
+  background-color: transparent;
+}
+.icon-right{
+  margin-right: 8px;
+}
+.cast-img{
+  display: flex;
+}
+.cast-img img{
+  margin: 0 10px;
+  border-radius: 8px;
+}
+.hero-sm img{
+  position: absolute;
+  opacity: 0.1;
+  width: 100%;
+}
+.product{
+  padding-top: 100px;
+  position: relative;
+}
+.review{
+  position: relative;
+}
+.trailer-title{
+  margin: 10px 0;
+  font-size: 30px;
+}
+.font-35{
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.container-review{
+  margin: 80px 15%;
+}
+
+.w-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.w-video {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  padding-top: 56.20608899297424%;
 }

@@ -50,7 +50,7 @@ const Anime = () => {
           {animeArray.map((data, i) => {
         return (
           <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
-            <Link to="#" className="movie-item-mv ">
+            <Link to="/detailmovie" className="movie-item-mv ">
               <img src={data.image} alt="" />
               <div className="movie-item-content">
                 <div className="movie-item-title">{data.nameMovie}</div>
@@ -63,12 +63,7 @@ const Anime = () => {
                     <i className="bx bxs-time"></i>
                     <span>{data.time}</span>
                   </div>
-                  <div className="movie-info">
-                    <span>HD</span>
-                  </div>
-                  <div className="movie-info">
-                    <span>16+</span>
-                  </div>
+                  
                 </div>
               </div>
             </Link>

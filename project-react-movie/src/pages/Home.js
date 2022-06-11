@@ -25,7 +25,7 @@ const Home = () => {
                       <div className="item-content-title top-down">
                       {data.nameMovie}
                       </div>
-                      <div className="movie-infos top-down delay-2">
+                      <div className="movie-infos2 top-down delay-2">
                         <div className="movie-info">
                           <i className="bx bxs-star"></i>
                           <span>{data.point}</span>
@@ -34,12 +34,7 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        <div className="movie-info">
-                          <span>HD</span>
-                        </div>
-                        <div className="movie-info">
-                          <span>16+</span>
-                        </div>
+                        
                       </div>
                       <div className="item-content-description top-down delay-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -49,7 +44,7 @@ const Home = () => {
                         suscipit.
                       </div>
                       <div className="item-action top-down delay-6">
-                        <Link to="#" className="btn btn-hover">
+                        <Link to="/detailmovie" className="btn btn-hover">
                           <i className="bx bxs-right-arrow"></i>
                           <span>Xem Ngay</span>
                         </Link>
@@ -82,12 +77,7 @@ const Home = () => {
                     <i className="bx bxs-time"></i>
                     <span>{data.time}</span>
                   </div>
-                  <div className="movie-info">
-                    <span>HD</span>
-                  </div>
-                  <div className="movie-info">
-                    <span>16+</span>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -105,12 +95,11 @@ const Home = () => {
               Xem Tất Cả
             </Link>
           </div>
-
           <div className="movies-slide carousel-nav-center owl-carousel">
             {movietheaterArray.map((data, i) => {
               return (
                 <div className="movie-item-mv" key={i}>
-                  <Link to="#">
+                  <Link to="/detailmovie">
                     <img src={data.image} alt="" />
                     <div className="movie-item-content">
                       <div className="movie-item-title">{data.nameMovie}</div>
@@ -123,12 +112,7 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        <div className="movie-info">
-                          <span>HD</span>
-                        </div>
-                        <div className="movie-info">
-                          <span>16+</span>
-                        </div>
+                        
                       </div>
                     </div>
                   </Link>
@@ -152,7 +136,7 @@ const Home = () => {
             {seriesmovieArray.map((data, i) => {
               return (
                 <div className="movie-item-mv" key={i}>
-                  <Link to="#">
+                  <Link to="/detailmovie">
                     <img src={data.image} alt="" />
                     <div className="movie-item-content">
                       <div className="movie-item-title">{data.nameMovie}</div>
@@ -165,12 +149,7 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        <div className="movie-info">
-                          <span>HD</span>
-                        </div>
-                        <div className="movie-info">
-                          <span>16+</span>
-                        </div>
+                        
                       </div>
                     </div>
                   </Link>
@@ -193,7 +172,7 @@ const Home = () => {
             {animeArray.map((data, i) => {
               return (
                 <div className="movie-item-mv" key={i}>
-                  <Link to="#">
+                  <Link to="/detailmovie">
                     <img src={data.image} alt="" />
                     <div className="movie-item-content">
                       <div className="movie-item-title">{data.nameMovie}</div>
@@ -206,12 +185,7 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        <div className="movie-info">
-                          <span>HD</span>
-                        </div>
-                        <div className="movie-info">
-                          <span>16+</span>
-                        </div>
+                        
                       </div>
                     </div>
                   </Link>
@@ -232,7 +206,7 @@ const Home = () => {
           <div className="hero-slide-item-content">
             <div className="item-content-wraper">
               <div className="item-content-title">Transformer</div>
-              <div className="movie-infos">
+              <div className="movie-infos2">
                 <div className="movie-info">
                   <i className="bx bxs-star"></i>
                   <span>9.5</span>
@@ -241,12 +215,7 @@ const Home = () => {
                   <i className="bx bxs-time"></i>
                   <span>130 mins</span>
                 </div>
-                <div className="movie-info">
-                  <span>HD</span>
-                </div>
-                <div className="movie-info">
-                  <span>16+</span>
-                </div>
+                
               </div>
               <div className="item-content-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
@@ -255,7 +224,7 @@ const Home = () => {
                 mollitia accusantium, facere ab suscipit.
               </div>
               <div className="item-action">
-                <Link to="#" className="btn btn-hover">
+                <Link to="/detailmovie" className="btn btn-hover">
                   <i className="bx bxs-right-arrow"></i>
                   <span>Xem Ngay</span>
                 </Link>
@@ -281,7 +250,7 @@ const Home = () => {
                     </div>
                     <div className="pricing-box-content">
                       <p className="set-para">Bản Gốc</p>
-                      <p className="set-para">Lên Kế Hoạch Bất Cứ Lúc Nào</p>
+                      <p className="set-para"><del>Download Phim </del></p>
                       <p className="set-para">
                         <del>65+ Kênh Trực Tiếp</del>
                       </p>
@@ -306,7 +275,7 @@ const Home = () => {
                     </div>
                     <div className="pricing-box-content">
                       <p className="set-para">Bản Gốc</p>
-                      <p className="set-para">Lên Kế Hoạch Bất Cứ Lúc Nào</p>
+                      <p className="set-para">Download Giới Hạn 5 Phim</p>
                       <p className="set-para">65+ Kênh Trực Tiếp</p>
                       <p className="set-para">
                         <del>Kênh Truyền Hình</del>
@@ -329,7 +298,7 @@ const Home = () => {
                     </div>
                     <div className="pricing-box-content">
                       <p className="set-para">Bản HD</p>
-                      <p className="set-para">Lên Kế Hoạch Bất Cứ Lúc Nào</p>
+                      <p className="set-para">Download Không Giới Hạn</p>
                       <p className="set-para">65+ Kênh Trực Tiếp</p>
                       <p className="set-para">Kênh Truyền Hình</p>
                     </div>
