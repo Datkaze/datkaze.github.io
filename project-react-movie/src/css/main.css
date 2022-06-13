@@ -323,7 +323,7 @@ a.movie-item:hover {
 }
 
 .carousel-nav-center .owl-nav button i {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .carousel-nav-center .owl-nav button {
@@ -398,6 +398,7 @@ a.movie-item:hover {
 
 .movie-item-mv{
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
 .movie-item img {
@@ -633,10 +634,6 @@ footer .content {
       position: relative;
   }
 
-  .hero-slide-item img {
-      height: 100%;
-  }
-
   .item-content-title {
       font-size: 3rem;
   }
@@ -725,6 +722,10 @@ footer .content {
   border: 2px solid white;
   background-color: transparent;
 }
+.button-movie2:hover{
+  background-color: #0477ff;
+  border: 2px solid #0477ff;
+}
 .icon-right{
   margin-right: 8px;
 }
@@ -748,15 +749,15 @@ footer .content {
   position: relative;
 }
 .trailer-title{
-  margin: 10px 0;
+  margin: 30px 0 10px 0;
   font-size: 30px;
 }
-.font-35{
+.font-size{
   font-size: 35px;
   margin-bottom: 25px;
 }
 .container-review{
-  margin: 80px 15%;
+  margin: 80px 20%;
 }
 
 .w-video iframe {
@@ -771,4 +772,7 @@ footer .content {
   position: relative;
   padding: 0;
   padding-top: 56.20608899297424%;
+}
+.padding-right{
+  padding-right: 5rem;
 }

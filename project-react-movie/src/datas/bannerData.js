@@ -2,21 +2,21 @@ export const heroSlideData = [
   {
     nameMovie: "Black Panther",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fblack-banner.png?alt=media&token=d1014415-b7a5-40e3-bd37-58f45f0d8eb5",
+      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fblack-banner.png?alt=media&token=e7f443ad-a6c1-4e4d-b647-42803a7912ca",
     point: 9.8,
     time: "120 phút",
   },
   {
     nameMovie: "Supergirl",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fsupergirl-banner.jpg?alt=media&token=9ba2b899-3990-4e6d-b858-45ef02ee4e76",
+      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fsupergirl-banner.png?alt=media&token=c07c5ff5-4a2c-4f64-ad80-75186419b829",
     point: 9.5,
     time: "60 phút/Tập",
   },
   {
     nameMovie: "Wanda Vision",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fwanda-banner.jpg?alt=media&token=9eb99d62-0a63-4c22-ad02-869bde13dc8f",
+      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fwanda-banner.png?alt=media&token=f6970607-8064-4013-b1b5-c1655f93173e",
     point: 9.7,
     time: "60 phút/Tập",
   },
@@ -85,5 +85,14 @@ export const imageCastData = [
   },
   {
     image: "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/cast%2Fcast5.png?alt=media&token=f1c0c272-b584-44cc-80cf-95a2b6c235c9"
+  },
+  {
+    image: "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/cast%2Fcast6.png?alt=media&token=5cb725eb-4d83-48a2-80cb-cf828cb0d740"
+  },
+  {
+    image: "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/cast%2Fcast7.png?alt=media&token=61694b30-e7b0-4b77-b18c-579275540779"
+  },
+  {
+    image: "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/cast%2Fcast8.png?alt=media&token=fdc3f79a-82d7-45af-b178-319e38167228"
   },
 ];

@@ -76,26 +76,24 @@
         }
     })
 
-//     $('.cast-img').owlCarousel({
-//     loop:true,
-//     margin:10,
-//     responsiveClass:true,
-//     responsive:{
-//         576:{
-//             items:1,
-//             nav:true
-//         },
-//         786:{
-//             items:3,
-//             nav:false
-//         },
-//         1600:{
-//             items:5,
-//             nav:true,
-//             loop:false
-//         }
-//     }
-// })
+    $('#top-movies-slide1').owlCarousel({
+        items: 3,
+        dots: false,
+        nav:true,
+        navText: navText,
+        margin: 10,
+        responsive: {
+            576: {
+                items: 3
+            },
+            786: {
+                items: 4
+            },
+            1600: {
+                items: 6
+            }
+        }
+    })
 
     $('.movies-slide').owlCarousel({
         items: 2,

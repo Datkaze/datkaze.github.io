@@ -6,6 +6,7 @@ import { seriesmovieArray } from "../datas/seriesmovieData";
 import { heroSlideData } from "../datas/bannerData";
 import { moviesSlideData } from "../datas/bannerData";
 
+
 const Home = () => {
   return (
     <React.Fragment>
@@ -199,7 +200,7 @@ const Home = () => {
       <div className="section">
         <div className="hero-slide-item">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Ftransformer-banner.jpg?alt=media&token=9029959c-ac7a-4276-a0fd-a80834edef70"
+            src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Ftransfomers-banner.png?alt=media&token=87b06b47-883e-4216-9c82-ef02d6ce8a27"
             alt=""
           />
           <div className="overlay"></div>

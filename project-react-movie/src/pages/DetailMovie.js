@@ -23,7 +23,7 @@ const DetailMovie = () => {
                 />
               </div>
             </div>
-            <div className="col-lg-8">
+            <div className="col-lg-8 padding-right">
               <div className="product-item">
                 <h1>Avengers: End Game</h1>
                 <div className="movie-infos2">
@@ -55,10 +55,16 @@ const DetailMovie = () => {
                 <div className="cast">
                   <h3>Diễn Viên</h3>
                   <div className="row">
-                    <div className="cast-img col-lg-2">
-                      {imageCastData.map((data, i) => {
-                        return <img src={data.image} alt="" />;
-                      })}
+                    <div className="top-movies-slide ">
+                      <div className="carousel-nav-center owl-carousel" id="top-movies-slide1">
+                        {imageCastData.map((data, i) => {
+                          return (
+                            <div className="movie-item-mv" key={i}>
+                              <img src={data.image} alt="" />
+                            </div>
+                          );
+                        })}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -70,7 +76,7 @@ const DetailMovie = () => {
       <div className="container-review review">
         <div className="review1">
           <h3 className="text-center">Người Sắt Lạc Vào Vũ Trụ</h3>
-          <p>
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
             possimus eius. Deserunt non odit, cum vero reprehenderit laudantium
             odio vitae autem quam, incidunt molestias ratione mollitia
@@ -82,7 +88,7 @@ const DetailMovie = () => {
               alt=""
             />
           </div>
-          <p>
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
             possimus eius. Deserunt non odit, cum vero reprehenderit laudantium
             odio vitae autem quam, incidunt molestias ratione mollitia
@@ -91,8 +97,8 @@ const DetailMovie = () => {
         </div>
 
         <div className="review1">
-          <h3 className="text-center">Phi Thuyền Thanos</h3>
-          <p>
+          <h3 className="text-center mt-4">Phi Thuyền Thanos</h3>
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
             possimus eius. Deserunt non odit, cum vero reprehenderit laudantium
             odio vitae autem quam, incidunt molestias ratione mollitia
@@ -104,7 +110,7 @@ const DetailMovie = () => {
               alt=""
             />
           </div>
-          <p>
+          <p className="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
             possimus eius. Deserunt non odit, cum vero reprehenderit laudantium
             odio vitae autem quam, incidunt molestias ratione mollitia
@@ -112,12 +118,11 @@ const DetailMovie = () => {
           </p>
         </div>
 
-         <div id="trailer" class="trailer-video-block">
+        <div id="trailer" class="trailer-video-block">
           <div class="trailer-title" id="trailer">
             Official trailer:
           </div>
           <div className="review-video w-video w-embed">
-            
             <iframe
               className="embedly-embed"
               rel="nofollow"
@@ -129,12 +134,12 @@ const DetailMovie = () => {
               scrolling="no"
             ></iframe>
           </div>
-        </div> 
+        </div>
       </div>
       <div className="section1">
-        <div className="container">
+        <div className="container padding">
           <div className="text-center">
-            <p className="font-35">Có Thể Bạn Cũng Muốn Xem</p>
+            <p className="font-size">Có Thể Bạn Cũng Muốn Xem</p>
           </div>
           <div className="movies-slide carousel-nav-center owl-carousel">
             {movietheaterArray.map((data, i) => {
@@ -153,7 +158,6 @@ const DetailMovie = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        
                       </div>
                     </div>
                   </Link>
