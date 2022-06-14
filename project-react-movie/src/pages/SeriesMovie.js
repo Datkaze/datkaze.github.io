@@ -5,7 +5,7 @@ import { seriesmovieArray } from "../datas/seriesmovieData";
 const SeriesMovie = () => {
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container set-padding">
         <div class="filter-bar">
           <div class="filter-dropdowns">
             <select name="genre" class="genre">

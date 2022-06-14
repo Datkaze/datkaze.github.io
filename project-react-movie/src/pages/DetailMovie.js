@@ -12,8 +12,9 @@ const DetailMovie = () => {
             src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Favenger-banner.png?alt=media&token=5fd59451-36e1-4568-8e77-5b8be1e94c87"
             alt=""
           />
+          <div className="overlay2"></div>
         </div>
-        <div className="container product">
+        <div className="container product ">
           <div className="row">
             <div className="col-lg-4">
               <div className="text-center setimg-movie">
@@ -56,7 +57,10 @@ const DetailMovie = () => {
                   <h3>Diễn Viên</h3>
                   <div className="row">
                     <div className="top-movies-slide ">
-                      <div className="carousel-nav-center owl-carousel" id="top-movies-slide1">
+                      <div
+                        className="carousel-nav-center owl-carousel"
+                        id="top-movies-slide1"
+                      >
                         {imageCastData.map((data, i) => {
                           return (
                             <div className="movie-item-mv" key={i}>

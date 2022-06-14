@@ -6,7 +6,7 @@
         padding: 0 30px;
     }
     .product{
-        padding: 100px 8% 0 8%;
+        padding: 120px 8% 0 8%;
     }
     .container-review{
         margin: 50px 10%;
@@ -14,11 +14,17 @@
     .padding{
         padding:0 10%;
     }
+    .form-control{
+        width: 500px;
+    }
 }
 
 @media (max-width: 768px){
     .container-review{
         margin: 60px 10%;
+    }
+    .form-control{
+        width: 300px;
     }
 }
 
@@ -32,6 +38,18 @@
     .font-size{
         font-size: 26px;
     }
+    .form-control{
+        width: 220px;
+    }
+    .btn-outline-success{
+        padding: 0 5px;
+    }
+    .hero-slide-item img{
+        height: 100%;
+    }
+    .set-btn, .section-header{
+        margin-bottom: 20px;
+      }
 }
 
 @media (max-width: 460px){
@@ -47,9 +65,6 @@
     .setimg-movie img{
         width: 180px;
     }
-    .product{
-        padding-top: 80px;
-    }
     .button-movie1, .button-movie2{
         padding: 8px 15px;
     }
@@ -62,4 +77,20 @@
     .font-size{
         font-size: 21px;
     }
+    .form-control{
+        width: 180px;
+    }
+    .btn-outline-success{
+        padding: 0 3px;
+        font-size: 18px;
+    }
+    .section {
+        padding-top: 30px;
+      }
+    .hero-section {
+        margin-bottom: 50px;
+      }
+      .set-btn, .section-header{
+        margin-bottom: 15px;
+      }
 }

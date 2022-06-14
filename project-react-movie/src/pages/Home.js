@@ -26,7 +26,7 @@ const Home = () => {
                       <div className="item-content-title top-down">
                       {data.nameMovie}
                       </div>
-                      <div className="movie-infos2 top-down delay-2">
+                      <div className="movie-infos3 top-down delay-2">
                         <div className="movie-info">
                           <i className="bx bxs-star"></i>
                           <span>{data.point}</span>
@@ -207,7 +207,7 @@ const Home = () => {
           <div className="hero-slide-item-content">
             <div className="item-content-wraper">
               <div className="item-content-title">Transformer</div>
-              <div className="movie-infos2">
+              <div className="movie-infos3">
                 <div className="movie-info">
                   <i className="bx bxs-star"></i>
                   <span>9.5</span>

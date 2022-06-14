@@ -6,7 +6,7 @@ import { animeArray } from "../datas/animeData";
 const Anime = () => {
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="container set-padding">
         <div class="filter-bar">
           <div class="filter-dropdowns">
             <select name="genre" class="genre">

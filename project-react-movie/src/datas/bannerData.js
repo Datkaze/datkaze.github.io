@@ -2,21 +2,21 @@ export const heroSlideData = [
   {
     nameMovie: "Black Panther",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fblack-banner.png?alt=media&token=e7f443ad-a6c1-4e4d-b647-42803a7912ca",
+      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fblack-banner.png?alt=media&token=0f10bbcd-244a-4746-a2f8-e71048531415",
     point: 9.8,
     time: "120 phút",
   },
   {
     nameMovie: "Supergirl",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fsupergirl-banner.png?alt=media&token=c07c5ff5-4a2c-4f64-ad80-75186419b829",
+      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fsupergilr-banner.png?alt=media&token=f04925fb-3447-4848-afc2-ecde62c2d50f",
     point: 9.5,
     time: "60 phút/Tập",
   },
   {
     nameMovie: "Wanda Vision",
     image:
-      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fwanda-banner.png?alt=media&token=f6970607-8064-4013-b1b5-c1655f93173e",
+      "https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Fwanda-banner.png?alt=media&token=a7db92e9-4eff-41e1-830e-dab6f6fc167c",
     point: 9.7,
     time: "60 phút/Tập",
   },

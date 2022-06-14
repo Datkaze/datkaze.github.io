@@ -73,13 +73,20 @@ img {
   margin: auto;
 }
 
-.overlay {
+.overlay, .overlay2{
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.overlay {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay2 {
+  background-image: linear-gradient(180deg, rgba(12, 39, 56, 0) 14%, #181616);
 }
 
 .nav-wrapper {
@@ -120,7 +127,6 @@ img {
 }
 
 .nav-menu a {
-  text-transform: uppercase;
   font-weight: 700;
 }
 
@@ -136,9 +142,8 @@ a.movie-item:hover {
 
 .btn {
   color: #ffffff;
-  padding: 0.25rem 1.5rem;
-  text-transform: uppercase;
   font-size: 1.25rem;
+  padding: 5px 15px;
   font-weight: 700;
   display: inline-flex;
   position: relative;
@@ -275,18 +280,15 @@ a.movie-item:hover {
   font-weight: 900;
 }
 
-.movie-infos {
+.movie-infos3, .movie-infos, .movie-infos2{
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   margin-top: calc(var(--space-top) / 2);
 }
 
-.movie-infos2 {
-  display: flex;
-  align-items: center;
-  margin-top: calc(var(--space-top) / 2);
+.movie-infos {
+  justify-content: center;
 }
 
 .movie-info {
@@ -452,7 +454,7 @@ a.movie-item:hover {
 }
 
 .section {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 .hero-section {
@@ -742,7 +744,7 @@ footer .content {
   width: 100%;
 }
 .product{
-  padding-top: 100px;
+  padding-top: 160px;
   position: relative;
 }
 .review{
@@ -774,5 +776,36 @@ footer .content {
   padding-top: 56.20608899297424%;
 }
 .padding-right{
-  padding-right: 5rem;
+  padding-right: 5%;
 }
+.fa-search{
+  margin: unset !important;
+}
+.container-fluid{
+  justify-content: center !important;
+}
+.btn-outline-success{
+  border-radius: 0 5px 5px 0;
+  background-color: #d1691f;
+  border-color: #d1691f;
+  padding: 0 10px;
+}
+.form-control{
+  width: 600px;
+  border-radius: 5px 0 0 5px;
+}
+
+.navbar{
+  margin:10px 0 10px 0;
+}
+
+.btn-outline-success:hover{
+  background-color: #d1691f;
+  border-color: #d1691f;
+}
+
+.hero-slide, .set-padding{
+  padding-top: 70px;
+}
+
+
