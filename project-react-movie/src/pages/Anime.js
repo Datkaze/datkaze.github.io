@@ -7,9 +7,9 @@ const Anime = () => {
   return (
     <React.Fragment>
       <div className="container set-padding">
-        <div class="filter-bar">
-          <div class="filter-dropdowns">
-            <select name="genre" class="genre">
+        <div className="filter-bar">
+          <div className="filter-dropdowns">
+            <select name="genre" className="genre">
               <option value="all genres">Tất Cả Thể Loại</option>
               <option value="action">Hành Động</option>
               <option value="adventure">Phưu Lưu</option>
@@ -18,7 +18,7 @@ const Anime = () => {
               <option value="biography">Tiểu Sử</option>
             </select>
 
-            <select name="year" class="year">
+            <select name="year" className="year">
               <option value="all years">Tất Cả Năm</option>
               <option value="2022">2022</option>
               <option value="2020-2021">2020-2021</option>
@@ -28,7 +28,7 @@ const Anime = () => {
             </select>
           </div>
 
-          <div class="filter-radios">
+          <div className="filter-radios d-flex">
             <input type="radio" name="grade" id="featured" />
             <label for="featured">Đặc Sắc</label>
 
@@ -38,7 +38,7 @@ const Anime = () => {
             <input type="radio" name="grade" id="newest" />
             <label for="newest">Mới Nhất</label>
 
-            <div class="checked-radio-bg"></div>
+            <div className="checked-radio-bg"></div>
           </div>
         </div>
       </div>

@@ -50,6 +50,39 @@
     .set-btn, .section-header{
         margin-bottom: 20px;
       }
+      .section-header{
+        font-size: 16px;
+        padding-left: 10px;
+      }
+      .item-content-wraper{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .set-btn{
+        font-size: 14px;
+      }
+      .pricing-box{
+        padding: 30px;
+      }
+      .pricing-price span {
+        font-size: 14px;
+    }
+    .pricing-name{
+      font-size: 21px;
+    }
+    .pricing-price{
+      font-size: 21px;
+    }
+    .set-para{
+      font-size: 18px;
+    }
+    .item-content-description{
+      font-size: 16px;
+    }
+    .modal-content{
+        width: 400px;
+        margin: auto;
+      }
 }
 
 @media (max-width: 460px){
@@ -93,4 +126,26 @@
       .set-btn, .section-header{
         margin-bottom: 15px;
       }
+      .trailer-title{
+        font-size: 25px;
+      }
+      .btn{
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+      .modal-content{
+        width: 330px;
+      }
+}
+
+@media (max-width: 370px){
+    a {
+        font-size: 14px;
+    }
+    .form-control{
+        width: 120px;
+    }
+    .btn{
+        padding: 5px 5px;
+    }
 }

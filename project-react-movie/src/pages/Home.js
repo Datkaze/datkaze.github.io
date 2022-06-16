@@ -15,7 +15,7 @@ const Home = () => {
           <div className="owl-carousel carousel-nav-center" id="hero-carousel">
             {heroSlideData.map((data, i) => {
               return (
-                <div className="hero-slide-item">
+                <div className="hero-slide-item" key={i}>
                   <img
                     src={data.image}
                     alt=""
@@ -62,7 +62,7 @@ const Home = () => {
           <div className="owl-carousel" id="top-movies-slide">
           {moviesSlideData.map((data, i) => {
               return (
-            <div className="movie-item">
+            <div className="movie-item" key={i}>
               <img
                 src={data.image}
                 alt=""

@@ -56,7 +56,6 @@ ul {
 
 a {
   text-decoration: none;
-  color: unset;
 }
 
 img {
@@ -177,6 +176,7 @@ a.movie-item:hover {
 
 .hamburger-menu {
   --size: 30px;
+  margin-left: 10px;
   height: var(--size);
   width: var(--size);
   cursor: pointer;
@@ -666,37 +666,6 @@ footer .content {
   }
 }
 
-@media (max-width: 568px) {
-  .section-header{
-    font-size: 16px;
-    padding-left: 10px;
-  }
-  .item-content-wraper{
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .set-btn{
-    font-size: 14px;
-  }
-  .pricing-box{
-    padding: 30px;
-  }
-  .pricing-price span {
-    font-size: 14px;
-}
-.pricing-name{
-  font-size: 21px;
-}
-.pricing-price{
-  font-size: 21px;
-}
-.set-para{
-  font-size: 18px;
-}
-.item-content-description{
-  font-size: 16px;
-}
-}
 .para-detail {
   margin-top: 15px;
 }
@@ -742,6 +711,7 @@ footer .content {
   position: absolute;
   opacity: 0.1;
   width: 100%;
+  padding-top: 70px;
 }
 .product{
   padding-top: 160px;
@@ -755,7 +725,7 @@ footer .content {
   font-size: 30px;
 }
 .font-size{
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 25px;
 }
 .container-review{
@@ -786,8 +756,8 @@ footer .content {
 }
 .btn-outline-success{
   border-radius: 0 5px 5px 0;
-  background-color: #d1691f;
-  border-color: #d1691f;
+  background-color: #0477ff;
+  border-color: #0477ff;
   padding: 0 10px;
 }
 .form-control{
@@ -800,12 +770,116 @@ footer .content {
 }
 
 .btn-outline-success:hover{
-  background-color: #d1691f;
-  border-color: #d1691f;
+  background-color: #0477ff;
+  border-color: #0477ff;
 }
 
 .hero-slide, .set-padding{
   padding-top: 70px;
 }
 
+.modal{
+  display: none;
+}
+.fa-eye-slash{
+  display: none;
+}
+
+
+/* -----------------------------------Login modal--------------------------------------- */
+.modal-dialog{
+  margin: 6rem auto;
+}
+label{
+  display: block;
+}
+.nav-pills{
+  display: flex;
+}
+.modal-inner{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-lg{
+  position: absolute;
+  margin-top: 42px;
+  font-size: 21px;
+  margin-left: 10px;
+}
+.icon-eye{
+  position: absolute;
+  right: 60px;
+  font-size: 21px;
+  margin-top: -32px;
+  cursor: pointer;
+}
+.nav-item-login{
+  width: 50%;
+}
+.nav-link-login{
+  background-color: white;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+.nav-link-login.active{
+  background-color: #c0392b;
+  color: white;
+}
+.nav-link-login:hover{
+  background-color: #e96868;
+  color: white;
+}
+.user-name, .pass, .again{
+  width: 100%;
+  padding:0px 40px;
+  height: 45px;
+}
+.user-name, .pass {
+  margin-top: 30px;
+}
+.again{
+  margin-top: 30px;
+}
+
+.login, .register-button{
+  width: 100%;
+  padding: 8px;
+  color: white;
+  background: #c0392b;
+  border: none;
+  margin: 30px 0 10px 0;
+}
+.login:hover{
+  background-color: #f15555;
+}
+.register-button:hover{
+  background-color: #f15555;
+}
+.register-button{
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.oline img{
+  margin: 10px 8px 30px 8px;
+  width: 35px;
+}
+.modal-content{
+  color: #000000;
+  border-radius: 1rem;
+}
+.checkbox{
+  cursor: pointer;
+}
+.nav-pills{
+  height: 100%;
+}
+.top-set{
+ border-radius:5px 0 0 0;
+}
+.left-set{
+  border-radius:0 5px 0 0;
+}
 
