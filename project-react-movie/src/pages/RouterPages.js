@@ -4,6 +4,7 @@ import Anime from './Anime'
 import DetailMovie from './DetailMovie'
 import Home from './Home'
 import MovieTheaters from './MovieTheaters'
+import Search from './Search'
 import SeriesMovie from './SeriesMovie'
 
 
@@ -15,6 +16,7 @@ const RouterPages = () => {
         <Route path='/seriesmovie' element={<SeriesMovie/>}/>
         <Route path='/anime' element={<Anime/>}/>
         <Route path='/detailmovie' element={<DetailMovie/>}/>
+        <Route path='/search' element={<Search/>}/>
     </Routes>
   )
 }

@@ -1,24 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { animeArray } from "../datas/animeData";
 
 
+function filterMovie(movieList, value) {
+  if (value === "all genres" || value === "") return movieList;
+  return movieList.filter((movieItem) => {
+    return movieItem.category === value;
+  });
+}
+function filterMovieTime(movieList, value) {
+  if (value === "all years" || value === "") return movieList;
+  return movieList.filter((movieItem) => {
+    return movieItem.year === value;
+  });
+}
 const Anime = () => {
+  const [movie, setMovie] = useState("");
+  const [moviList, setMovieList] = useState(animeArray);
+  const [moviListCurrent, setMovieListCurrent] = useState(animeArray);
+  const [moviTime, setMovieTime] = useState("");
+
+  useEffect(() => {
+    setMovieList(filterMovie(animeArray, movie));
+    setMovieListCurrent(filterMovie(animeArray, movie));
+  }, [movie]);
+  useEffect(() => {
+    setMovieList(filterMovieTime(moviListCurrent, moviTime));
+  }, [moviTime]);
+
   return (
     <React.Fragment>
       <div className="container set-padding">
         <div className="filter-bar">
           <div className="filter-dropdowns">
-            <select name="genre" className="genre">
+            <select
+              name="genre"
+              className="genre"
+              onChange={(e) => {
+                setMovie(e.target.value);
+              }}
+            >
               <option value="all genres">Tất Cả Thể Loại</option>
               <option value="action">Hành Động</option>
               <option value="adventure">Phưu Lưu</option>
-              <option value="animal">Động Vật</option>
-              <option value="animation">Hoạt Hình</option>
+              <option value="humor">Hài Hước</option>
+              <option value="horrified">Kinh Dị</option>
               <option value="biography">Tiểu Sử</option>
             </select>
 
-            <select name="year" className="year">
+            <select
+              name="year"
+              className="year"
+              onChange={(e) => {
+                setMovieTime(e.target.value);
+              }}
+            >
               <option value="all years">Tất Cả Năm</option>
               <option value="2022">2022</option>
               <option value="2020-2021">2020-2021</option>
@@ -30,13 +67,13 @@ const Anime = () => {
 
           <div className="filter-radios d-flex">
             <input type="radio" name="grade" id="featured" />
-            <label for="featured">Đặc Sắc</label>
+            <label htmlFor="featured">Đặc Sắc</label>
 
             <input type="radio" name="grade" id="popular" />
-            <label for="popular">Nổi Bật</label>
+            <label htmlFor="popular">Nổi Bật</label>
 
             <input type="radio" name="grade" id="newest" />
-            <label for="newest">Mới Nhất</label>
+            <label htmlFor="newest">Mới Nhất</label>
 
             <div className="checked-radio-bg"></div>
           </div>
@@ -45,38 +82,36 @@ const Anime = () => {
 
       <div className="section1">
         <div className="container">
-          <div className="section-header">Phim Hoạt Hình</div>
-          <div className="row">      
-          {animeArray.map((data, i) => {
-        return (
-          <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
-            <Link to="/detailmovie" className="movie-item-mv ">
-              <img src={data.image} alt="" />
-              <div className="movie-item-content">
-                <div className="movie-item-title">{data.nameMovie}</div>
-                <div className="movie-infos">
-                  <div className="movie-info">
-                    <i className="bx bxs-star"></i>
-                    <span>{data.point}</span>
-                  </div>
-                  <div className="movie-info">
-                    <i className="bx bxs-time"></i>
-                    <span>{data.time}</span>
-                  </div>
-                  
+          <div className="section-header">Phim Chiếu Rạp</div>
+          <div className="row">
+            {moviList.length == 0 && <div className="searchresults">Không có kết quả tìm kiếm</div>}
+            {moviList?.map((data, i) => {
+              return (
+                <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
+                  <Link to="/detailmovie" className="movie-item-mv ">
+                    <img src={data.image} alt="" />
+                    <div className="movie-item-content">
+                      <div className="movie-item-title">{data.nameMovie}</div>
+                      <div className="movie-infos">
+                        <div className="movie-info">
+                          <i className="bx bxs-star"></i>
+                          <span>{data.point}</span>
+                        </div>
+                        <div className="movie-info">
+                          <i className="bx bxs-time"></i>
+                          <span>{data.time}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </div>
-            </Link>
-          </div>
-        );
-      })}     
+              );
+            })}
           </div>
         </div>
       </div>
     </React.Fragment>
-
-    
-  )
-}
+  );
+};
 
 export default Anime

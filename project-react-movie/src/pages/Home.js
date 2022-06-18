@@ -260,7 +260,7 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="pricing-box-action">
-                      <Link to="#" className="btn btn-hover">
+                      <Link data-bs-toggle="modal" data-bs-target="#exampleModal" to="#" className="btn btn-hover">
                         <span>Đăng Kí</span>
                       </Link>
                     </div>
@@ -283,7 +283,7 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="pricing-box-action">
-                      <Link to="#" className="btn btn-hover">
+                      <Link data-bs-toggle="modal" data-bs-target="#exampleModal" to="#" className="btn btn-hover">
                         <span>Đăng Kí</span>
                       </Link>
                     </div>
@@ -304,7 +304,7 @@ const Home = () => {
                       <p className="set-para">Kênh Truyền Hình</p>
                     </div>
                     <div className="pricing-box-action">
-                      <Link to="#" className="btn btn-hover">
+                      <Link to="#" data-bs-toggle="modal" data-bs-target="#exampleModal" className="btn btn-hover">
                         <span>Đăng Kí</span>
                       </Link>
                     </div>

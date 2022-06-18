@@ -8,11 +8,6 @@ const DetailMovie = () => {
     <React.Fragment>
       <div className="hero-slide2">
         <div className="hero-sm">
-          <img
-            src="https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Favenger-banner.png?alt=media&token=5fd59451-36e1-4568-8e77-5b8be1e94c87"
-            alt=""
-          />
-          <div className="overlay2"></div>
         </div>
         <div className="container product ">
           <div className="row">
@@ -128,6 +123,7 @@ const DetailMovie = () => {
           </div>
           <div className="review-video w-video w-embed">
             <iframe
+              title="movietraler"
               className="embedly-embed"
               rel="nofollow"
               src="https://www.youtube.com/embed/TcMBFSGVi1c?modestbranding=1&amp;iv_load_policy=3&amp;showinfo=1&amp;rel=0"

@@ -56,6 +56,16 @@ ul {
 
 a {
   text-decoration: none;
+  color: white;
+}
+a:hover{
+  color: white;
+}
+.set-colora{
+  color: black;
+}
+.set-colora:hover{
+  color: black;
 }
 
 img {
@@ -783,6 +793,15 @@ footer .content {
 }
 .fa-eye-slash{
   display: none;
+}
+.hero-slide2{
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.8), rgba(24,22,22,1)), url(https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Favenger-banner.png?alt=media&token=5fd59451-36e1-4568-8e77-5b8be1e94c87);
+  background-size: cover;
+}
+
+.searchresults{
+  font-size: 18px;
+  padding: 0 5%;
 }
 
 
