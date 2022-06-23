@@ -8,7 +8,9 @@ import Search from './Search'
 import SeriesMovie from './SeriesMovie'
 
 
+
 const RouterPages = () => {
+
   return (
     <Routes>
         <Route path='/' element={<Home/>}/>

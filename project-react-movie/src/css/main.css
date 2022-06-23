@@ -804,6 +804,10 @@ footer .content {
   padding: 0 5%;
 }
 
+.section-top{
+  margin-top: 130px;
+}
+
 
 /* -----------------------------------Login modal--------------------------------------- */
 .modal-dialog{
