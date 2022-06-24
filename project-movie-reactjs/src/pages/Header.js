@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [search, setSearch] = useState("");
 
+  
+
   return (
     <React.Fragment>
       <div className="nav-wrapper">
@@ -16,7 +18,7 @@ const Header = () => {
 
             <ul className="nav-menu" id="nav-menu">
               <li>
-                <a href="/">PHIM MỚI</a>
+                <Link to="/">PHIM MỚI</Link>
               </li>
               <li>
                 <Link to="/movietheaters">PHIM CHIẾU RẠP</Link>
@@ -49,7 +51,6 @@ const Header = () => {
                   type="search"
                   placeholder="Tìm Phim"
                   aria-label="Search"
-                  required=""
                   onChange={(e) => setSearch(e.target.value)}
                 />
                 <button className="btn btn-outline-success" type="button">
@@ -150,9 +151,7 @@ const Header = () => {
                           </label>
                         </div>
                         <div className="col-6 forget text-end">
-                          <a className="set-colora" href="#">
-                            Quên mật khẩu ?
-                          </a>
+                          <a className="set-colora" href="#">Quên mật khẩu ?</a>
                         </div>
                       </div>
                       <p className="text-center">Hoặc</p>

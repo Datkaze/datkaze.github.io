@@ -1,0 +1,160 @@
+@media (max-width: 992px){
+    .carousel-nav-center .owl-nav button i {
+        font-size: 2rem;
+    }
+    .padding-right{
+        padding: 0 30px;
+    }
+    .product{
+        padding: 70px 8% 0 8%;
+    }
+    .container-review{
+        margin: 50px 10%;
+    }
+    .padding{
+        padding:0 10%;
+    }
+    .form-control{
+        width: 500px;
+    }
+    .hero-slide2{
+        background-position: 96%;
+    }
+}
+
+@media (max-width: 768px){
+    .container-review{
+        margin: 60px 10%;
+    }
+    .form-control{
+        width: 300px;
+    }
+}
+
+@media (max-width: 576px){
+    .carousel-nav-center .owl-nav button i {
+        font-size: 2rem;
+    }
+    .container-review{
+        margin: 60px 15%;
+    }
+    .font-size{
+        font-size: 26px;
+    }
+    .form-control{
+        width: 220px;
+    }
+    .btn-outline-success{
+        padding: 0 5px;
+    }
+    .hero-slide-item img{
+        height: 100%;
+    }
+    .set-btn, .section-header{
+        margin-bottom: 20px;
+      }
+      .section-header{
+        font-size: 16px;
+        padding-left: 10px;
+      }
+      .item-content-wraper{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .set-btn{
+        font-size: 14px;
+      }
+      .pricing-box{
+        padding: 30px;
+      }
+      .pricing-price span {
+        font-size: 14px;
+    }
+    .pricing-name{
+      font-size: 21px;
+    }
+    .pricing-price{
+      font-size: 21px;
+    }
+    .set-para{
+      font-size: 18px;
+    }
+    .item-content-description{
+      font-size: 16px;
+    }
+    .modal-content{
+        width: 400px;
+        margin: auto;
+      }
+}
+
+@media (max-width: 460px){
+    .padding-right{
+        padding: 0 5%;
+    }
+    .product-item{
+        text-align: center;
+    }
+    .movie-infos2{
+        justify-content: center;
+    }
+    .setimg-movie img{
+        width: 180px;
+    }
+    .button-movie1, .button-movie2{
+        padding: 8px 15px;
+    }
+    .container-review{
+        margin: 50px 10%;
+    }
+    p{
+        font-size: 14px;
+    }
+    .font-size{
+        font-size: 21px;
+    }
+    .form-control{
+        width: 180px;
+    }
+    .btn-outline-success{
+        padding: 0 3px;
+        font-size: 18px;
+    }
+    .section {
+        padding-top: 30px;
+      }
+    .hero-section {
+        margin-bottom: 50px;
+      }
+      .set-btn, .section-header{
+        margin-bottom: 15px;
+      }
+      .trailer-title{
+        font-size: 25px;
+      }
+      .btn{
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+      .modal-content{
+        width: 330px;
+      }
+      .product{
+        padding-top:50px;
+    }
+    .hero-slide2{
+        background-position: 80%;
+    }
+}
+
+@media (max-width: 370px){
+    a {
+        font-size: 14px;
+    }
+    .form-control{
+        width: 120px;
+    }
+    .btn{
+        padding: 5px 5px;
+    }
+}

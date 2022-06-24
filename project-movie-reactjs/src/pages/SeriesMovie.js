@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { movietheaterArray } from "../datas/movietheaterData";
+import { seriesmovieArray } from "../datas/seriesmovieData";
 
 function filterMovie(movieList, value) {
   if (value === "all genres" || value === "") return movieList;
@@ -14,15 +14,15 @@ function filterMovieTime(movieList, value) {
     return movieItem.year === value;
   });
 }
-const MovieTheaters = () => {
+const SeriesMovie = () => {
   const [movie, setMovie] = useState("");
-  const [moviList, setMovieList] = useState(movietheaterArray);
-  const [moviListCurrent, setMovieListCurrent] = useState(movietheaterArray);
+  const [moviList, setMovieList] = useState(seriesmovieArray);
+  const [moviListCurrent, setMovieListCurrent] = useState(seriesmovieArray);
   const [moviTime, setMovieTime] = useState("");
 
   useEffect(() => {
-    setMovieList(filterMovie(movietheaterArray, movie));
-    setMovieListCurrent(filterMovie(movietheaterArray, movie));
+    setMovieList(filterMovie(seriesmovieArray, movie));
+    setMovieListCurrent(filterMovie(seriesmovieArray, movie));
   }, [movie]);
   useEffect(() => {
     setMovieList(filterMovieTime(moviListCurrent, moviTime));
@@ -83,13 +83,11 @@ const MovieTheaters = () => {
         <div className="container">
           <div className="section-header">Phim Chiếu Rạp</div>
           <div className="row">
-            {moviList.length === 0 && (
-              <div className="searchresults">Không có kết quả tìm kiếm</div>
-            )}
+            {moviList.length === 0 && <div className="searchresults">Không có kết quả tìm kiếm</div>}
             {moviList?.map((data, i) => {
               return (
                 <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
-                  <a href="/detailmovie" className="movie-item-mv ">
+                  <Link to="/detailmovie" className="movie-item-mv ">
                     <img src={data.image} alt="" />
                     <div className="movie-item-content">
                       <div className="movie-item-title">{data.nameMovie}</div>
@@ -104,7 +102,7 @@ const MovieTheaters = () => {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               );
             })}
@@ -115,4 +113,4 @@ const MovieTheaters = () => {
   );
 };
 
-export default MovieTheaters;
+export default SeriesMovie;

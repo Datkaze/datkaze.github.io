@@ -1,11 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { movietheaterArray } from "../datas/movietheaterData";
 import { animeArray } from "../datas/animeData";
+import { moviesSlideData } from "../datas/bannerData";
+import { movietheaterArray } from "../datas/movietheaterData";
 import { seriesmovieArray } from "../datas/seriesmovieData";
 import { heroSlideData } from "../datas/bannerData";
-import { moviesSlideData } from "../datas/bannerData";
-
 
 const Home = () => {
   return (
@@ -16,15 +15,12 @@ const Home = () => {
             {heroSlideData.map((data, i) => {
               return (
                 <div className="hero-slide-item" key={i}>
-                  <img
-                    src={data.image}
-                    alt=""
-                  />
+                  <img src={data.image} alt="" />
                   <div className="overlay"></div>
                   <div className="hero-slide-item-content">
                     <div className="item-content-wraper">
                       <div className="item-content-title top-down">
-                      {data.nameMovie}
+                        {data.nameMovie}
                       </div>
                       <div className="movie-infos3 top-down delay-2">
                         <div className="movie-info">
@@ -35,7 +31,6 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        
                       </div>
                       <div className="item-content-description top-down delay-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -57,38 +52,33 @@ const Home = () => {
             })}
           </div>
         </div>
-
         <div className="top-movies-slide">
           <div className="owl-carousel" id="top-movies-slide">
-          {moviesSlideData.map((data, i) => {
+            {moviesSlideData.map((data, i) => {
               return (
-            <div className="movie-item" key={i}>
-              <img
-                src={data.image}
-                alt=""
-              />
-              <div className="movie-item-content">
-                <div className="movie-item-title">{data.nameMovie}</div>
-                <div className="movie-infos">
-                  <div className="movie-info">
-                    <i className="bx bxs-star"></i>
-                    <span>{data.point}</span>
+                <div className="movie-item" key={i}>
+                  <img src={data.image} alt="" />
+                  <div className="movie-item-content">
+                    <div className="movie-item-title">{data.nameMovie}</div>
+                    <div className="movie-infos">
+                      <div className="movie-info">
+                        <i className="bx bxs-star"></i>
+                        <span>{data.point}</span>
+                      </div>
+                      <div className="movie-info">
+                        <i className="bx bxs-time"></i>
+                        <span>{data.time}</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="movie-info">
-                    <i className="bx bxs-time"></i>
-                    <span>{data.time}</span>
-                  </div>
-                  
                 </div>
-              </div>
-            </div>
-            );
-        })}
+              );
+            })}
           </div>
         </div>
       </div>
-       
-        <div className="section1">
+
+      <div className="section1">
         <div className="container">
           <div className="d-flex justify-content-between">
             <div className="section-header">Phim Chiếu Rạp Mới</div>
@@ -113,7 +103,6 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        
                       </div>
                     </div>
                   </Link>
@@ -124,7 +113,6 @@ const Home = () => {
         </div>
       </div>
 
-        
       <div className="section">
         <div className="container">
           <div className="d-flex justify-content-between">
@@ -150,7 +138,6 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        
                       </div>
                     </div>
                   </Link>
@@ -160,7 +147,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="section">
         <div className="container">
           <div className="d-flex justify-content-between">
@@ -186,7 +173,6 @@ const Home = () => {
                           <i className="bx bxs-time"></i>
                           <span>{data.time}</span>
                         </div>
-                        
                       </div>
                     </div>
                   </Link>
@@ -196,7 +182,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="section">
         <div className="hero-slide-item">
           <img
@@ -216,7 +202,6 @@ const Home = () => {
                   <i className="bx bxs-time"></i>
                   <span>130 mins</span>
                 </div>
-                
               </div>
               <div className="item-content-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
@@ -234,7 +219,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="section">
         <div className="container">
           <div className="pricing">
@@ -251,7 +236,9 @@ const Home = () => {
                     </div>
                     <div className="pricing-box-content">
                       <p className="set-para">Bản Gốc</p>
-                      <p className="set-para"><del>Download Phim </del></p>
+                      <p className="set-para">
+                        <del>Download Phim </del>
+                      </p>
                       <p className="set-para">
                         <del>65+ Kênh Trực Tiếp</del>
                       </p>
@@ -260,7 +247,12 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="pricing-box-action">
-                      <Link data-bs-toggle="modal" data-bs-target="#exampleModal" to="#" className="btn btn-hover">
+                      <Link
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        to="#"
+                        className="btn btn-hover"
+                      >
                         <span>Đăng Kí</span>
                       </Link>
                     </div>
@@ -283,7 +275,12 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="pricing-box-action">
-                      <Link data-bs-toggle="modal" data-bs-target="#exampleModal" to="#" className="btn btn-hover">
+                      <Link
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        to="#"
+                        className="btn btn-hover"
+                      >
                         <span>Đăng Kí</span>
                       </Link>
                     </div>
@@ -304,7 +301,12 @@ const Home = () => {
                       <p className="set-para">Kênh Truyền Hình</p>
                     </div>
                     <div className="pricing-box-action">
-                      <Link to="#" data-bs-toggle="modal" data-bs-target="#exampleModal" className="btn btn-hover">
+                      <Link
+                        to="#"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        className="btn btn-hover"
+                      >
                         <span>Đăng Kí</span>
                       </Link>
                     </div>

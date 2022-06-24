@@ -83,11 +83,13 @@ const SeriesMovie = () => {
         <div className="container">
           <div className="section-header">Phim Chiếu Rạp</div>
           <div className="row">
-            {moviList.length === 0 && <div className="searchresults">Không có kết quả tìm kiếm</div>}
+            {moviList.length === 0 && (
+              <div className="searchresults">Không có kết quả tìm kiếm</div>
+            )}
             {moviList?.map((data, i) => {
               return (
                 <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
-                  <Link to="/detailmovie" className="movie-item-mv ">
+                  <a href="/detailmovie" className="movie-item-mv ">
                     <img src={data.image} alt="" />
                     <div className="movie-item-content">
                       <div className="movie-item-title">{data.nameMovie}</div>
@@ -102,7 +104,7 @@ const SeriesMovie = () => {
                         </div>
                       </div>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               );
             })}

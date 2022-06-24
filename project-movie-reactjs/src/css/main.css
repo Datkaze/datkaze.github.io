@@ -1,8 +1,16 @@
-.banner-wrap {
-  width: 100%;
-  background: red;
-  height: 200px;
+.slick-prev{
+  left: 10px;
+  z-index: 1;
 }
+.slick-next{
+  right: 10px;
+}
+.set-slick{
+  padding:0 7px;
+}
+
+
+
 :root {
   --main-color: #c0392b;
   --body-bg: #181616;
@@ -396,7 +404,7 @@ a.movie-item:hover {
   transition-delay: 0.8s;
 }
 
-.owl-item.active .top-down {
+.slick-active .top-down {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
@@ -729,7 +737,7 @@ footer .content {
   padding-top: 70px;
 }
 .product{
-  padding-top: 160px;
+  padding-top: 80px;
   position: relative;
 }
 .review{
@@ -802,6 +810,7 @@ footer .content {
 .hero-slide2{
   background-image: linear-gradient(to bottom,rgba(0,0,0,0.8), rgba(24,22,22,1)), url(https://firebasestorage.googleapis.com/v0/b/image-movie-app.appspot.com/o/banner-icon%2Favenger-banner.png?alt=media&token=5fd59451-36e1-4568-8e77-5b8be1e94c87);
   background-size: cover;
+  margin-top: 72px;
 }
 
 .searchresults{
