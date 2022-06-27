@@ -87,8 +87,8 @@ const Footer = () => {
     </footer>
     
     <div className="copyright">
-        Copyright 2022 
-            Doan Minh Dat
+        Copyright 2022 by Flix
+            
     </div>
 
 
