@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { movieAll } from "../datas/allMovie";
+
+function filterMovieAll(searchMovie, value) {
+  if (value === "all years") return searchMovie;
+  return searchMovie.filter((movieItem) => {
+    return movieItem.nameMovie === value;
+  });
+}
 
 const Header = () => {
   const [search, setSearch] = useState("");
+  const [searchMovie, setSearchMovie] = useState(movieAll);
 
-  
+  useEffect(() => {
+    setSearchMovie(filterMovieAll(searchMovie, search));
+  }, [search]);
 
   return (
     <React.Fragment>
@@ -151,7 +162,9 @@ const Header = () => {
                           </label>
                         </div>
                         <div className="col-6 forget text-end">
-                          <a className="set-colora" href="#">Quên mật khẩu ?</a>
+                          <a className="set-colora" href="#">
+                            Quên mật khẩu ?
+                          </a>
                         </div>
                       </div>
                       <p className="text-center">Hoặc</p>
