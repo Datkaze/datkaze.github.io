@@ -9,14 +9,34 @@ function filterMovieAll(searchMovie, value) {
   });
 }
 
+function getValueSearch(value) {
+  return value.replaceAll(" ", "_");
+}
 const Header = () => {
   const [search, setSearch] = useState("");
   const [searchMovie, setSearchMovie] = useState(movieAll);
 
+  const handleSearch = (e) => {
+    if (e.target.value.trim() == "") {
+      return;
+    }
+    setSearch(getValueSearch(e.target.value.trim()));
+  };
   useEffect(() => {
     setSearchMovie(filterMovieAll(searchMovie, search));
+    
   }, [search]);
-
+  const handleKeyPress = (e) => {
+    if (e.charCode === 13) {
+      if (e.target.value.trim() === "") return;
+      window.location.assign(`/search?${e.target.value.trim()}`);
+    }
+  };
+  const handleCkeckSearch = (e) => {
+    if (search.trim() == "") {
+      e.preventDefault();
+    }
+  };
   return (
     <React.Fragment>
       <div className="nav-wrapper">
@@ -61,11 +81,15 @@ const Header = () => {
                   className="form-control "
                   type="search"
                   placeholder="Tìm Phim"
+                  required
                   aria-label="Search"
-                  onChange={(e) => setSearch(e.target.value)}
+                  onChange={handleSearch}
+                  onKeyPress={handleKeyPress}
                 />
                 <button className="btn btn-outline-success" type="button">
-                  <Link to={`/search?${search}`}>Tìm Kiếm</Link>
+                  <Link to={`/search?${search}`} onClick={handleCkeckSearch}>
+                    Tìm Kiếm
+                  </Link>
                 </button>
               </form>
             </div>

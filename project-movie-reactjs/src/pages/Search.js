@@ -1,18 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { movieAll } from "../datas/allMovie"
+import React, { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { movieAll } from "../datas/allMovie";
 
+function getResultSearch(value) {
+  return value.replace("?", "").replaceAll("_", " ");
+}
 
-
+function getMovieSearch(resultSearch, movieAll) {
+  return movieAll?.filter((movieItem) => {
+    return movieItem.nameMovie.toLowerCase().includes(resultSearch) == true;
+  });
+}
 const Search = () => {
+  const params = useLocation();
+  const resultSearch = getResultSearch(params.search);
+  const [movieSearch, setMovieSearch] = useState();
 
+  useEffect(() => {
+    setMovieSearch(getMovieSearch(resultSearch, movieAll));
+  }, [params]);
   return (
     <React.Fragment>
       <div className="section-top">
         <div className="container">
           <div className="section-header">Kết Quả Tìm Kiếm</div>
           <div className="row">
-            {movieAll.map((data, i) => {
+            {!movieSearch ||
+              (movieSearch.length == 0 && (
+                <div>Không có kết quả tìm kiếm phù hơp !</div>
+              ))}
+            {movieSearch?.map((data, i) => {
               return (
                 <div className="col-lg-2 col-md-3 col-sm-6" key={i}>
                   <Link to="/detailmovie" className="movie-item-mv ">
@@ -37,10 +54,7 @@ const Search = () => {
           </div>
         </div>
       </div>
-
-
     </React.Fragment>
-    
   );
 };
 

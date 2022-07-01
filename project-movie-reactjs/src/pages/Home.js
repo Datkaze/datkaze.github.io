@@ -22,9 +22,7 @@ const bannerMain = () => {
         {heroSlideData.map((data, i) => {
           return (
             <>
-              {" "}
               <div className="hero-slide-item" key={i}>
-                {" "}
                 <img src={data.image} alt="" />
                 <div className="overlay"></div>
                 <div className="hero-slide-item-content">
@@ -106,7 +104,7 @@ const bannerMainBootom = () => {
         <Slider {...settings}>
           {moviesSlideData.map((data, i) => {
             return (
-              <div className="movie-item" key={i}>
+              <div className="movie-item" key={data.nameMovie}>
                 <Link to="/detailmovie">
                   <img src={data.image} alt="" />
                   <div className="movie-item-content">
@@ -166,23 +164,23 @@ const chieuRap = () => {
             return (
               <div className="set-slick">
                 <div className="movie-item-mv" key={i}>
-                <Link to="/detailmovie">
-                  <img src={data.image} alt="" />
-                  <div className="movie-item-content">
-                    <div className="movie-item-title">{data.nameMovie}</div>
-                    <div className="movie-infos">
-                      <div className="movie-info">
-                        <i className="bx bxs-star"></i>
-                        <span>{data.point}</span>
-                      </div>
-                      <div className="movie-info">
-                        <i className="bx bxs-time"></i>
-                        <span>{data.time}</span>
+                  <Link to="/detailmovie">
+                    <img src={data.image} alt="" />
+                    <div className="movie-item-content">
+                      <div className="movie-item-title">{data.nameMovie}</div>
+                      <div className="movie-infos">
+                        <div className="movie-info">
+                          <i className="bx bxs-star"></i>
+                          <span>{data.point}</span>
+                        </div>
+                        <div className="movie-info">
+                          <i className="bx bxs-time"></i>
+                          <span>{data.time}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
+                  </Link>
+                </div>
               </div>
             );
           })}
@@ -224,25 +222,25 @@ const phimBo = () => {
         <Slider {...settings}>
           {seriesmovieArray.map((data, i) => {
             return (
-                <div className="set-slick">
+              <div className="set-slick">
                 <div className="movie-item-mv" key={i}>
-                <Link to="/detailmovie">
-                  <img src={data.image} alt="" />
-                  <div className="movie-item-content">
-                    <div className="movie-item-title">{data.nameMovie}</div>
-                    <div className="movie-infos">
-                      <div className="movie-info">
-                        <i className="bx bxs-star"></i>
-                        <span>{data.point}</span>
-                      </div>
-                      <div className="movie-info">
-                        <i className="bx bxs-time"></i>
-                        <span>{data.time}</span>
+                  <Link to="/detailmovie">
+                    <img src={data.image} alt="" />
+                    <div className="movie-item-content">
+                      <div className="movie-item-title">{data.nameMovie}</div>
+                      <div className="movie-infos">
+                        <div className="movie-info">
+                          <i className="bx bxs-star"></i>
+                          <span>{data.point}</span>
+                        </div>
+                        <div className="movie-info">
+                          <i className="bx bxs-time"></i>
+                          <span>{data.time}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
+                  </Link>
+                </div>
               </div>
             );
           })}
@@ -286,23 +284,23 @@ const hoatHinh = () => {
             return (
               <div className="set-slick">
                 <div className="movie-item-mv" key={i}>
-                <Link to="/detailmovie">
-                  <img src={data.image} alt="" />
-                  <div className="movie-item-content">
-                    <div className="movie-item-title">{data.nameMovie}</div>
-                    <div className="movie-infos">
-                      <div className="movie-info">
-                        <i className="bx bxs-star"></i>
-                        <span>{data.point}</span>
-                      </div>
-                      <div className="movie-info">
-                        <i className="bx bxs-time"></i>
-                        <span>{data.time}</span>
+                  <Link to="/detailmovie">
+                    <img src={data.image} alt="" />
+                    <div className="movie-item-content">
+                      <div className="movie-item-title">{data.nameMovie}</div>
+                      <div className="movie-infos">
+                        <div className="movie-info">
+                          <i className="bx bxs-star"></i>
+                          <span>{data.point}</span>
+                        </div>
+                        <div className="movie-info">
+                          <i className="bx bxs-time"></i>
+                          <span>{data.time}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </Link>
-              </div>
+                  </Link>
+                </div>
               </div>
             );
           })}
