@@ -76,7 +76,7 @@ const Header = () => {
           </div>
           <nav className="navbar">
             <div className="container-fluid">
-              <form className="d-flex" role="search">
+              <div className="d-flex" role="search">
                 <input
                   className="form-control "
                   type="search"
@@ -91,7 +91,7 @@ const Header = () => {
                     Tìm Kiếm
                   </Link>
                 </button>
-              </form>
+              </div>
             </div>
           </nav>
         </div>
